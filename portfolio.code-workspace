@@ -1,8 +1,14 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
+    {
+      "path": "."
+    },
+    {
+      "path": "../smak-portfolio"
+    },
+    {
+      "path": "../../../Downloads/tailwindui-spotlight"
+    }
   ],
   "settings": {}
 }

@@ -22,6 +22,8 @@ export default defineNuxtConfig({
         vueI18n: './i18n.config.ts'
       },
     ],
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@vueuse/nuxt',
   ],
 })
