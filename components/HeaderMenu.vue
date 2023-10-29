@@ -20,6 +20,7 @@ const navigation = [
         aria-label="Global"
         class="flex items-center justify-between px-4 py-2 sm:px-8 sm:py-4 md:justify-center"
       >
+        <!-- Mobile navigation -->
         <NuxtLink to="/" class="font-semibold text-white md:hidden">
           Šimon Macek
         </NuxtLink>
@@ -41,7 +42,7 @@ const navigation = [
           </div>
         </div>
         <div
-          class="mx-auto hidden w-full max-w-5xl items-center sm:px-8 md:flex md:justify-between"
+          class="hidden w-full items-center sm:px-8 md:flex md:justify-between"
         >
           <!-- Navigation -->
           <div class="flex flex-wrap gap-4 text-gray-100 md:gap-6 lg:gap-8">
@@ -58,7 +59,7 @@ const navigation = [
               @click="toggleModal()"
               class="dark:hover-gray-600 mr-2 inline-flex items-center justify-center rounded-md bg-gray-50 px-3 py-2 text-blue-600 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-auto text-blue-500 dark:text-blue-300" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z"/></svg>
+              <Icon name="mi:email" size="20px" />
               <span class="ml-2 text-sm font-semibold">Contact Me</span>
             </button>
             <SocialIcons />

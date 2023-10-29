@@ -25,5 +25,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@vueuse/nuxt',
+    'nuxt-icon',
   ],
 })
