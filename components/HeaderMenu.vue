@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
+const localePath = useLocalePath()
 const toggleModal = () => {
   // noop
 }
@@ -9,6 +10,10 @@ const navigation = [
   {
     title: 'Home',
     _path: '/',
+  },
+  {
+    title: 'Blog',
+    _path: '/blog',
   }
 ]
 </script>
@@ -46,7 +51,7 @@ const navigation = [
         >
           <!-- Navigation -->
           <div class="flex flex-wrap gap-4 text-gray-100 md:gap-6 lg:gap-8">
-            <NuxtLink v-for="link in navigation" :to="link._path">
+            <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
               {{ link.title }}
             </NuxtLink>
           </div>
@@ -64,7 +69,7 @@ const navigation = [
             </button>
             <SocialIcons />
             <!-- <ColorModeSwitch class="hover:text-white" /> -->
-            <!-- <LanguageSwitch /> -->
+            <LanguageSwitch />
           </div>
         </div>
       </nav>
@@ -97,20 +102,23 @@ const navigation = [
               </div>
             </div>
             <div class="px-2 pt-2 pb-3">
-              <VMenuLink
-                v-for="link of navigation"
+              <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
+                {{ link.title }}
+              </NuxtLink>
+              <!-- <MenuLink
+                v-for="link in navigation"
                 :key="link._path"
                 :link="link"
                 active-class="font-bold"
                 class="menu-link dark:hover-bg-gray-500 dark:hover-text-white block rounded-md px-3 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-200"
                 @click="close()"
-              />
+              /> -->
               <div class="space-x-3 px-3 py-2 text-gray-500 transition">
                 <SocialIcons />
                 <!-- <ColorModeSwitch
                   class="hover:text-gray-700 dark:hover:text-gray-300"
                 /> -->
-                <!-- <LanguageSwitch /> -->
+                <LanguageSwitch />
               </div>
             </div>
           </div>

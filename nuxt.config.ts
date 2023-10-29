@@ -2,29 +2,35 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    [
-      '@nuxtjs/i18n',
-      {
-        locale: 'cs',
-        defaultLocale: 'cs',
-        locales: [
-          {
-            code: 'en',
-            iso: 'en-US',
-            name: 'English'
-          },
-          {
-            code: 'cs',
-            iso: 'cs-CZ',
-            name: 'Čeština'
-          }
-        ],
-        vueI18n: './i18n.config.ts'
-      },
-    ],
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-icon',
   ],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: "en-US.ts",
+      },
+      {
+        code: 'cs',
+        iso: 'cs-CZ',
+        name: 'Čeština',
+        file: "cs-CZ.ts",
+      }
+    ],
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix",
+    defaultLocale: 'cs-CZ',
+    detectBrowserLanguage: false,
+    vueI18n: './i18n.config.ts'
+  },
+  content: {
+    contentHead: true,
+  }
 })
