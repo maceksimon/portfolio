@@ -2,7 +2,8 @@ export default {
   index: {
     hero: {
       highlight: "Helping you",
-      title: "come alive on the web",
+      titleHighlight: "come alive",
+      title: "on the web",
       perex: ""
     }
   },

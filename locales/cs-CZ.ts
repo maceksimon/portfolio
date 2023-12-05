@@ -2,7 +2,8 @@ export default {
   index: {
     hero: {
       highlight: "Pomůžu vám",
-      title: "ožít na webu.",
+      titleHighlight: "ožít",
+      title: "na webu.",
       perex: ""
     }
   },
