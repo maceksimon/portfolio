@@ -22,5 +22,7 @@
     "nuxt": "^3.7.4",
     "nuxt-icon": "^0.6.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@nuxt/image": "^1.1.0"
+  }
 }

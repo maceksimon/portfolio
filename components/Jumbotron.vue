@@ -2,17 +2,12 @@
 
 <template>
   <div class="relative mb-8 flex flex-col-reverse sm:mb-12 sm:flex-col">
-    <!-- <NuxtPicture src="/image/profile_light.png" alt="Simon Macek profile photo" aria-hidden="true" format="webp"
+    <NuxtPicture src="/image/hero.png" alt="Users connecting to the internet" aria-hidden="true" format="png"
       :imgAttrs="{
         class:
-          'bottom-0 right-0 isolate m-0 mt-4 h-full w-auto dark:hidden sm:absolute sm:mt-0',
+          'bottom-0 right-0 isolate m-0 mt-4 h-full w-auto sm:absolute sm:mt-0',
       }"
     />
-    <NuxtPicture src="/image/profile_dark.png" alt="Simon Macek profile photo" aria-hidden="true" format="webp" :imgAttrs="{
-      class:
-        'bottom-0 right-0 isolate m-0 mt-4 hidden h-full w-auto dark:block sm:absolute sm:mt-0',
-      }"
-    /> -->
     <div class="isolate">
       <div class="not-prose">
         <div
