@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="relative mb-8 flex flex-col-reverse sm:mb-12 sm:flex-col">
     <NuxtPicture src="/image/hero.png" alt="Users connecting to the internet" aria-hidden="true" format="png"
@@ -23,16 +21,23 @@
         class="mt-6 max-w-xs leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 sm:mt-8 sm:text-lg lg:mt-12 lg:text-xl lg:leading-loose xl:max-w-none">
         {{ $t('index.hero.perex') }}
       </div>
-      <!-- <div v-if="button1 || button2" class="not-prose mt-6 sm:mt-10 sm:flex">
+      <div class="not-prose mt-6 sm:mt-10 sm:flex">
         <div>
-          <VButton :link="link1" type="primary">{{ button1 }}</VButton>
-        </div>
-        <div class="mt-3 sm:mt-0 sm:ml-3">
-          <VButton type="secondary" @click="toggleModal()">
-            {{ button2 }}
+          <VButton url="/portfolio" variant="primary">
+            {{ $t('index.hero.buttonPortfolio') }}
           </VButton>
         </div>
-      </div> -->
+        <div class="mt-3 sm:mt-0 sm:ml-3">
+          <VButton type="secondary" variant="secondary" @click="open()">
+            {{ $t('index.hero.buttonContact') }}
+          </VButton>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+// composables
+const { open, toggle } = useDialogContact()
+</script>

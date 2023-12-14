@@ -1,10 +1,12 @@
 export default {
   index: {
     hero: {
-      highlight: "Helping you",
-      titleHighlight: "come alive",
+      highlight: "",
+      titleHighlight: "Come alive",
       title: "on the web",
-      perex: ""
+      perex: "",
+      buttonPortfolio: "Portfolio",
+      buttonContact: "Contact"
     }
   },
   blog: {

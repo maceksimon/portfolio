@@ -1,10 +1,13 @@
 export default {
   index: {
     hero: {
-      highlight: "Pomůžu vám",
-      titleHighlight: "ožít",
+      highlight: "",
+      titleHighlight: "Ožijte",
       title: "na webu.",
-      perex: ""
+      perex: "",
+      buttonProjects: "Projekty",
+      buttonPortfolio: "Portfolio",
+      buttonContact: "Kontakt"
     }
   },
   blog: {

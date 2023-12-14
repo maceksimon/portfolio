@@ -3,7 +3,7 @@
 <template>
   <div class="dark:bg-gray-900">
     <div class="container mx-auto">
-      <Jumbotron />
+      <Jumbotron contact-buton />
     </div>
   </div>
 </template>
