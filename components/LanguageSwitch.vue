@@ -12,7 +12,7 @@ const { locale } = useI18n();
   >
     <Icon
       name="flag:gb-1x1"
-      class="h-5 w-5 flex-shrink-0 rounded-full border-2 border-white"
+      class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-white"
     />
   </a>
   <a
@@ -23,7 +23,7 @@ const { locale } = useI18n();
   >
     <Icon
       name="flag:cz-1x1"
-      class="h-5 w-5 flex-shrink-0 rounded-full border-2 border-white"
+      class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-white"
     />
   </a>
 </template>
