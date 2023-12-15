@@ -51,7 +51,7 @@ const navigation = [
             class="hidden w-full items-center md:flex md:justify-between"
           >
             <!-- Menu -->
-            <div class="flex flex-wrap gap-4 text-gray-100 md:gap-6 lg:gap-8">
+            <div class="flex flex-wrap gap-4 lg:text-lg font-medium text-gray-100 md:gap-6 lg:gap-8">
               <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
                 {{ link.title }}
               </NuxtLink>
