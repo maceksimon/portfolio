@@ -5,10 +5,14 @@ export default {
       titleHighlight: "Ožijte",
       title: "na webu.",
       perex: "",
-      buttonProjects: "Projekty",
       buttonPortfolio: "Portfolio",
       buttonContact: "Kontakt"
-    }
+    },
+  },
+  projectFeature: {
+    highlight: "Vybraný projekt",
+    buttonDetail: "Přečtěte si víc",
+    buttonWebsite: "Prohlédněte si web",
   },
   blog: {
     title: "Blog"
@@ -16,5 +20,8 @@ export default {
   social: {
     twitter: "Twitter",
     github: "GitHub",
+  },
+  alert: {
+    missingData: "Omlouvám se, obsah právě doplňuji.",
   }
 }

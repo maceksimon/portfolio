@@ -25,11 +25,11 @@
         </div>
         <div>
           <div class="flex">
-            <NuxtLink to="https://upupaepop.cz/" target="_blank" class="relative group mt-8">
+            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8">
               <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
               <div class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-500">
-                <span class="pr-6 text-gray-100">upupaepop.cz</span>
-                <span class="pl-6 text-blue-300 group-hover:text-gray-100 transition duration-200">Check out the web &rarr;</span>
+                <span class="pr-6 text-gray-100">{{ data.url.web.readable }}</span>
+                <span class="pl-6 text-blue-300 group-hover:text-gray-100 transition duration-200">{{ $t('projectFeature.buttonWebsite') }} &rarr;</span>
               </div>
             </NuxtLink>
           </div>
@@ -51,16 +51,13 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  name: {
-    type: String,
-    default: "",
-  },
-});
+const { locale } = useI18n()
 
 const { data } = await useAsyncData("portfolioItemFeatured", () =>
-  queryContent("portfolio", "upupaepop")
-    // do not fetch the root page
-    .findOne()
+  queryContent(
+    "portfolio",
+    "upupaepop",
+    locale.value.toLowerCase()
+  ).findOne()
 );
 </script>

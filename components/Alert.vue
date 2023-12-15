@@ -5,16 +5,16 @@ withDefaults(defineProps<{ icon: string }>(), {
 </script>
 
 <template>
-  <div class="rounded-md border border-orange-200 bg-orange-100 p-4 dark:bg-orange-400/25">
+  <div class="rounded-md border border-red-200/25 bg-red-100 p-4 dark:bg-red-400/25">
     <div class="flex items-center">
       <div v-if="icon" class="mr-3 flex flex-shrink-0 items-center">
-        <Icon class="h-5 w-5 text-orange-800/75 dark:text-orange-100/50" aria-hidden="true" :name="icon" />
+        <Icon class="h-5 w-5 text-red-800/75 dark:text-red-100/50" aria-hidden="true" :name="icon" />
       </div>
       <div class="alert-text not-prose flex items-center">
-        <div v-if="$slots.title" class="m-0 text-base font-medium text-orange-900 dark:text-orange-100">
+        <div v-if="$slots.title" class="m-0 text-base font-medium text-red-900 dark:text-red-100">
           <MDCSlot :use="$slots.title" unwrap="p" />
         </div>
-        <div v-if="$slots.default" class="mt-2 text-sm text-orange-700">
+        <div v-if="$slots.default" class="text-sm text-red-100">
           <MDCSlot :use="$slots.default" unwrap="p" />
         </div>
       </div>

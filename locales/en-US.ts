@@ -9,6 +9,11 @@ export default {
       buttonContact: "Contact"
     }
   },
+  projectFeature: {
+    highlight: "Featured project",
+    buttonDetail: "Read on",
+    buttonWebsite: "Check out the web",
+  },
   blog: {
     title: "Blog"
   },
