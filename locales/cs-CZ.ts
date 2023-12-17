@@ -47,4 +47,11 @@ export default {
   alert: {
     missingData: 'Omlouvám se, obsah právě doplňuji.',
   },
+  faq: {
+    title: 'Co vás možná zajímá',
+    perex:
+      'Máte další otázky a nenašli jste odpověď v informacích níže? Můžete mě kontaktovat přes ',
+    linkContact: 'formulář',
+    perex2: ' a já se vám ozvu co nejdříve.',
+  },
 }

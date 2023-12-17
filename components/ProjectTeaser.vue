@@ -9,7 +9,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-6 mt-16 sm:mt-20 lg:mt-24">
       <div class="relative sm:col-span-4">
         <!-- Mockup mobile -->
-        <div class="absolute right-[20%] bottom-0 pointer-events-none" aria-hidden="true">
+        <div class="sm:absolute right-[20%] bottom-0 mx-auto pointer-events-none" aria-hidden="true">
           <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[12rem] max-w-full drop-shadow-xl">
             <defs>
               <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
@@ -29,7 +29,7 @@
           </svg>
         </div>
         <!-- Mockup desktop -->
-        <div>
+        <div class="hidden sm:block">
           <svg width="600" height="482" viewBox="0 0 1442 1281" fill="none" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect x="553" y="1223" width="44" height="7" rx="1" fill="url(#paint0_linear_7_520)" />
