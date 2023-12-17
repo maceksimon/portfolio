@@ -1,7 +1,8 @@
 <template>
-  <div class="prose prose-lg">
-    <h1>{{ post.title }}</h1>
-    <ContentRenderer :value="post" />
+  <div class="bg-gray-800 p-4 sm:p-8 lg:p-16 rounded-2xl mt-12">
+    <div class="prose prose-lg prose-invert mx-auto">
+      <ContentRenderer :value="post" />
+    </div>
   </div>
 </template>
 
