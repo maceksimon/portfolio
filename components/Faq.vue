@@ -3,8 +3,9 @@
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
       <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">{{ $t('faq.title') }}</h2>
       <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300">{{ $t('faq.perex') }} <a href="#"
-          class="font-semibold text-indigo-400 hover:text-indigo-300" @click.prevent="toggle()">{{ $t('faq.linkContact')
-          }}</a> {{ $t('faq.perex2') }}</p>
+          class="font-medium text-purple-400 hover:text-purple-300 underline hover:no-underline" @click.prevent="toggle()">
+          {{ $t('faq.linkContact') }}
+          </a> {{ $t('faq.perex2') }}</p>
       <div class="mt-20">
         <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
           <div v-for="faq in faqs" :key="faq.id">

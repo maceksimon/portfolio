@@ -141,25 +141,22 @@
       </div>
       <RadioGroup v-model="selectedMailingLists" class="sm:col-span-2">
         <RadioGroupLabel class="text-base font-semibold leading-6 text-gray-900">Select a mailing list</RadioGroupLabel>
-        <div class="mt-4 grid grid-cols-1 gap-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 gap-x-4">
           <RadioGroupOption as="template" v-for="project in projects" :key="project.id" :value="project"
             v-slot="{ active, checked }">
             <div
-              :class="[active ? 'border-blue-600 ring-2 ring-blue-600' : 'border-gray-300', 'relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none']">
-              <span class="flex flex-1">
+              :class="[active ? 'border-purple-400 ring-2 ring-purple-600' : 'border-purple-400/25', 'relative flex cursor-pointer rounded-lg border p-4 focus:outline-none', checked ? 'bg-gradient-to-r from-purple-500/90 to-pink-500/90' : 'bg-purple-400/10']">
+              <span class="flex flex-1 sm:justify-center">
                 <span class="flex flex-col">
-                  <RadioGroupLabel as="span" class="block text-sm font-medium text-gray-900">
+                  <RadioGroupLabel as="span" class="block text-sm font-medium" :class="[checked ? 'text-white' : 'text-purple-100/75']">
                     {{ project.title }}
                   </RadioGroupLabel>
-                  <RadioGroupDescription as="span" class="mt-1 flex items-center text-sm text-gray-500">
-                    {{ project.description }}
-                  </RadioGroupDescription>
                 </span>
               </span>
-              <Icon class="h-5 w-5 text-red-800/75 dark:text-red-100/50" aria-hidden="true"
-                name="heroicons:check-circle" />
+              <!-- <Icon class="h-5 w-5 text-red-800/75 dark:text-red-100/50" aria-hidden="true"
+                name="heroicons:check-circle" /> -->
               <span
-                :class="[active ? 'border' : 'border-2', checked ? 'border-blue-600' : 'border-transparent', 'pointer-events-none absolute -inset-px rounded-lg']"
+                :class="[active ? 'border' : 'border-2', checked ? 'border-purple-500' : 'border-transparent', 'pointer-events-none absolute -inset-px rounded-lg']"
                 aria-hidden="true" />
             </div>
           </RadioGroupOption>
@@ -174,9 +171,30 @@ import { ref } from 'vue'
 import { RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
 const projects = [
-  { id: 1, title: 'MKS Jaroměř', description: 'Informační web kulturního střediska', imageMobile: '/image/portfolio/jaromer-homepage-mobile.png', imageDesktop: '/image/portfolio/jaromer-homepage-desktop.png' },
-  { id: 2, title: 'Ekoloko', description: 'Stránky kulturní neziskové organizace', imageMobile: '/image/portfolio/ekoloko-homepage-mobile.png', imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.png' },
-  { id: 3, title: 'KSKA', description: 'Web Katedry sociální a kulturní antropologie UPCE', imageMobile: '/image/portfolio/kska-homepage-mobile.png', imageDesktop: '/image/portfolio/kska-homepage-desktop.png' },
+  {
+    id: 1,
+    title: 'MKS Jaroměř',
+    description: 'Informační web kulturního střediska',
+    imageMobile: '/image/portfolio/jaromer-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.png',
+    urlPortfolio: '/portfolio/mks-jaromer'
+  },
+  {
+    id: 2,
+    title: 'Ekoloko',
+    description: 'Stránky kulturní neziskové organizace',
+    imageMobile: '/image/portfolio/ekoloko-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.png',
+    urlPortfolio: '/portfolio/ekoloko'
+  },
+  {
+    id: 3,
+    title: 'KSKA',
+    description: 'Web Katedry sociální a kulturní antropologie UPCE',
+    imageMobile: '/image/portfolio/kska-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/kska-homepage-desktop.png',
+    urlPortfolio: '/portfolio/kska'
+  },
 ]
 
 const selectedMailingLists = ref(projects[0])

@@ -4,16 +4,16 @@ export default {
       highlight: '',
       titleHighlight: 'Ožijte',
       title: 'online',
-      perex: 'Chcete zazářit na webu se svými projekty a nápady?',
-      perex2: 'Pomůžu vám.',
+      perex: 'Chcete zazářit se svými projekty a nápady?',
+      perex2: 'První krok je web.',
       buttonPortfolio: 'Portfolio',
       buttonContact: 'Kontakt',
     },
   },
   serviceTeaser: {
-    highlight: 'Zabydlete se na webu',
-    title: '',
-    perex: '',
+    highlight: 'Zapište se do online prostoru',
+    title: 'Webem, kterého si každý všimne',
+    perex: 'Poutavé stránky nejsou jen pro velké firmy a organizace. I vy můžete mít web, který vystihne váš charakter, bude bezchybně fungovat a zaujme na první pohled.',
     service: {
       control: {
         title: 'Web ve vlastních rukou',
