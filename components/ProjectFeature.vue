@@ -1,10 +1,12 @@
 <template>
-  <div v-if="data" class="mt-32 max-w-7xl sm:mt-56">
-    <div class="flex flex-col items-center lg:flex-row-reverse">
+  <div v-if="data" class="mt-32 max-w-7xl sm:mt-56 px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex flex-col gap-16 lg:gap-8 items-center lg:flex-row-reverse max-w-2xl lg:max-w-none">
       <div class="aspect-[7/4] shrink-0 grow">
+        <!-- Mockup -->
+        <!-- TODO: Use image on mobile -->
         <iframe v-if="data.rive.mockup" :src="data.rive.mockup" loading="lazy" class="h-full w-full border-none"></iframe>
       </div>
-      <div class="w-2/5 shrink-0">
+      <div class="lg:w-2/5 shrink-0">
         <div class="mb-2 font-bold text-purple-400 sm:mb-4 sm:text-lg">
           {{ $t("projectFeature.highlight") }}
         </div>
@@ -22,9 +24,9 @@
               <div
                 class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
               </div>
-              <div class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-500">
-                <span class="pr-6 text-gray-100">{{ data.url.web.readable }}</span>
-                <span class="pl-6 text-purple-300 group-hover:text-gray-100 transition duration-200">{{
+              <div class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center lg:divide-x divide-gray-500">
+                <span class="hidden lg:block pr-6 text-gray-100">{{ data.url.web.readable }}</span>
+                <span class="lg:pl-6 text-purple-300 group-hover:text-gray-100 transition duration-200">{{
                   $t('projectFeature.buttonWebsite') }} &rarr;</span>
               </div>
             </NuxtLink>

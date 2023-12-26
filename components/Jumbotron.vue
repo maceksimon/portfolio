@@ -1,5 +1,5 @@
 <template>
-  <div class="relative isolate mb-8 flex flex-col-reverse sm:mb-12 sm:flex-col">
+  <div class="relative isolate mb-8 flex flex-col-reverse sm:mb-12 sm:flex-col px-4 sm:px-6 lg:px-8">
     <div class="absolute -top-40 inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 pointer-events-none"
       aria-hidden="true">
       <div
@@ -13,7 +13,7 @@
           'bottom-0 right-0 isolate m-0 mt-4 h-full w-auto sm:absolute sm:mt-0',
       }"
     /> -->
-    <div class="isolate">
+    <div class="isolate max-w-2xl lg:max-w-none">
       <div class="not-prose">
         <div class="mb-2 font-bold text-gray-700 dark:text-gray-200 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
           {{ $t('index.hero.highlight') }}

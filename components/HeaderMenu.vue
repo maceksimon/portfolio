@@ -26,8 +26,8 @@ const navigation = [
 </script>
 
 <template>
-  <div class="absolute top-0 inset-x-0 z-10">
-    <div class="container mx-auto">
+  <div class="absolute top-0 inset-x-0 z-10 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto max-w-2xl lg:max-w-none">
       <Popover>
         <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
           <!-- Mobile navigation -->
