@@ -7,7 +7,7 @@
         <iframe v-if="data.rive.mockup" :src="data.rive.mockup" loading="lazy" class="h-full w-full border-none"></iframe>
       </div>
       <div class="lg:w-2/5 shrink-0">
-        <div class="mb-2 font-bold text-purple-400 sm:mb-4 sm:text-lg">
+        <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-purple-300">
           {{ $t("projectFeature.highlight") }}
         </div>
         <h2

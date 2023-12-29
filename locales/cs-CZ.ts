@@ -11,8 +11,8 @@ export default {
     },
   },
   serviceTeaser: {
-    highlight: 'Zapište se do online prostoru',
-    title: 'Webem, kterého si každý všimne',
+    highlight: 'Co z toho bude?',
+    title: 'Web, kterého si každý všimne',
     perex: 'Poutavé stránky nejsou jen pro velké firmy a organizace. I vy můžete mít web, který vystihne váš charakter, bude bezchybně fungovat a zaujme na první pohled.',
     service: {
       control: {
@@ -33,9 +33,18 @@ export default {
     },
   },
   projectFeature: {
-    highlight: 'Vybraný projekt',
+    highlight: 'Čím to začalo?',
     buttonDetail: 'Přečtěte si víc',
     buttonWebsite: 'Prohlédněte si web',
+  },
+  projectTeaser: {
+    highlight: 'Co už je online?',
+    title: 'Prohlédněte si dokončené projekty',
+    perex: 'Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy.',
+  },
+  testimonials: {
+    highlight: 'Co si o tom myslí ostatní?',
+    title: 'Zprávy a hodnocení od mého báječného klientstva',
   },
   blog: {
     title: 'Blog',
@@ -48,10 +57,11 @@ export default {
     missingData: 'Omlouvám se, obsah právě doplňuji.',
   },
   faq: {
-    title: 'Co vás možná zajímá',
+    highlight: 'Co by vás mohlo zajímat',
+    title: 'Odpovědi na nejčastější otázky',
     perex:
-      'Máte další otázky a nenašli jste odpověď v informacích níže? Můžete mě kontaktovat přes ',
-    linkContact: 'formulář',
+      'Pokud se chcete zeptat na cokoliv dalšího, napište mi přes ',
+    linkContact: 'kontaktní formulář',
     perex2: ' a já se vám ozvu co nejdříve.',
   },
 }

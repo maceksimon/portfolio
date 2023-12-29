@@ -2,7 +2,7 @@
   <!-- Feature section -->
   <div class="mx-auto mt-32 max-w-7xl sm:mt-56 px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none text-center">
-      <h2 class="text-base font-semibold leading-7 text-purple-400">{{ $t('serviceTeaser.highlight') }}</h2>
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-purple-300">{{ $t('serviceTeaser.highlight') }}</h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ $t('serviceTeaser.title') }}</p>
       <p class="mt-6 text-lg leading-8 text-gray-300">{{ $t('serviceTeaser.perex') }}</p>
     </div>
