@@ -1,6 +1,6 @@
 <template>
   <div v-if="data" class="mt-32 max-w-7xl sm:mt-56 px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto flex flex-col gap-16 lg:gap-8 items-center lg:flex-row-reverse max-w-2xl lg:max-w-none">
+    <div class="mx-auto flex flex-col gap-16 lg:gap-8 items-center lg:flex-row-reverse max-w-2xl sm:max-w-none">
       <div class="aspect-[7/4] shrink-0 grow">
         <!-- Mockup -->
         <!-- TODO: Use image on mobile -->

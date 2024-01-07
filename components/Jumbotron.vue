@@ -13,7 +13,7 @@
           'bottom-0 right-0 isolate m-0 mt-4 h-full w-auto sm:absolute sm:mt-0',
       }"
     /> -->
-    <div class="isolate max-w-2xl lg:max-w-none">
+    <div class="isolate max-w-2xl sm:max-w-none">
       <div class="not-prose">
         <div class="mb-2 font-bold text-gray-700 dark:text-gray-200 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
           {{ $t('index.hero.highlight') }}
