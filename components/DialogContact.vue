@@ -10,7 +10,7 @@
         leave-from="opacity-100"
         leave-to="opacity-0"
       >
-        <div class="fixed inset-0 bg-black/25" />
+        <div class="fixed inset-0 bg-black/50 backdrop-blur" />
       </TransitionChild>
 
       <div class="fixed inset-0 overflow-y-auto">
@@ -27,30 +27,9 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel
-              class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+              class="relative w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-800 p-6 text-left align-middle shadow-xl transition-all"
             >
-              <DialogTitle
-                as="h3"
-                class="text-lg font-medium leading-6 text-gray-900"
-              >
-                Payment successful
-              </DialogTitle>
-              <div class="mt-2">
-                <p class="text-sm text-gray-500">
-                  Your payment has been successfully submitted. We’ve sent you
-                  an email with all of the details of your order.
-                </p>
-              </div>
-
-              <div class="mt-4">
-                <button
-                  type="button"
-                  class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                  @click="close"
-                >
-                  Got it, thanks!
-                </button>
-              </div>
+              <FormContact />
             </DialogPanel>
           </TransitionChild>
         </div>
@@ -65,7 +44,6 @@ import {
   TransitionChild,
   Dialog,
   DialogPanel,
-  DialogTitle,
 } from '@headlessui/vue'
 
 // composables

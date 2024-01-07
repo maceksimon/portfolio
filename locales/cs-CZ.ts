@@ -64,4 +64,12 @@ export default {
     linkContact: 'kontaktní formulář',
     perex2: ' a já se vám ozvu co nejdříve.',
   },
+  formContact: {
+    title: 'Napište mi',
+    perex: '',
+    labelName: 'Jméno',
+    labelEmail: 'E-mail',
+    labelMessage: 'Zpráva',
+    buttonSend: 'Odeslat',
+  }
 }

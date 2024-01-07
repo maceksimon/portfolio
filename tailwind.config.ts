@@ -2,6 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
+    './formkit.theme.ts',
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -12,7 +13,7 @@ module.exports = {
         blue: colors.sky,
         orange: colors.orange,
       },
-      typography: ({ theme }) => ({
+      typography: ({ theme }: { theme: any }) => ({
         primary: {
           css: {
             "--tw-prose-body": theme("colors.gray[800]"),

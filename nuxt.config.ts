@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vueuse/nuxt',
     'nuxt-icon',
+    '@formkit/nuxt',
   ],
   i18n: {
     locales: [
@@ -30,6 +31,10 @@ export default defineNuxtConfig({
     defaultLocale: 'cs',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts'
+  },
+  formkit: {
+    // Experimental support for auto loading (see note):
+    autoImport: true
   },
   content: {
     contentHead: true,
