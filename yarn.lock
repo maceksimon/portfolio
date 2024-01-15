@@ -4392,9 +4392,9 @@ h3@^1.7.1:
     unenv "^1.7.4"
 
 happy-dom@^13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.0.0.tgz#79345c8435a9ff5579a8ed7ca5b6c03ff06841ce"
-  integrity sha512-R0j/6qco6wmihOKmelRGt6Coao9gDNEkhcZ8fB73zzr7qo8EaM+BBSmfe2f2hBhC81dykLVVZ1ONcI+zSRoWMQ==
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.1.4.tgz#26592cb6c764526088473ac0030bd1959375c90d"
+  integrity sha512-f8STa4iuJcpXn7YjgqBEemzinyPAdjlHMxlCNbIERdRIjJO9Z9Cj3XW5LuiEhsURFfl0AOWqj0hQitme4gq+Gg==
   dependencies:
     css.escape "^1.5.1"
     entities "^4.5.0"
