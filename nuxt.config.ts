@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
     '@formkit/nuxt',
+    '@nuxt/test-utils/module'
   ],
   i18n: {
     locales: [
