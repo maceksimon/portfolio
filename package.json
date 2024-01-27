@@ -36,7 +36,7 @@
     "axios": "^1.6.5"
   },
   "resolutions": {
-    "string-width": "4.2.3",
+    "string-width": "7.1.0",
     "strip-ansi-cjs": "8.0.0"
   }
 }
