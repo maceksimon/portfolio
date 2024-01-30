@@ -7,7 +7,27 @@
         "author": {
           "name": "Vanda Paulíčková",
           "project": "Ekoloko",
-          "imageUrl": "/image/testimonial/vanda.png"
+          "imageUrl": "/image/testimonial/vanda.webp"
+        }
+      },
+      {
+        "id": "dominika",
+        "body": "Se Šimonem jsme prošli celým procesem tvorby online portfolia. Moc oceňuji jeho pomoc při designu stránek i při tvorbě a editaci obsahu.",
+        "author": {
+          "name": "Dominika Špalková",
+          "project": "",
+          "imageUrl": "/image/testimonial/dominika.webp"
+        }
+      }
+    ],
+    [
+      {
+        "id": "animato",
+        "body": "Šimon je zkušený, spolehlivý a precizní v detailech. S takovým člověkem prostě chcete spolupracovat.",
+        "author": {
+          "name": "Štěpán Rambousek",
+          "project": "Animato",
+          "imageUrl": "/image/testimonial/stepan.webp"
         }
       }
     ]
