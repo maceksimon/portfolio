@@ -4990,9 +4990,9 @@ h3@^1.9.0:
     unenv "^1.9.0"
 
 happy-dom@^13.0.0:
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.5.0.tgz#11b3b5ea53dd49e59569830070f803794e6661df"
-  integrity sha512-0XWOSvyc03Z2Ye+VGP5pN6fpwgKMy3a2d09RuGRqAR4TEaW0SCtw3upt7dLoKaYBFUO+JeuDJh366aDBat3OVQ==
+  version "13.7.1"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.7.1.tgz#cd86292ab80403eb8ee82f4ff458d4448253d379"
+  integrity sha512-uQgxSTqQY4lMVIhV/W6GWYOT6h7Z6CNlsa+SyvAcOy311spU3zPDNAMzayJky9q4xqfEQf3cQj8yDZngiYUEDA==
   dependencies:
     entities "^4.5.0"
     webidl-conversions "^7.0.0"
