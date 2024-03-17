@@ -24,7 +24,7 @@
     "@vue/test-utils": "^2.4.3",
     "@vueuse/nuxt": "^10.5.0",
     "happy-dom": "^13.0.0",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.11.0",
     "nuxt-icon": "^0.6.1",
     "playwright": "^1.40.1",
     "playwright-core": "^1.40.1",
@@ -38,5 +38,6 @@
   "resolutions": {
     "string-width": "7.1.0",
     "strip-ansi-cjs": "8.0.0"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
