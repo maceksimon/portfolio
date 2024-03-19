@@ -25,15 +25,15 @@ const { toggle } = useDialogContact()
 
 <i18n lang="json">
   {
-    "en": {
-      "title": "Great websites are not just for big companies.",
-      "description": "You don't need to have a large budget to get a website that looks and works exactly the way you want. Modern technologies enable efficient development that is both fast and cheap. Do you want to know how if it can work for you? Hit me up and I will walk you through it. Your dream website might be closer than you think.",
-      "contact": "Message me"
-    },
     "cs": {
       "title": "Precizní weby nejsou jen pro velké firmy.",
       "description": "Nemusíte být zavedení podnikatelé se stotisícovým rozpočtem abyste si mohli dovolit web, který splňuje vaše představy. Moderní technologie umožňují schopným vývojářům pracovat efektivně rychle a levně. Zajímá vás jak to funguje? Dejte mi vědět a můžeme se o tom pobavit. Váš vysněný web je možná blíž než si myslíte?",
       "contact": "Napište mi"
+    },
+    "en": {
+      "title": "Great websites are not just for big companies.",
+      "description": "You don't need to have a large budget to get a website that looks and works exactly the way you want. Modern technologies enable efficient development that is both fast and cheap. Do you want to know how if it can work for you? Hit me up and I will walk you through it. Your dream website might be closer than you think.",
+      "contact": "Message me"
     }
   }
 </i18n>
