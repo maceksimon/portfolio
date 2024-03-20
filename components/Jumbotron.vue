@@ -45,6 +45,9 @@
 </template>
 
 <script setup lang="ts">
-// composables
+const { t } = useI18n({
+  useScope: 'local'
+})
+
 const { open, toggle } = useDialogContact()
 </script>

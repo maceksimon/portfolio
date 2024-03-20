@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <Jumbotron contact-buton />
+  <JumbotronCenter contact-buton />
   <ServiceTeaser class="my-12" />
   <ProjectFeature class="my-12" />
   <HeroCenter class="my-12" />

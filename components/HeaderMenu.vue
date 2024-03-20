@@ -37,10 +37,10 @@
                 </NuxtLink>
               </div>
               <!-- Social icons & Color Mode -->
-              <div id="navbar-icons" class="flex items-center space-x-3 text-gray-100 transition md:space-x-4">
+              <div id="navbar-icons" class="flex items-center space-x-4 md:space-x-6 text-gray-100 transition">
                 <button @click="toggle()"
-                  class="dark:hover-gray-600 mr-2 inline-flex items-center justify-center h-full w-full bg-white/10 hover:bg-white/25 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-gray-300 px-3 py-2 text-grey-200 hover:bg-gray-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors">
-                  <Icon name="mi:email" size="20px" />
+                  class="inline-flex items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  <Icon name="mi:email" size="18px" class="text-gray-500" />
                   <span class="ml-2 text-sm font-semibold">{{ t("contact") }}</span>
                 </button>
                 <SocialIcons />
@@ -104,19 +104,19 @@ const { toggle } = useDialogContact()
 
 const navigation = [
   {
-    title: 'Home',
+    title: t('menuHome'),
     _path: '/',
   },
   {
-    title: 'Projects',
+    title: t('menuProjects'),
     _path: '/projects',
   },
   {
-    title: 'Blog',
+    title: t('menuBlog'),
     _path: '/blog',
   },
   {
-    title: 'About',
+    title: t('menuAbout'),
     _path: '/about',
   },
 ]
@@ -128,12 +128,20 @@ const navigation = [
       "closeMenu": "Zavřít hlavní menu",
       "contact": "Napište mi",
       "menu": "Menu",
+      "menuAbout": "O mně",
+      "menuBlog": "Blog",
+      "menuHome": "Domů",
+      "menuProjects": "Projekty",
       "openMenu": "Otevřít hlavní menu"
     },
     "en": {
       "closeMenu": "Close main menu",
       "contact": "Contact me",
       "menu": "Menu",
+      "menuAbout": "About me",
+      "menuBlog": "Blog",
+      "menuHome": "Home",
+      "menuProjects": "Projects",
       "openMenu": "Open main menu"
     }
   }
