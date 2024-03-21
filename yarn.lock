@@ -979,12 +979,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/collections@npm:^1.0.401":
-  version: 1.0.405
-  resolution: "@iconify/collections@npm:1.0.405"
+"@iconify/collections@npm:^1.0.406":
+  version: 1.0.406
+  resolution: "@iconify/collections@npm:1.0.406"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/d8154c2417b88858ab5d992f1eb0285092739ce7bb9721536f4d83e1af99a062358aba20e2399d48e261178d2f8c9b3a61bdb43b2980b7412e71bcefc0e2eefc
+  checksum: 10c0/3df5111807be6ebe850075d4bc34af701e9fcb30e9d58a09167b07dbdbcaebf7e8bdda0073fb67fcf4aaf89f2910ff301f9fea313a80cf2dee89b8a6f6433e0e
   languageName: node
   linkType: hard
 
@@ -1452,7 +1452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.0.8, @nuxt/devtools-kit@npm:^1.0.8":
+"@nuxt/devtools-kit@npm:1.0.8":
   version: 1.0.8
   resolution: "@nuxt/devtools-kit@npm:1.0.8"
   dependencies:
@@ -1463,6 +1463,20 @@ __metadata:
     nuxt: ^3.9.0
     vite: "*"
   checksum: 10c0/e4ad9e0b605473e82c48d43bfa6ba9dbc025ce112c6c8cbc1c58e55b5f130645f60b86256aaa027b93565cd7589577863fb90fad94c22201a8060d72eaf918f2
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools-kit@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@nuxt/devtools-kit@npm:1.1.1"
+  dependencies:
+    "@nuxt/kit": "npm:^3.11.1"
+    "@nuxt/schema": "npm:^3.11.1"
+    execa: "npm:^7.2.0"
+  peerDependencies:
+    nuxt: ^3.9.0
+    vite: "*"
+  checksum: 10c0/7f5695c1e489286aa9fd86a406380df425f12c26f90c73186ac16ecff0ed93037a04a2aeac7030402ebb0f486c3392534c7375d86a81afdc995c4a1b576e00a0
   languageName: node
   linkType: hard
 
@@ -1555,7 +1569,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.1, @nuxt/kit@npm:^3.10.2, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.1, @nuxt/kit@npm:^3.9.3":
+"@nuxt/kit@npm:3.11.1, @nuxt/kit@npm:^3.10.2, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.7.4, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.1, @nuxt/kit@npm:^3.9.3":
   version: 3.11.1
   resolution: "@nuxt/kit@npm:3.11.1"
   dependencies:
@@ -1581,7 +1595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.11.1, @nuxt/schema@npm:^3.10.3, @nuxt/schema@npm:^3.9.1":
+"@nuxt/schema@npm:3.11.1, @nuxt/schema@npm:^3.10.3, @nuxt/schema@npm:^3.11.1, @nuxt/schema@npm:^3.9.1":
   version: 3.11.1
   resolution: "@nuxt/schema@npm:3.11.1"
   dependencies:
@@ -5498,14 +5512,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^13.0.0":
-  version: 13.10.1
-  resolution: "happy-dom@npm:13.10.1"
+"happy-dom@npm:^14.0.0":
+  version: 14.2.0
+  resolution: "happy-dom@npm:14.2.0"
   dependencies:
     entities: "npm:^4.5.0"
     webidl-conversions: "npm:^7.0.0"
     whatwg-mimetype: "npm:^3.0.0"
-  checksum: 10c0/bbe9edafde6622a8ab485f5576c3eb210caa1e083c176282322385f57535506092480ea62c139a71a64fcdb0027be97776670609fefd428745b4282d7211b174
+  checksum: 10c0/e37662c7e346f31b943e96490e9ed1c589d1484ab864c62eadaf9174210ffa388599fe481ce04d612f35583b1bd4878c089ea9d9e299bfb17bec515668080acf
   languageName: node
   linkType: hard
 
@@ -8046,7 +8060,7 @@ __metadata:
     "@vue/test-utils": "npm:^2.4.3"
     "@vueuse/nuxt": "npm:^10.5.0"
     axios: "npm:^1.6.5"
-    happy-dom: "npm:^13.0.0"
+    happy-dom: "npm:^14.0.0"
     nuxt: "npm:^3.11.0"
     nuxt-icon: "npm:^0.6.1"
     playwright: "npm:^1.40.1"
@@ -8056,14 +8070,14 @@ __metadata:
   linkType: soft
 
 "nuxt-icon@npm:^0.6.1":
-  version: 0.6.9
-  resolution: "nuxt-icon@npm:0.6.9"
+  version: 0.6.10
+  resolution: "nuxt-icon@npm:0.6.10"
   dependencies:
-    "@iconify/collections": "npm:^1.0.401"
+    "@iconify/collections": "npm:^1.0.406"
     "@iconify/vue": "npm:^4.1.1"
-    "@nuxt/devtools-kit": "npm:^1.0.8"
-    "@nuxt/kit": "npm:^3.10.3"
-  checksum: 10c0/751963390d3dbdab9d07d5fece49744192ed29a60fd22357156624b99c1fffc1c11c90d623835bfb7b6f8746c3fad9f591b53302c8265ad9c9a0b3a9a9b34879
+    "@nuxt/devtools-kit": "npm:^1.1.1"
+    "@nuxt/kit": "npm:^3.11.1"
+  checksum: 10c0/948be6855be13f687c027943668af8d0aa804803d5add768a5dbbd3296fa49eba0185a2e0049c24fd0a8903632e25703de8d7f78c8326678bc21a059edada7b0
   languageName: node
   linkType: hard
 
