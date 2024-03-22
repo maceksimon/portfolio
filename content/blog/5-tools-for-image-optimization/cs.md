@@ -3,8 +3,8 @@ title: 5 Nástrojů pro optimalizaci obrázků na webu
 description: Read how we optimize images to make your websites blazingly fast.
 head.title: 5 Nástrojů pro optimalizaci obrázků na webu
 head.description: Read how we optimize images to make your websites blazingly fast.
-head.image: /image/blog/5-tools-for-image-optimization.jpg
-image: /image/blog/5-tools-for-image-optimization.jpg
+head.image: /image/blog/5-tools-for-image-optimization.png
+image: /image/blog/5-tools-for-image-optimization.png
 tags: ['Performance', 'Cloudinary', 'WebP']
 created: '2022-07-17T12:34:44'
 time: ''

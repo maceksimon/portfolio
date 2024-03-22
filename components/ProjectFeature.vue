@@ -4,7 +4,8 @@
       <div class="aspect-[7/4] shrink-0 grow">
         <!-- Mockup -->
         <!-- TODO: Use image on mobile -->
-        <iframe v-if="data.rive.mockup" :src="data.rive.mockup" loading="lazy" class="h-full w-full border-none"></iframe>
+        <iframe v-if="data.rive.mockup" :src="data.rive.mockup" loading="lazy"
+          class="h-full w-full border-none"></iframe>
       </div>
       <div class="lg:w-2/5 shrink-0">
         <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-purple-300">
@@ -24,10 +25,11 @@
               <div
                 class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
               </div>
-              <div class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center lg:divide-x divide-gray-500">
+              <div
+                class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center lg:divide-x divide-gray-500">
                 <span class="hidden lg:block pr-6 text-gray-100">{{ data.url.web.readable }}</span>
                 <span class="lg:pl-6 text-purple-300 group-hover:text-gray-100 transition duration-200">{{
-                  $t('projectFeature.buttonWebsite') }} &rarr;</span>
+    $t('projectFeature.buttonWebsite') }} &rarr;</span>
               </div>
             </NuxtLink>
           </div>
@@ -51,7 +53,7 @@ const { locale } = useI18n()
 
 const { data } = await useAsyncData("portfolioItemFeatured", () =>
   queryContent(
-    "portfolio",
+    "projects",
     "upupaepop",
     locale.value.toLowerCase()
   ).findOne()

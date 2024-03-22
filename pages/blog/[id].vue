@@ -12,7 +12,7 @@ const route = useRoute()
 
 const post = await queryContent(
   "blog",
-  route.params.slug as string,
+  route.params.id as string,
   locale.value.toLowerCase()
 ).findOne()
 </script>
