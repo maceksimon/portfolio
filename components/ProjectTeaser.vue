@@ -2,9 +2,15 @@
   <div class="mt-32 max-w-7xl sm:mt-56">
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-purple-300">{{ $t('projectTeaser.highlight') }}</h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ $t('projectTeaser.title') }}</p>
-      <p class="mt-6 text-lg leading-8 text-gray-300">{{ $t('projectTeaser.perex') }}</p>
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-purple-300">
+        {{ t('highlight') }}
+      </h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        {{ t('title') }}
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        {{ t('perex') }}
+      </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-6 mt-16 sm:mt-20 lg:mt-24">
       <div class="relative sm:col-span-4">
@@ -23,7 +29,7 @@
               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z">
             </path>
             <foreignObject width="316" height="684" transform="translate(24 24)"
-              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"><img :src="selectedMailingLists.imageMobile"
+              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"><img :src="selectedProject.imageMobile"
                 alt="" />
             </foreignObject>
           </svg>
@@ -49,7 +55,7 @@
             <rect width="1372" height="783" transform="matrix(-1 0 0 1 1406 34)"
               id="2ade4387-9c63-4fc4-b754-10e687a0d333" />
             <foreignObject width="1372" height="783" transform="translate(34 34)"
-              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d333)"><img :src="selectedMailingLists.imageDesktop"
+              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d333)"><img :src="selectedProject.imageDesktop"
                 alt="" />
             </foreignObject>
             <path d="M84 851L918 0H1416C1429.25 0 1440 10.7452 1440 24V851H84Z" fill="url(#paint7_linear_7_520)" />
@@ -60,8 +66,8 @@
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_7_520" />
               </filter>
-              <filter id="filter1_f_7_520" x="231" y="1197" width="977.311" height="62.4758" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
+              <filter id="filter1_f_7_520" x="231" y="1197" width="977.311" height="62.4758"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_7_520" />
@@ -109,7 +115,8 @@
                 <stop stop-color="#28282A" />
                 <stop offset="1" stop-color="#18191B" />
               </linearGradient>
-              <linearGradient id="paint4_linear_7_520" x1="720" y1="851" x2="720" y2="999" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint4_linear_7_520" x1="720" y1="851" x2="720" y2="999"
+                gradientUnits="userSpaceOnUse">
                 <stop stop-color="#535457" />
                 <stop offset="1" stop-color="#43464C" />
               </linearGradient>
@@ -139,25 +146,30 @@
           </svg>
         </div>
       </div>
-      <RadioGroup v-model="selectedMailingLists" class="sm:col-span-2">
-        <RadioGroupLabel class="text-base font-semibold leading-6 text-gray-900">Select a mailing list</RadioGroupLabel>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 gap-x-4">
+      <RadioGroup v-model="selectedProject" class="sm:col-span-2">
+        <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 gap-x-4 p-1 bg-gray-800 rounded-xl">
           <RadioGroupOption as="template" v-for="project in projects" :key="project.id" :value="project"
             v-slot="{ active, checked }">
             <div
-              :class="[active ? 'border-purple-400 ring-2 ring-purple-600' : 'border-purple-400/25', 'relative flex cursor-pointer rounded-lg border p-4 focus:outline-none', checked ? 'bg-gradient-to-r from-purple-500/90 to-pink-500/90' : 'bg-purple-400/10']">
+              :class="[
+                'relative flex cursor-pointer rounded-lg p-2 focus:outline-none',
+                active ?
+                  'bg-black text-white' :
+                  'bg-transparent',
+                checked ?
+                  'bg-black text-white' :
+                  'bg-transparent'
+                ]"
+              >
               <span class="flex flex-1 sm:justify-center">
                 <span class="flex flex-col">
-                  <RadioGroupLabel as="span" class="block text-sm font-medium" :class="[checked ? 'text-white' : 'text-purple-100/75']">
+                  <RadioGroupLabel as="span" class="block text-sm font-medium"
+                    :class="[checked ? 'text-white' : 'text-gray-200']">
                     {{ project.title }}
                   </RadioGroupLabel>
                 </span>
               </span>
-              <!-- <Icon class="h-5 w-5 text-red-800/75 dark:text-red-100/50" aria-hidden="true"
-                name="heroicons:check-circle" /> -->
-              <span
-                :class="[active ? 'border' : 'border-2', checked ? 'border-purple-500' : 'border-transparent', 'pointer-events-none absolute -inset-px rounded-lg']"
-                aria-hidden="true" />
             </div>
           </RadioGroupOption>
         </div>
@@ -168,7 +180,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
+import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
+
+const { t } = useI18n({
+  useScope: 'local'
+})
 
 const projects = [
   {
@@ -197,5 +213,22 @@ const projects = [
   },
 ]
 
-const selectedMailingLists = ref(projects[0])
+const selectedProject = ref(projects[0])
 </script>
+
+<i18n lang="json">
+{
+  "en": {
+    "projectList": "Project list",
+    "highlight": "What is already online",
+    "title": "Browse the completed projects",
+    "perex": "Each website has their own characteristics and requirements. With this approach I have created a whole range of different realizations from presentation websites to e-commerce.",
+  },
+  "cs": {
+    "projectList": "Seznam projektů",
+    "highlight": "Co už je online",
+    "title": "Prohlédněte si dokončené projekty",
+    "perex": "Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy.",
+  }
+}
+</i18n>

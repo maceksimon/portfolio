@@ -37,11 +37,6 @@ export default {
     buttonDetail: 'Přečtěte si víc',
     buttonWebsite: 'Prohlédněte si web',
   },
-  projectTeaser: {
-    highlight: 'Co už je online?',
-    title: 'Prohlédněte si dokončené projekty',
-    perex: 'Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy.',
-  },
   testimonials: {
     highlight: 'Co si o tom myslí ostatní?',
     title: 'Zprávy a hodnocení od mého báječného klientstva',
