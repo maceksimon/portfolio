@@ -2,7 +2,7 @@
 head.title: Studio Upupaepop
 head.description: Pro hradecké designové studio jsem připravil web, který teď skvěle funguje i jako internetový obchod.
 head.image: /image/portfolio/upupaepop.jpg
-fields.image: /image/portfolio/upupaepop.jpg
+fields.image: /image/portfolio/upupaepop-mockup-1.jpg
 fields.order: 200
 fields.skills: ["WordPress", "WooCommerce"]
 featured: true
@@ -10,9 +10,10 @@ type: "full"
 url.web.full: "https://upupaepop.cz/"
 url.web.readable: "upupaepop.cz"
 rive.mockup: "https://rive.app/s/wi2V2T55e0KhmeUyjB4HMQ/embed"
+locale: "cs"
 ---
 
-# **Letterpress na WordPressu:**<br>Stránky studia Upupaepop
+# **Letterpress na WordPressu:** <br>Stránky studia Upupaepop
 
 _Jak se vyrábějí stránky pro grafiky?_
 

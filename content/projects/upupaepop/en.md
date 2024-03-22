@@ -10,4 +10,5 @@ type: "full"
 url.web.full: "https://upupaepop.cz/"
 url.web.readable: "upupaepop.cz"
 rive.mockup: "https://rive.app/s/wi2V2T55e0KhmeUyjB4HMQ/embed"
+locale: "en"
 ---

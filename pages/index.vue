@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <JumbotronCenter contact-buton />
   <ServiceTeaser class="my-12" />
@@ -9,3 +7,5 @@
   <TestimonialGrid class="my-12" />
   <Faq class="my-12" />
 </template>
+
+<script setup lang="ts"></script>
