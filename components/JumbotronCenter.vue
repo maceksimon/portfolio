@@ -43,7 +43,7 @@ const { t } = useI18n({
     "en": {
       "buttonContact": "Contact",
       "buttonLearn": "Browse",
-      "description": "",
+      "description": "I create digital projects to dazzle.",
       "highlight": "Websites that let you",
       "title": "Shine online"
     }
