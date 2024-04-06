@@ -33,7 +33,8 @@
   "dependencies": {
     "@formkit/nuxt": "^1.4.0",
     "@nuxt/image": "^1.1.0",
-    "axios": "^1.6.5"
+    "axios": "^1.6.5",
+    "postcss-custom-properties": "^13.3.6"
   },
   "packageManager": "yarn@4.1.1"
 }

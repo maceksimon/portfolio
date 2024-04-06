@@ -1,22 +1,30 @@
-name: CI
+name: Nuxt 3 CI
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
       with:
-        node-version: '20.x'
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
     - name: Install dependencies
-      run: yarn install
+      run: yarn install --frozen-lockfile
+
     - name: Build
-      run: yarn run build
+      run: yarn generate
+
     - name: Run tests
       run: yarn test
