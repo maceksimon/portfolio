@@ -17,11 +17,11 @@ const tag: string = link.length ? "a" : "button";
     :href="link"
     class="bg-gradient-animated inline-flex w-full items-center justify-center rounded-md border bg-gradient-to-r text-base font-semibold shadow dark:border-none md:py-3 md:px-7 md:text-lg"
     :class="{
-      'border-transparent from-violet-800 via-violet-600 to-purple-500 text-white ':
+      'border-transparent from-violet-800 via-violet-600 to-blue-500 text-white ':
         variant === 'primary',
-      'border-purple-200 bg-gradient-to-r from-purple-100 via-white to-purple-100 text-purple-800 dark:from-purple-200 dark:via-purple-50 dark:to-purple-100':
+      'border-blue-200 bg-gradient-to-r from-blue-100 via-white to-blue-100 text-blue-800 dark:from-blue-200 dark:via-blue-50 dark:to-blue-100':
         variant === 'secondary',
-      'bg-purple-600  text-white transition-colors duration-150 ease-out hover:bg-purple-700':
+      'bg-blue-600  text-white transition-colors duration-150 ease-out hover:bg-blue-700':
         variant === 'default',
       'px-4 py-2': size === 'default',
       'px-5 py-3': size === 'large',

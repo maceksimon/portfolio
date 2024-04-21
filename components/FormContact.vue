@@ -44,7 +44,7 @@
         An error occurred while sending the form. Please try again
         later, or email me at
         <a
-          class="text-purple-800 underline hover:no-underline"
+          class="text-blue-800 underline hover:no-underline"
           :href="`mailto:${emailAddress}`"
         >
           {{ emailAddress }}

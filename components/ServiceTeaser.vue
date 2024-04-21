@@ -1,18 +1,18 @@
 <template>
   <!-- Feature section -->
-  <div class="mx-auto mt-32 max-w-7xl sm:mt-56 px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-purple-300">{{ t('highlight') }}
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">{{ t('highlight') }}
       </h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</p>
       <p class="mt-6 text-lg leading-8 text-gray-300">{{ t('perex') }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:max-w-none sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:gap-x-12 lg:max-w-none lg:grid-cols-3">
-        <div v-for="feature in primaryFeatures" :key="feature.name" class="flex flex-col">
+        <div v-for="feature in primaryFeatures" :key="feature.name" class="flex flex-col group">
           <dt class="text-base font-semibold leading-7 text-white">
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-purple-400 border bg-purple-400/10 border-purple-400/25">
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-300/90 border bg-blue-400/10 border-blue-400/25 group-hover:text-blue-300 group-hover:bg-blue-400/15 transition-colors duration-300">
               <Icon :name="feature.icon" class="h-10 w-10" aria-hidden="true" />
             </div>
             {{ feature.name }}
@@ -57,19 +57,19 @@ const primaryFeatures = [
   "cs": {
     "highlight": "Co z toho bude?",
     "title": "Web, kterého si každý všimne",
-    "perex": "Poutavé stránky nejsou jen pro velké firmy a organizace. I vy můžete mít web, který vystihne váš charakter, bude bezchybně fungovat a zaujme na první pohled.",
+    "perex": "S internetovou doménou vzniká vaše online identita. Buďte nároční. Chtějte web, který vystihne váš charakter, bude bezchybně fungovat a zaujme na první pohled.",
     "service": {
       "control": {
         "title": "Web ve vlastních rukou",
-        "description": "Stavím weby tak, abyste je měli plně pod kontrolou, mohli měnit texty i obrázky, jednoduše tvořit nové stránky i upravovat ty existující. Používám WordPress jako osvědčené open-source řešení, nastavené tak aby se používalo co nejsnáze i těm, kdo s ním ještě nemají zkušenost.",
+        "description": "Stavím weby tak, abyste je měli plně pod kontrolou, mohli měnit texty i obrázky, jednoduše tvořit nové stránky i upravovat ty existující. Používám WordPress jako osvědčené open-source řešení, nastavené tak aby se používalo co nejsnáze i těm, kdo s ním ještě nemají zkušenost."
       },
       "design": {
         "title": "Digitální vizuál přesně pro vás",
-        "description": "Web by měl odrážet vaši jedinečnou identitu. Proto řeším design individuálně a rád ho navrhnu přesně podle vašich potřeb. Vždy beru ohled na základní zásady UI a UX, aby byl web přehledný a dobře se používal. Baví mě oživovat design interaktivními prvky, efekty a animacemi.",
+        "description": "Web by měl odrážet vaši jedinečnou identitu. Proto řeším design individuálně a rád ho navrhnu přesně podle vašich potřeb. Vždy beru ohled na základní zásady UI a UX, aby byl web přehledný a dobře se používal. Baví mě oživovat design interaktivními prvky, efekty a animacemi."
       },
       "function": {
         "title": "Online vizitka, která funguje",
-        "description": "Abyste byli vidět potřebujete stránky optimalizované pro internetové vyhledávače. Používám technologie, které pomáhají s indexací a splněním požadavků pro vyhledávače. To zlepšuje vaši pozici ve výsledcích vyhledávání. Díky datům o návštěvnosti můžete sledovat svůj růst a vývoj.",
+        "description": "Abyste byli vidět potřebujete stránky optimalizované pro internetové vyhledávače. Používám technologie, které pomáhají s indexací a splněním požadavků pro vyhledávače. To zlepšuje vaši pozici ve výsledcích vyhledávání. Díky datům o návštěvnosti můžete sledovat svůj růst a vývoj."
       }
     }
   },

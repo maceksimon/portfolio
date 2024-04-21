@@ -20,7 +20,7 @@
         </div>
         <h1
           class="sm:max-w-md text-4xl font-extrabold uppercase tracking-tight sm:text-5xl lg:text-7xl xl:max-w-2xl text-gray-900 dark:text-gray-50">
-          <span class="bg-clip-text bg-gradient-to-r text-transparent from-violet-500 via-purple-400 to-pink-500">{{
+          <span class="bg-clip-text bg-gradient-to-r text-transparent from-violet-500 via-blue-400 to-pink-500">{{
             $t('index.hero.titleHighlight') }}</span> <span>{{ $t('index.hero.title') }}</span>
         </h1>
       </div>

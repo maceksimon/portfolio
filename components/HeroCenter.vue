@@ -1,18 +1,16 @@
 <template>
-  <div class="relative isolate overflow-hidden">
-    <div class="px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
-        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
-          {{ t("description") }}
-        </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <button
-            class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            @click="toggle()">
-            {{ t("contact") }}
-          </button>
-        </div>
+  <div class="relative isolate overflow-hidden px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+        {{ t("description") }}
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <button
+          class="rounded-md bg-gray-50 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+          @click="toggle()">
+          {{ t("contact") }}
+        </button>
       </div>
     </div>
   </div>
