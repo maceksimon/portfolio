@@ -1,34 +1,36 @@
-[
-  {
-    "question": "Kolik mě bude stát web?",
-    "answer": "To záleží na mnoha okolnostech. Jde o jednu přistávací stránku, nebo rozsáhlý web s různými typy obsahu? Jak má vypadat, a jaké má mít funkce? Pro představu se dá říct, že web stojí asi tolik co koupit si nové kolo. A výsledek by měl být alespoň stejně tak užitečný."
-  },
-  {
-    "question": "Jak probíhá platba?",
-    "answer": "Pokud je to možné, zakázka je placena ve dvou částech. Polovina je splatná při zadání a polovina po dokončení práce. Když ale bude potřeba, můžeme se domluvit i jinak."
-  },
-  {
-    "question": "Je moje poptávka nezávazná?",
-    "answer": "Ano. Po odeslání poptávky se vám v co nejkratší době ozvu a domluvíme si bezplatnou schůzku kde probereme váš projekt. Pak vám připravím nabídku, na základě které se můžete rozhodnout, jestli budeme dál spolupracovat."
-  },
-  {
-    "question": "Co budu potřebovat?",
-    "answer": "V první řadě informace o vašem projektu. Budete-li chtít použít vlastní texty nebo grafický design nebo logo, je dobré, dodáte-li mi tyto podklady co nejdříve. Před realizací projektu se je třeba dohodnout o plánovaném obsahu webu, s tím vám ale rád poradím. Momentálně neposkytuji fotografické služby."
-  },
-  {
-    "question": "Dostanu grafický návrh webu?",
-    "answer": "Ano. Nemáte-li vlastní grafický návrh, přichystám ho já jako samostatnou součást zakázky. Podle společné domluvy připravím design, který budete moci zkontrolovat a zrevidovat aby přesně ladil s vaší představou. Výsledkem bude finální návrh, který převedu na web."
-  },
-  {
-    "question": "Kdo napíše a zadá obsah?",
-    "answer": "Záleží na dohodě. Někdo rád vytváří a upravuje obsah svých stránek sám. V takovém případě rád poskytnu instrukce k práci s administračním prostředím. Pokud nejsou texty na web váš oblíbený žánr, není problém tenhle úkol delegovat jako samostatnou součást zakázky."
-  },
-  {
-    "question": "Bude můj web na první stránce Googlu?",
-    "answer": "Ano, jen ne hned. Ptáte se na optimalizaci pro vyhledávače (neboli SEO), a to je dlouhodobý, pozvolný proces. Záleží zde na relevantním obsahu, důvěryhodnosti vaší stránky a jejím 'zasíťování' do internetu. Weby, které stavím, mají ale pro závod na první příčky vyhledávání všechny předpoklady, od rychlosti, po bezchybnou strukturu."
-  },
-  {
-    "question": "Můžu si nechat upravit už existující web?",
-    "answer": "Záleží na dohodě. Určitě ale budu potřebovat bližší informace o vašem webu a konkrétní zadání. Ozvěte se, a můžeme to probrat."
-  }
-]
+{
+  "body": [
+    {
+      "question": "Kolik mě bude stát web?",
+      "answer": "To záleží na mnoha okolnostech. Jde o jednu přistávací stránku, nebo rozsáhlý web s různými typy obsahu? Jak má vypadat, a jaké má mít funkce? Pro představu se dá říct, že web stojí asi tolik co koupit si nové kolo. A výsledek by měl být alespoň stejně tak užitečný."
+    },
+    {
+      "question": "Jak probíhá platba?",
+      "answer": "Pokud je to možné, zakázka je placena ve dvou částech. Polovina je splatná při zadání a polovina po dokončení práce. Když ale bude potřeba, můžeme se domluvit i jinak."
+    },
+    {
+      "question": "Je moje poptávka nezávazná?",
+      "answer": "Ano. Po odeslání poptávky se vám v co nejkratší době ozvu a domluvíme si bezplatnou schůzku kde probereme váš projekt. Pak vám připravím nabídku, na základě které se můžete rozhodnout, jestli budeme dál spolupracovat."
+    },
+    {
+      "question": "Co budu potřebovat?",
+      "answer": "V první řadě informace o vašem projektu. Budete-li chtít použít vlastní texty nebo grafický design nebo logo, je dobré, dodáte-li mi tyto podklady co nejdříve. Před realizací projektu se je třeba dohodnout o plánovaném obsahu webu, s tím vám ale rád poradím. Momentálně neposkytuji fotografické služby."
+    },
+    {
+      "question": "Dostanu grafický návrh webu?",
+      "answer": "Ano. Nemáte-li vlastní grafický návrh, přichystám ho já jako samostatnou součást zakázky. Podle společné domluvy připravím design, který budete moci zkontrolovat a zrevidovat aby přesně ladil s vaší představou. Výsledkem bude finální návrh, který převedu na web."
+    },
+    {
+      "question": "Kdo napíše a zadá obsah?",
+      "answer": "Záleží na dohodě. Někdo rád vytváří a upravuje obsah svých stránek sám. V takovém případě rád poskytnu instrukce k práci s administračním prostředím. Pokud nejsou texty na web váš oblíbený žánr, není problém tenhle úkol delegovat jako samostatnou součást zakázky."
+    },
+    {
+      "question": "Bude můj web na první stránce Googlu?",
+      "answer": "Ano, jen ne hned. Ptáte se na optimalizaci pro vyhledávače (neboli SEO), a to je dlouhodobý, pozvolný proces. Záleží zde na relevantním obsahu, důvěryhodnosti vaší stránky a jejím 'zasíťování' do internetu. Weby, které stavím, mají ale pro závod na první příčky vyhledávání všechny předpoklady, od rychlosti, po bezchybnou strukturu."
+    },
+    {
+      "question": "Můžu si nechat upravit už existující web?",
+      "answer": "Záleží na dohodě. Určitě ale budu potřebovat bližší informace o vašem webu a konkrétní zadání. Ozvěte se, a můžeme to probrat."
+    }
+  ]
+}
