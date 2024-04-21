@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32 max-w-7xl sm:mt-56">
+  <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">
@@ -29,8 +29,8 @@
               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z">
             </path>
             <foreignObject width="316" height="684" transform="translate(24 24)"
-              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"><img :src="selectedProject.imageMobile"
-                alt="" />
+              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
+              <img :src="imageMobile" alt="" />
             </foreignObject>
           </svg>
         </div>
@@ -55,8 +55,8 @@
             <rect width="1372" height="783" transform="matrix(-1 0 0 1 1406 34)"
               id="2ade4387-9c63-4fc4-b754-10e687a0d333" />
             <foreignObject width="1372" height="783" transform="translate(34 34)"
-              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d333)"><img :src="selectedProject.imageDesktop"
-                alt="" />
+              clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d333)">
+              <img :src="imageDesktop" alt="" />
             </foreignObject>
             <path d="M84 851L918 0H1416C1429.25 0 1440 10.7452 1440 24V851H84Z" fill="url(#paint7_linear_7_520)" />
             <defs>
@@ -148,18 +148,18 @@
       </div>
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 gap-x-4 p-1 bg-gray-800 rounded-xl">
-          <RadioGroupOption as="template" v-for="project in projects" :key="project.id" :value="project"
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 p-1 bg-gray-800 rounded-xl">
+          <RadioGroupOption as="template" v-for="project in projects" :key="project.id" :value="project.id"
             v-slot="{ active, checked }">
             <div
               :class="[
                 'relative flex cursor-pointer rounded-lg p-2 focus:outline-none',
                 active ?
                   'bg-black text-white' :
-                  'bg-transparent',
+                  '',
                 checked ?
                   'bg-black text-white' :
-                  'bg-transparent'
+                  ''
                 ]"
               >
               <span class="flex flex-1 sm:justify-center">
@@ -211,9 +211,40 @@ const projects = [
     imageDesktop: '/image/portfolio/kska-homepage-desktop.png',
     urlPortfolio: '/portfolio/kska'
   },
+  {
+    id: 4,
+    title: 'MKS Jaroměř',
+    description: 'Informační web kulturního střediska',
+    imageMobile: '/image/portfolio/jaromer-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.png',
+    urlPortfolio: '/portfolio/mks-jaromer'
+  },
+  {
+    id: 5,
+    title: 'Ekoloko',
+    description: 'Stránky kulturní neziskové organizace',
+    imageMobile: '/image/portfolio/ekoloko-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.png',
+    urlPortfolio: '/portfolio/ekoloko'
+  },
+  {
+    id: 6,
+    title: 'KSKA',
+    description: 'Web Katedry sociální a kulturní antropologie UPCE',
+    imageMobile: '/image/portfolio/kska-homepage-mobile.png',
+    imageDesktop: '/image/portfolio/kska-homepage-desktop.png',
+    urlPortfolio: '/portfolio/kska'
+  },
 ]
 
-const selectedProject = ref(projects[0])
+const selectedProject = ref(projects[0].id)
+
+const imageDesktop = computed(() => {
+  return projects.find(project => project.id === selectedProject.value)?.imageDesktop
+})
+const imageMobile = computed(() => {
+  return projects.find(project => project.id === selectedProject.value)?.imageMobile
+})
 </script>
 
 <i18n lang="json">
@@ -222,13 +253,13 @@ const selectedProject = ref(projects[0])
     "projectList": "Project list",
     "highlight": "What is already online",
     "title": "Browse the completed projects",
-    "perex": "Each website has their own characteristics and requirements. With this approach I have created a whole range of different realizations from presentation websites to e-commerce.",
+    "perex": "Each website has their own characteristics and requirements. With this approach I have created a whole range of different realizations from presentation websites to e-commerce."
   },
   "cs": {
     "projectList": "Seznam projektů",
     "highlight": "Co už je online",
     "title": "Prohlédněte si dokončené projekty",
-    "perex": "Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy.",
+    "perex": "Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy."
   }
 }
 </i18n>
