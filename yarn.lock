@@ -9065,8 +9065,8 @@ __metadata:
   linkType: hard
 
 "postcss-custom-properties@npm:^13.3.6":
-  version: 13.3.7
-  resolution: "postcss-custom-properties@npm:13.3.7"
+  version: 13.3.8
+  resolution: "postcss-custom-properties@npm:13.3.8"
   dependencies:
     "@csstools/cascade-layer-name-parser": "npm:^1.0.9"
     "@csstools/css-parser-algorithms": "npm:^2.6.1"
@@ -9075,7 +9075,7 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10c0/5d8767efae956f98d9a62a8f54d913c9ea95eaab1c906679ddeee64d87f0fb37d99c8ac1d16ec199794ed7c13a42d39ca2ea0a98df1056d400d4cbc9f31d6b94
+  checksum: 10c0/03dd1918f897005b23d09615ebb2c3faf4a01cac67462069c9cfa87c024b2a878f64948b0cf668971bc0ca00cfc349080879b3864deb3808a32d52ff2b473319
   languageName: node
   linkType: hard
 
