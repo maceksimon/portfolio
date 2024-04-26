@@ -968,13 +968,13 @@ __metadata:
   linkType: hard
 
 "@headlessui/vue@npm:^1.7.16":
-  version: 1.7.20
-  resolution: "@headlessui/vue@npm:1.7.20"
+  version: 1.7.21
+  resolution: "@headlessui/vue@npm:1.7.21"
   dependencies:
     "@tanstack/vue-virtual": "npm:^3.0.0-beta.60"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 10c0/cdbfde5533b145838671e15032f3345cb571078c2528ced11277032bd3a509c9704933d5211045f57bd235dcb0fe7b4cd3eace2ca1522c6aee3b1014a1c3ad41
+  checksum: 10c0/600b13457c83715d7997e927cbebca299daa8876633dd44d2fd21fa822614b05ea7e5cb70c083d0db56a6a06a823802bfc4157f6f88b0eb19834febef08d84f0
   languageName: node
   linkType: hard
 
