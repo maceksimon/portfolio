@@ -7,5 +7,3 @@
   <TestimonialGrid class="my-20 sm:my-28 lg:my-36" />
   <Faq class="my-20 sm:my-28 lg:my-36" />
 </template>
-
-<script setup lang="ts"></script>

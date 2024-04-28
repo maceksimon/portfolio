@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     '@formkit/nuxt',
     '@nuxt/test-utils/module'
   ],
+  experimental: {
+    scanPageMeta: true,
+  },
   i18n: {
     locales: [
       {
@@ -26,12 +29,38 @@ export default defineNuxtConfig({
         file: "cs-CZ.ts",
       }
     ],
-    lazy: true,
     langDir: "locales",
-    strategy: "prefix_and_default",
+    strategy: "prefix_except_default",
     defaultLocale: 'cs',
     detectBrowserLanguage: false,
-    vueI18n: './i18n.config.ts'
+    vueI18n: './i18n.config.ts',
+    customRoutes: 'config',
+    pages: {
+      index: {
+        cs: '/',
+        en: '/',
+      },
+      'about/index': {
+        cs: '/o-mne',
+        en: '/about',
+      },
+      'blog/index': {
+        cs: '/blog',
+        en: '/blog',
+      },
+      'blog/[slug]': {
+        cs: '/blog/[slug]',
+        en: '/blog/[slug]',
+      },
+      'projects/index': {
+        cs: '/projekty',
+        en: '/projects',
+      },
+      'projects/[slug]': {
+        cs: '/projekty/[slug]',
+        en: '/projects/[slug]',
+      },
+    }
   },
   formkit: {
     // Experimental support for auto loading (see note):

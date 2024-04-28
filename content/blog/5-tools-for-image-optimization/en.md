@@ -4,7 +4,7 @@ description: Read how we optimize images to make your websites blazingly fast.
 head.title: 5 Tools for Image Optimization
 head.description: Read how we optimize images to make your websites blazingly fast.
 head.image: /image/blog/5-tools-for-image-optimization.png
-imageUrl: /image/blog/5-tools-for-image-optimization.png
+image: /image/blog/5-tools-for-image-optimization.png
 tags: ['Performance', 'Cloudinary', 'WebP']
 created: '2022-07-17T12:34:44'
 authorName: 'Simon Macek'

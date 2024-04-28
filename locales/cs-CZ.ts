@@ -37,10 +37,6 @@ export default {
     buttonDetail: 'Přečtěte si víc',
     buttonWebsite: 'Prohlédněte si web',
   },
-  testimonials: {
-    highlight: 'Co si o tom myslí ostatní?',
-    title: 'Zprávy a hodnocení od mého báječného klientstva',
-  },
   blog: {
     title: 'Blog',
   },
@@ -50,14 +46,6 @@ export default {
   },
   alert: {
     missingData: 'Omlouvám se, obsah právě doplňuji.',
-  },
-  faq: {
-    highlight: 'Co by vás mohlo zajímat',
-    title: 'Odpovědi na nejčastější otázky',
-    perex:
-      'Pokud se chcete zeptat na cokoliv dalšího, napište mi přes ',
-    linkContact: 'kontaktní formulář',
-    perex2: ' a já se vám ozvu co nejdříve.',
   },
   formContact: {
     title: 'Napište mi',

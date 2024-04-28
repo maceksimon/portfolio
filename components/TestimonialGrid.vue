@@ -14,8 +14,8 @@
     </div>
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="mx-auto text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">{{ $t('testimonials.highlight') }}</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">{{ $t('testimonials.title') }}</p>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">{{ t('highlight') }}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">{{ t('title') }}</p>
       </div>
       <div
         class="mx-auto mt-16 grid grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-50 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -68,7 +68,20 @@ const featuredTestimonial = {
   },
 }
 
-const { locale } = useI18n()
+const { locale, t } = useI18n({
+  useScope: 'local'
+})
 const file = await queryContent("testimonials", locale.value.toLowerCase()).findOne()
 const testimonials = file.body
 </script>
+
+<i18n lang="json">{
+  "cs": {
+    "highlight": "Co si o tom myslí ostatní?",
+    "title": "Zprávy a hodnocení od mého báječného klientstva"
+  },
+  "en": {
+    "highlight": "What do others say?",
+    "title": "Testimonials and ratings from my clients"
+  }
+}</i18n>

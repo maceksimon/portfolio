@@ -44,4 +44,15 @@ export default {
     twitter: 'Twitter',
     github: 'GitHub',
   },
+  alert: {
+    missingData: 'Sorry, this content is just being created.',
+  },
+  formContact: {
+    title: 'Contact me',
+    perex: '',
+    labelName: 'Full name',
+    labelEmail: 'Email',
+    labelMessage: 'Message',
+    buttonSend: 'Send',
+  }
 }
