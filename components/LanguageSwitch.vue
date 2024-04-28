@@ -1,29 +1,28 @@
 <script setup lang="ts">
-const switchLocalePath = useSwitchLocalePath();
-const { locale } = useI18n();
+const { locale, locales, setLocale } = useI18n()
 </script>
 
 <template>
-  <a
+  <button
     v-if="locale !== 'en'"
     class="text-md"
-    :href="switchLocalePath('en')"
+    @click="setLocale('en')"
     title="English"
   >
     <Icon
       name="flag:gb-1x1"
       class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-white"
     />
-  </a>
-  <a
+  </button>
+  <button
     v-if="locale !== 'cs'"
     class="text-md"
-    :href="switchLocalePath('cs')"
+    @click="setLocale('cs')"
     title="Čeština"
   >
     <Icon
       name="flag:cz-1x1"
       class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-white"
     />
-  </a>
+  </button>
 </template>

@@ -109,15 +109,15 @@ const navigation = [
   },
   {
     title: t('menuProjects'),
-    _path: '/projects',
+    _path: localePath('/projekty'),
   },
   {
     title: t('menuBlog'),
-    _path: '/blog',
+    _path: localePath('/blog'),
   },
   {
     title: t('menuAbout'),
-    _path: '/about',
+    _path: localePath('/o-mne'),
   },
 ]
 </script>
