@@ -29,7 +29,6 @@ export default defineNuxtConfig({
         file: "cs-CZ.ts",
       }
     ],
-    lazy: true,
     langDir: "locales",
     strategy: "prefix_except_default",
     defaultLocale: 'cs',
