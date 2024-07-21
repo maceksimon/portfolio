@@ -2005,10 +2005,10 @@ __metadata:
   linkType: hard
 
 "@nuxt/content@npm:^2.12.1":
-  version: 2.13.1
-  resolution: "@nuxt/content@npm:2.13.1"
+  version: 2.13.2
+  resolution: "@nuxt/content@npm:2.13.2"
   dependencies:
-    "@nuxt/kit": "npm:^3.12.3"
+    "@nuxt/kit": "npm:^3.12.4"
     "@nuxtjs/mdc": "npm:^0.8.3"
     "@vueuse/core": "npm:^10.11.0"
     "@vueuse/head": "npm:^2.0.0"
@@ -2024,18 +2024,18 @@ __metadata:
     micromark: "npm:^4.0.0"
     micromark-util-sanitize-uri: "npm:^2.0.0"
     micromark-util-types: "npm:^2.0.0"
-    minisearch: "npm:^6.3.0"
+    minisearch: "npm:^7.0.2"
     ohash: "npm:^1.1.3"
     pathe: "npm:^1.1.2"
     scule: "npm:^1.3.0"
-    shiki: "npm:^1.10.1"
+    shiki: "npm:^1.10.3"
     slugify: "npm:^1.6.6"
     socket.io-client: "npm:^4.7.5"
-    ufo: "npm:^1.5.3"
+    ufo: "npm:^1.5.4"
     unist-util-stringify-position: "npm:^4.0.0"
     unstorage: "npm:^1.10.2"
     ws: "npm:^8.18.0"
-  checksum: 10c0/6d6bf3f57ac3e3dd2303d066711e09ad85682843af908df364e3c67891b445c5dff174aa21e3abba8bdf9353d8f3481e15fb8776d1692ee5a885575b00f2741e
+  checksum: 10c0/1ec0e7f49204acafbfa0e0e86b5cb5a3ab445df82d2e19cad505c057068c705d35044fab5e4c8ae3a8d8ff00bfd3b4d79479f2ade58d9aee14cdb6a23f3a1d36
   languageName: node
   linkType: hard
 
@@ -2164,7 +2164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.12.4":
+"@nuxt/kit@npm:3.12.4, @nuxt/kit@npm:^3.12.4":
   version: 3.12.4
   resolution: "@nuxt/kit@npm:3.12.4"
   dependencies:
@@ -3219,6 +3219,15 @@ __metadata:
   version: 1.10.1
   resolution: "@shikijs/core@npm:1.10.1"
   checksum: 10c0/586711b6485833323937f1193635e1d7ffc63ac9e664aa3fef16c7583dfdbaf4362bb268712ebaba9113a96f871e6e1f993f1c8eb3f558353880a54e436002a9
+  languageName: node
+  linkType: hard
+
+"@shikijs/core@npm:1.10.3":
+  version: 1.10.3
+  resolution: "@shikijs/core@npm:1.10.3"
+  dependencies:
+    "@types/hast": "npm:^3.0.4"
+  checksum: 10c0/6792c3a6228fe2085aa39616139087aeaa85748a0f49740576c55f6c41b3f2cad911720f653cdba1e175c5b6a8876eee8982750f70b9de17d2944b7f69a8066d
   languageName: node
   linkType: hard
 
@@ -8967,10 +8976,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minisearch@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "minisearch@npm:6.3.0"
-  checksum: 10c0/82799e1ff7be856f3ba0c13b237f4e56f0bf4fabf973b7f163e6a4be2604fe577776ef9dd50dde2a8ee54c74a7525008246f728e9ce0412477a5f18040d4a036
+"minisearch@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "minisearch@npm:7.0.2"
+  checksum: 10c0/c1b62d4fed3b5893cb8f6c32b38e71009ecf2040891fa4ed6a84381acbaa70fd7e9d54fc14fc857bbfbe7a01becfe5f200714a6ec9b8bdf1caae38fc98d1b05c
   languageName: node
   linkType: hard
 
@@ -11292,12 +11301,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:1.10.1, shiki@npm:^1.10.0, shiki@npm:^1.10.1":
+"shiki@npm:1.10.1, shiki@npm:^1.10.0":
   version: 1.10.1
   resolution: "shiki@npm:1.10.1"
   dependencies:
     "@shikijs/core": "npm:1.10.1"
   checksum: 10c0/ba0fbb6ffc1e08b4089c679a84e8c2800a7e6609519ada3892831b691d35e73cface539c486e888fc77aa48a70310ceded990158d2153a963efc2d1b084a4e5f
+  languageName: node
+  linkType: hard
+
+"shiki@npm:^1.10.3":
+  version: 1.10.3
+  resolution: "shiki@npm:1.10.3"
+  dependencies:
+    "@shikijs/core": "npm:1.10.3"
+    "@types/hast": "npm:^3.0.4"
+  checksum: 10c0/b2f7db15a837c24973d4906cbfc6ad7d2c32931e610470d129b85c372da1561f57370676e23a63d889341450359befdfdacbbab0230fe3c222dc59c5f52e5623
   languageName: node
   linkType: hard
 
