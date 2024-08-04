@@ -34,7 +34,7 @@
     "@formkit/nuxt": "^1.6.2",
     "@nuxt/image": "^1.6.0",
     "axios": "^1.6.8",
-    "postcss-custom-properties": "^13.3.8"
+    "postcss-custom-properties": "^14.0.0"
   },
   "packageManager": "yarn@4.4.0"
 }
