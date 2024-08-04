@@ -2347,7 +2347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.11.2, @nuxt/schema@npm:^3.11.2":
+"@nuxt/schema@npm:3.11.2":
   version: 3.11.2
   resolution: "@nuxt/schema@npm:3.11.2"
   dependencies:
@@ -2426,7 +2426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.12.4":
+"@nuxt/schema@npm:3.12.4, @nuxt/schema@npm:^3.12.4":
   version: 3.12.4
   resolution: "@nuxt/schema@npm:3.12.4"
   dependencies:
@@ -2474,18 +2474,18 @@ __metadata:
   linkType: hard
 
 "@nuxt/test-utils@npm:>=3.9.0, @nuxt/test-utils@npm:^3.12.1":
-  version: 3.13.1
-  resolution: "@nuxt/test-utils@npm:3.13.1"
+  version: 3.14.0
+  resolution: "@nuxt/test-utils@npm:3.14.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.11.2"
-    "@nuxt/schema": "npm:^3.11.2"
-    c12: "npm:^1.10.0"
+    "@nuxt/kit": "npm:^3.12.4"
+    "@nuxt/schema": "npm:^3.12.4"
+    c12: "npm:^1.11.1"
     consola: "npm:^3.2.3"
     defu: "npm:^6.1.4"
     destr: "npm:^2.0.3"
     estree-walker: "npm:^3.0.3"
     execa: "npm:^8.0.1"
-    fake-indexeddb: "npm:^5.0.2"
+    fake-indexeddb: "npm:^6.0.0"
     get-port-please: "npm:^3.1.2"
     local-pkg: "npm:^0.5.0"
     magic-string: "npm:^0.30.10"
@@ -2496,16 +2496,16 @@ __metadata:
     radix3: "npm:^1.1.2"
     scule: "npm:^1.3.0"
     std-env: "npm:^3.7.0"
-    ufo: "npm:^1.5.3"
-    unenv: "npm:^1.9.0"
-    unplugin: "npm:^1.10.1"
+    ufo: "npm:^1.5.4"
+    unenv: "npm:^1.10.0"
+    unplugin: "npm:^1.12.0"
     vitest-environment-nuxt: "npm:^1.0.0"
   peerDependencies:
     "@cucumber/cucumber": ^10.3.1
     "@jest/globals": ^29.5.0
     "@playwright/test": ^1.43.1
     "@testing-library/vue": ^7.0.0 || ^8.0.1
-    "@vitest/ui": ^0.34.6 || ^1.0.0
+    "@vitest/ui": ^0.34.6 || ^1.0.0 || ^2.0.0
     "@vue/test-utils": ^2.4.2
     h3: "*"
     happy-dom: ^9.10.9 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
@@ -2513,7 +2513,7 @@ __metadata:
     nitropack: "*"
     playwright-core: ^1.43.1
     vite: "*"
-    vitest: ^0.34.6 || ^1.0.0
+    vitest: ^0.34.6 || ^1.0.0 || ^2.0.0
     vue: ^3.3.4
     vue-router: ^4.0.0
   peerDependenciesMeta:
@@ -2537,7 +2537,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/8c2a0f7a775fcea9241ae5cfeba1e89e78a05040c80cde69e534b01fd76c7838cf665c1f6a94a6552a9120fe056982866847d3d21586cce91cbd9a58a4e582cf
+  checksum: 10c0/fa109fd6b980727b34e081144b9981310f2dc126b2a88a580ddfbcf0387fffda2ab09a21ff1598648e70391df89c4fbcb345c184c53d48c0471183d097e1e6a9
   languageName: node
   linkType: hard
 
@@ -6380,10 +6380,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fake-indexeddb@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "fake-indexeddb@npm:5.0.2"
-  checksum: 10c0/9255cc8ee40ad8440450b248e416c49254b97e6256e12fa93a6169055e8f02358c47ab5f2aca261b66455d34e1483b4f92ddead449c0c285279f9be4807b10fb
+"fake-indexeddb@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "fake-indexeddb@npm:6.0.0"
+  checksum: 10c0/551ddada98f6d8b1c159698ff82570d06c8959f8e98616d872305dee3d857795dd62dd32094779e7b325397103364dcb0e24b6447992c0464ae13d19fbe57315
   languageName: node
   linkType: hard
 
@@ -12506,6 +12506,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unplugin@npm:^1.12.0":
+  version: 1.12.0
+  resolution: "unplugin@npm:1.12.0"
+  dependencies:
+    acorn: "npm:^8.12.1"
+    chokidar: "npm:^3.6.0"
+    webpack-sources: "npm:^3.2.3"
+    webpack-virtual-modules: "npm:^0.6.2"
+  checksum: 10c0/d4ca9508adbc3724fbafe0eec50e346b3772d3bca7881f20b29d403c576fae5ac2f1224cc84481913396e9c52cba5e934d2815d1b2a206c439fdc52ec39889b8
+  languageName: node
+  linkType: hard
+
 "unstorage@npm:^1.10.1, unstorage@npm:^1.10.2":
   version: 1.10.2
   resolution: "unstorage@npm:1.10.2"
@@ -13150,6 +13162,13 @@ __metadata:
   version: 0.6.1
   resolution: "webpack-virtual-modules@npm:0.6.1"
   checksum: 10c0/696bdc1acf3806374bdeb4b9b9856b79ee70b31e92f325dfab9b8c8c7e14bb6ddffa9f895a214770c4fb8fea45a21f34ca64310f74e877292a90f4a9966c9c2f
+  languageName: node
+  linkType: hard
+
+"webpack-virtual-modules@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "webpack-virtual-modules@npm:0.6.2"
+  checksum: 10c0/5ffbddf0e84bf1562ff86cf6fcf039c74edf09d78358a6904a09bbd4484e8bb6812dc385fe14330b715031892dcd8423f7a88278b57c9f5002c84c2860179add
   languageName: node
   linkType: hard
 
