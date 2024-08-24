@@ -1,16 +1,20 @@
 <template>
-  <div v-if="project" class="text-white">
-    {{ project }}
-  </div>
-  <div v-else>
-    {{ error }}
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-12 lg:my-16">
+    <!-- Breadcrumb -->
+    <Breadcrumbs />
+    <div class="prose prose-invert text-white">
+      <ContentDoc :path="`/projects/${route.params.id}/${locale.toLowerCase()}`" />
+      <!-- <ContentRenderer :value="project" /> -->
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const route = useRoute()
-const { data: project, error } = await useAsyncData('project', () => queryContent(
-  "projects",
-  route.params.id,
-  locale.value.toLowerCase()).findOne())
+const { locale } = useI18n()
+
+// const { data: project, error } = await useAsyncData('project', () => queryContent(
+//   "projects",
+//   route.params.id,
+//   locale.value.toLowerCase()).findOne())
 </script>
