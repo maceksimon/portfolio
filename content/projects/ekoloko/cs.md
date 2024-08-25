@@ -15,3 +15,5 @@ locale: "cs"
 # Něco pro komunitu: Web spolku Ekoloko
 
 ![Ekoloko homepage](/image/portfolio/ekoloko/ekoloko-mockup-homepage-mobile.webp)
+
+Vanda a Lucie se seznámily na kurzu šití. Skončilo to založením spolku Ekoloko. Zkratka v sobě spojuje slova ekologie lokálnost a komunita. Vystihuje tak hlavní myšlenky neziskové organizace, která má za cíl propojovat lidi se zájmem o životní prostředí a informovat o udržitelném způsobu života, ale i
