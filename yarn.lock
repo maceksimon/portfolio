@@ -2215,8 +2215,8 @@ __metadata:
   linkType: hard
 
 "@nuxt/image@npm:^1.6.0":
-  version: 1.7.1
-  resolution: "@nuxt/image@npm:1.7.1"
+  version: 1.8.0
+  resolution: "@nuxt/image@npm:1.8.0"
   dependencies:
     "@nuxt/kit": "npm:^3.13.0"
     consola: "npm:^3.2.3"
@@ -2232,7 +2232,7 @@ __metadata:
   dependenciesMeta:
     ipx:
       optional: true
-  checksum: 10c0/a430fd286c2e588c9038b162337c17ea47ba19cacedcb3c7aaf3e3fa56f4a579a1a3213da88704a884280c2fe85f8b0c3c54b6df62c35045892df1a3e0b23d14
+  checksum: 10c0/772c696f1dd45f9a41d252ffc0fa345702c08bb747e2a53abff13a331e6a1e03a87e05597cc4a9e113174bb0aa3227683fb93b376af249ffdb9c6cb5d06d395b
   languageName: node
   linkType: hard
 
