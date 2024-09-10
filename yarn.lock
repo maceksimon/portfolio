@@ -2118,16 +2118,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@nuxt/devtools-kit@npm:1.4.1"
+"@nuxt/devtools-kit@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@nuxt/devtools-kit@npm:1.4.2"
   dependencies:
-    "@nuxt/kit": "npm:^3.13.0"
-    "@nuxt/schema": "npm:^3.13.0"
+    "@nuxt/kit": "npm:^3.13.1"
+    "@nuxt/schema": "npm:^3.13.1"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/c4a001db1a879bc8bf557f9dd05326736750f9131c1db12100a6532d2254dd66c591deef59d5b23a3f30d0cdd2c48371ef6fbc37cebf38838437e8aa25ccaf71
+  checksum: 10c0/293723236dba84f8bb8d7ff36319d2e6d6478fb5c83403c69fefbcc81692bd219856a4822f0ba40789634447cbb39b1aaef34d281e9a86cfb788d3533926692c
   languageName: node
   linkType: hard
 
@@ -2145,15 +2145,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@nuxt/devtools-wizard@npm:1.4.1"
+"@nuxt/devtools-wizard@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@nuxt/devtools-wizard@npm:1.4.2"
   dependencies:
     consola: "npm:^3.2.3"
-    diff: "npm:^5.2.0"
+    diff: "npm:^7.0.0"
     execa: "npm:^7.2.0"
     global-directory: "npm:^4.0.1"
-    magicast: "npm:^0.3.4"
+    magicast: "npm:^0.3.5"
     pathe: "npm:^1.1.2"
     pkg-types: "npm:^1.2.0"
     prompts: "npm:^2.4.2"
@@ -2161,20 +2161,20 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/a0f4d1ead81e142c010c68522e99081d9e83b1ee16cede6d1a5ebccc3a2e362c5c6a2901962cd25612b5040c5dfdcf01a19fc596ba12b6576e4696e57dfc2bed
+  checksum: 10c0/40dc720f5d92376aa702cf4991d69c3960f58f38742a0d3ac4c6c5c2fcf76db7a07bd29dde0916ac15eaf1e0e2a582047e31e88150b81b11484c3cbafab9a964
   languageName: node
   linkType: hard
 
 "@nuxt/devtools@npm:^1.2.0, @nuxt/devtools@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@nuxt/devtools@npm:1.4.1"
+  version: 1.4.2
+  resolution: "@nuxt/devtools@npm:1.4.2"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.4.1"
-    "@nuxt/devtools-wizard": "npm:1.4.1"
-    "@nuxt/kit": "npm:^3.13.0"
-    "@vue/devtools-core": "npm:7.3.3"
-    "@vue/devtools-kit": "npm:7.3.3"
+    "@nuxt/devtools-kit": "npm:1.4.2"
+    "@nuxt/devtools-wizard": "npm:1.4.2"
+    "@nuxt/kit": "npm:^3.13.1"
+    "@vue/devtools-core": "npm:7.4.4"
+    "@vue/devtools-kit": "npm:7.4.4"
     birpc: "npm:^0.2.17"
     consola: "npm:^3.2.3"
     cronstrue: "npm:^2.50.0"
@@ -2187,9 +2187,9 @@ __metadata:
     hookable: "npm:^5.5.3"
     image-meta: "npm:^0.2.1"
     is-installed-globally: "npm:^1.0.0"
-    launch-editor: "npm:^2.8.1"
+    launch-editor: "npm:^2.9.1"
     local-pkg: "npm:^0.5.0"
-    magicast: "npm:^0.3.4"
+    magicast: "npm:^0.3.5"
     nypm: "npm:^0.3.11"
     ohash: "npm:^1.1.3"
     pathe: "npm:^1.1.2"
@@ -2198,19 +2198,19 @@ __metadata:
     rc9: "npm:^2.1.2"
     scule: "npm:^1.3.0"
     semver: "npm:^7.6.3"
-    simple-git: "npm:^3.25.0"
+    simple-git: "npm:^3.26.0"
     sirv: "npm:^2.0.4"
-    tinyglobby: "npm:^0.2.5"
+    tinyglobby: "npm:^0.2.6"
     unimport: "npm:^3.11.1"
     vite-plugin-inspect: "npm:^0.8.7"
-    vite-plugin-vue-inspector: "npm:^5.1.3"
+    vite-plugin-vue-inspector: "npm:^5.2.0"
     which: "npm:^3.0.1"
     ws: "npm:^8.18.0"
   peerDependencies:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/0fdc43ed224ed70760912ca9ad1b1f90c45de49c49ba0178a5794a22d86712ac5a36085efcd4543e3c055dfd0948f0b3a68e23528d1f36b35839892e3d99c880
+  checksum: 10c0/d0e3eae7045301a3dc6d911fcbe6375323376f3529eb18a90d91cc6e2cc4d3731165db86c2bb3b097c074d241eefbfba173b5fc4fb50a6546de00a2e276362a2
   languageName: node
   linkType: hard
 
@@ -2236,7 +2236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.13.1":
+"@nuxt/kit@npm:3.13.1, @nuxt/kit@npm:^3.13.1":
   version: 3.13.1
   resolution: "@nuxt/kit@npm:3.13.1"
   dependencies:
@@ -2574,7 +2574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.13.0, @nuxt/schema@npm:^3.13.0":
+"@nuxt/schema@npm:3.13.0":
   version: 3.13.0
   resolution: "@nuxt/schema@npm:3.13.0"
   dependencies:
@@ -2594,7 +2594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.13.1":
+"@nuxt/schema@npm:3.13.1, @nuxt/schema@npm:^3.13.1":
   version: 3.13.1
   resolution: "@nuxt/schema@npm:3.13.1"
   dependencies:
@@ -4182,41 +4182,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-core@npm:7.3.3":
-  version: 7.3.3
-  resolution: "@vue/devtools-core@npm:7.3.3"
+"@vue/devtools-core@npm:7.4.4":
+  version: 7.4.4
+  resolution: "@vue/devtools-core@npm:7.4.4"
   dependencies:
-    "@vue/devtools-kit": "npm:^7.3.3"
-    "@vue/devtools-shared": "npm:^7.3.3"
+    "@vue/devtools-kit": "npm:^7.4.4"
+    "@vue/devtools-shared": "npm:^7.4.4"
     mitt: "npm:^3.0.1"
     nanoid: "npm:^3.3.4"
     pathe: "npm:^1.1.2"
     vite-hot-client: "npm:^0.2.3"
-  checksum: 10c0/252dc093286b032f4edb2129a02db2731bce6aea97b27ec793d4e54fda780e7b4aef7a6ffc67ad26f552f8fc50717baad155fb6f1cf54701b2e9e4f107842fb4
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 10c0/9e1e7c8d6ded795cad40fdd8bfc7e3600f2b2bf3cff64f6549a3f4e6f78028c3b0dcbdda392bcb686763160970ef3158c3acb89b66eac780f7ac5522ec232f9f
   languageName: node
   linkType: hard
 
-"@vue/devtools-kit@npm:7.3.3, @vue/devtools-kit@npm:^7.3.3":
-  version: 7.3.3
-  resolution: "@vue/devtools-kit@npm:7.3.3"
+"@vue/devtools-kit@npm:7.4.4, @vue/devtools-kit@npm:^7.4.4":
+  version: 7.4.4
+  resolution: "@vue/devtools-kit@npm:7.4.4"
   dependencies:
-    "@vue/devtools-shared": "npm:^7.3.3"
+    "@vue/devtools-shared": "npm:^7.4.4"
     birpc: "npm:^0.2.17"
     hookable: "npm:^5.5.3"
     mitt: "npm:^3.0.1"
     perfect-debounce: "npm:^1.0.0"
     speakingurl: "npm:^14.0.1"
     superjson: "npm:^2.2.1"
-  checksum: 10c0/622a252083ee5bd38f64cbabe37b2b37d40d92a06825a2d6fc070cf0de47b1a28fa49e53e555c40c7a7cbe508be57c4109309acd8d5fc04a6a7442ef93e8897f
+  checksum: 10c0/299507b14a4eb6bb998eaec5397dec3f99a1d7b2661562a95cdd15f3d4e020aa2fbbb67257d4004df1d0f26a5e916adfb6820006b4d1bef558417bd0658e2da5
   languageName: node
   linkType: hard
 
-"@vue/devtools-shared@npm:^7.3.3":
-  version: 7.3.3
-  resolution: "@vue/devtools-shared@npm:7.3.3"
+"@vue/devtools-shared@npm:^7.4.4":
+  version: 7.4.4
+  resolution: "@vue/devtools-shared@npm:7.4.4"
   dependencies:
     rfdc: "npm:^1.4.1"
-  checksum: 10c0/448a5f370a8df9339646030e10ec757d1a50cfe9ebc1e03c1e76ac89cd469ac8fbe4c4cbc8f1a7b8e5e4a6b314c9807f1bc0006daed379763147e55d4dce9c6c
+  checksum: 10c0/6ef587a322031d9779d3f1a634368bf41fa5950ccece4ffc389e4445bd7ea0a8bd6d834fbd792964a5c90ad2487ec744becaeae202c7429f66c40e6d6f2bfe5c
   languageName: node
   linkType: hard
 
@@ -6084,10 +6086,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "diff@npm:5.2.0"
-  checksum: 10c0/aed0941f206fe261ecb258dc8d0ceea8abbde3ace5827518ff8d302f0fc9cc81ce116c4d8f379151171336caf0516b79e01abdc1ed1201b6440d895a66689eb4
+"diff@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "diff@npm:7.0.0"
+  checksum: 10c0/251fd15f85ffdf814cfc35a728d526b8d2ad3de338dcbd011ac6e57c461417090766b28995f8ff733135b5fbc3699c392db1d5e27711ac4e00244768cd1d577b
   languageName: node
   linkType: hard
 
@@ -6884,7 +6886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fdir@npm:^6.2.0":
+"fdir@npm:^6.2.0, fdir@npm:^6.3.0":
   version: 6.3.0
   resolution: "fdir@npm:6.3.0"
   peerDependencies:
@@ -8445,13 +8447,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"launch-editor@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "launch-editor@npm:2.8.1"
+"launch-editor@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "launch-editor@npm:2.9.1"
   dependencies:
     picocolors: "npm:^1.0.0"
     shell-quote: "npm:^1.8.1"
-  checksum: 10c0/e18fcda6617a995306602871c7a71ddcfdd82d88a57508ae970be86bfb6685f131cf9ddb8896df4e8e4cde6d0e2d14318d2b41314eaae6abf03ca205948daa27
+  checksum: 10c0/891f1d136ed8e4ea12e16c196a0d2e07f23c7b983e3ab532b2be1775fb244909581507cce97c50f9d5ca92680b53e4a75c72ddcf20184aa6c4da6ebbe87703f5
   languageName: node
   linkType: hard
 
@@ -8672,6 +8674,17 @@ __metadata:
     "@babel/types": "npm:^7.24.0"
     source-map-js: "npm:^1.2.0"
   checksum: 10c0/7ebaaac397b13c31ca05e6d9649296751d76749b945d10a0800107872119fbdf267acdb604571d25e38ec6fd7ab3568a951b6e76eaef1caba9eaa11778fd9783
+  languageName: node
+  linkType: hard
+
+"magicast@npm:^0.3.5":
+  version: 0.3.5
+  resolution: "magicast@npm:0.3.5"
+  dependencies:
+    "@babel/parser": "npm:^7.25.4"
+    "@babel/types": "npm:^7.25.4"
+    source-map-js: "npm:^1.2.0"
+  checksum: 10c0/a6cacc0a848af84f03e3f5bda7b0de75e4d0aa9ddce5517fd23ed0f31b5ddd51b2d0ff0b7e09b51f7de0f4053c7a1107117edda6b0732dca3e9e39e6c5a68c64
   languageName: node
   linkType: hard
 
@@ -11986,14 +11999,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git@npm:^3.25.0":
-  version: 3.25.0
-  resolution: "simple-git@npm:3.25.0"
+"simple-git@npm:^3.26.0":
+  version: 3.26.0
+  resolution: "simple-git@npm:3.26.0"
   dependencies:
     "@kwsites/file-exists": "npm:^1.1.1"
     "@kwsites/promise-deferred": "npm:^1.1.1"
     debug: "npm:^4.3.5"
-  checksum: 10c0/2087dddac041eac6330cbb7fafea21f3e45786ea54e50ae07a49ba6a7134298e12727e5e4b6580310b679c7cb4f2a83804c04e7eab247eeabcd48d33b7885e16
+  checksum: 10c0/fa45c9ff26c45aa7390f69610e27c1ae474b3881977828009fe41b7ffe8ce371cc108b818b2153815299deffefed591e9148cfdad92d8ddb60ca29eaefaf5827
   languageName: node
   linkType: hard
 
@@ -12625,13 +12638,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:0.2.5, tinyglobby@npm:^0.2.5":
+"tinyglobby@npm:0.2.5":
   version: 0.2.5
   resolution: "tinyglobby@npm:0.2.5"
   dependencies:
     fdir: "npm:^6.2.0"
     picomatch: "npm:^4.0.2"
   checksum: 10c0/a9ebb3fd8fec5a7aee9a8078d84db9209986b077d267bc1da41c312d7a19cea8c5ec4fc660a27adea180efda026c30cb7529ff80ef2aa7737ff404de8d0066c2
+  languageName: node
+  linkType: hard
+
+"tinyglobby@npm:^0.2.6":
+  version: 0.2.6
+  resolution: "tinyglobby@npm:0.2.6"
+  dependencies:
+    fdir: "npm:^6.3.0"
+    picomatch: "npm:^4.0.2"
+  checksum: 10c0/d7b5eb4c5b9c341f961c1d3c30624f9a1e22b27b48a79a65b48120245a77c143827f75f5854628fef1a4bd4bc3cfaf06ce76497f3a574e3f933229c5e556e5fe
   languageName: node
   linkType: hard
 
@@ -13514,9 +13537,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-vue-inspector@npm:^5.1.3":
-  version: 5.1.3
-  resolution: "vite-plugin-vue-inspector@npm:5.1.3"
+"vite-plugin-vue-inspector@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "vite-plugin-vue-inspector@npm:5.2.0"
   dependencies:
     "@babel/core": "npm:^7.23.0"
     "@babel/plugin-proposal-decorators": "npm:^7.23.0"
@@ -13529,7 +13552,7 @@ __metadata:
     magic-string: "npm:^0.30.4"
   peerDependencies:
     vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
-  checksum: 10c0/8d6d46778f87a32d0dd0dcaec24b9463f1d48405066212f2f0b2cfc6799ecd72f43a2e3fea7f762d9205fe519e4de4b44656637bd063b7a5f7018e00f09e9beb
+  checksum: 10c0/fb5042f9fd45edeb3523902a7b6a1971caa4da38298d6199ecaab18c35da3a10b105e36b346e13d4fcf859bfc9994bfcf4c4162d2f1d85d0c789d9f1382002d2
   languageName: node
   linkType: hard
 
