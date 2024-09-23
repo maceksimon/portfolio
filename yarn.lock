@@ -2118,16 +2118,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@nuxt/devtools-kit@npm:1.5.0"
+"@nuxt/devtools-kit@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@nuxt/devtools-kit@npm:1.5.1"
   dependencies:
     "@nuxt/kit": "npm:^3.13.2"
     "@nuxt/schema": "npm:^3.13.2"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/e935e283f4f6c58f041323a4bed21ccf2d9f3dd0be2519f2967a4101286b6a1e10f0c4fc6f2b1d8ac5e29c422c320b2a41e18b98ded657c2f4397e1c8dbb3ed9
+  checksum: 10c0/ce5d9422c5683b903a871311c6185ddef2be52f627fa520a83c6909078e8a7518387b7774b2469f81921c182b038939e6deec82007da881060cf9e1ad17379a1
   languageName: node
   linkType: hard
 
@@ -2145,9 +2145,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@nuxt/devtools-wizard@npm:1.5.0"
+"@nuxt/devtools-wizard@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@nuxt/devtools-wizard@npm:1.5.1"
   dependencies:
     consola: "npm:^3.2.3"
     diff: "npm:^7.0.0"
@@ -2161,17 +2161,17 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/d263c05eb61e4676cecb2a9b070f2e780ae761639af6fd2d6807a11e91b5adeaf9aca4e3d7144f6c4a1a1db3487af7a18aafff95345ed0c294b38b86d6585878
+  checksum: 10c0/ad5e2e3e2d826a2f44de76eb752733e86a010061127f3ead1103ade11456b533f23ae7da8d65379bf1c172d377d46a96024278f709d0899aabb0dbb4df82efff
   languageName: node
   linkType: hard
 
 "@nuxt/devtools@npm:^1.2.0, @nuxt/devtools@npm:^1.4.2":
-  version: 1.5.0
-  resolution: "@nuxt/devtools@npm:1.5.0"
+  version: 1.5.1
+  resolution: "@nuxt/devtools@npm:1.5.1"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.5.0"
-    "@nuxt/devtools-wizard": "npm:1.5.0"
+    "@nuxt/devtools-kit": "npm:1.5.1"
+    "@nuxt/devtools-wizard": "npm:1.5.1"
     "@nuxt/kit": "npm:^3.13.2"
     "@vue/devtools-core": "npm:7.4.4"
     "@vue/devtools-kit": "npm:7.4.4"
@@ -2210,7 +2210,7 @@ __metadata:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/901736c78000308485b65eb2722e185290f600301d4360665047a761280c221c0d634806f503e92b6ad6813b954e456f81a31ff2a42d0deea7b9b1a8fa31df2d
+  checksum: 10c0/fbd4d28acb7b2b90067aea90c5d5ae5345ea613a964b23348515439cfba82dbc7969f11cf13e1b9dcbffe95cd16cb472e83c68376ab2dc8c3215f7f5bfb835e5
   languageName: node
   linkType: hard
 
