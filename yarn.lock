@@ -2118,16 +2118,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@nuxt/devtools-kit@npm:1.5.1"
+"@nuxt/devtools-kit@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@nuxt/devtools-kit@npm:1.5.2"
   dependencies:
     "@nuxt/kit": "npm:^3.13.2"
     "@nuxt/schema": "npm:^3.13.2"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/ce5d9422c5683b903a871311c6185ddef2be52f627fa520a83c6909078e8a7518387b7774b2469f81921c182b038939e6deec82007da881060cf9e1ad17379a1
+  checksum: 10c0/9f5056260d443fcdeb18cd14032f6196a8de2c1ed028a46322f96583dfc360d961f92321a3e5951a0111e1322ef0e7fcf081245aad33f2b0cba1e610b8b119d3
   languageName: node
   linkType: hard
 
@@ -2145,9 +2145,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@nuxt/devtools-wizard@npm:1.5.1"
+"@nuxt/devtools-wizard@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@nuxt/devtools-wizard@npm:1.5.2"
   dependencies:
     consola: "npm:^3.2.3"
     diff: "npm:^7.0.0"
@@ -2161,17 +2161,17 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/ad5e2e3e2d826a2f44de76eb752733e86a010061127f3ead1103ade11456b533f23ae7da8d65379bf1c172d377d46a96024278f709d0899aabb0dbb4df82efff
+  checksum: 10c0/0752e6e3370527311ceba42bf3fbf0cd7a05e008f7514b34eaa3961cce037d79074e117f149b30c25d398a96f388f7818bf74fb43f7f8f2503925bebb114bcda
   languageName: node
   linkType: hard
 
 "@nuxt/devtools@npm:^1.2.0, @nuxt/devtools@npm:^1.4.2":
-  version: 1.5.1
-  resolution: "@nuxt/devtools@npm:1.5.1"
+  version: 1.5.2
+  resolution: "@nuxt/devtools@npm:1.5.2"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.5.1"
-    "@nuxt/devtools-wizard": "npm:1.5.1"
+    "@nuxt/devtools-kit": "npm:1.5.2"
+    "@nuxt/devtools-wizard": "npm:1.5.2"
     "@nuxt/kit": "npm:^3.13.2"
     "@vue/devtools-core": "npm:7.4.4"
     "@vue/devtools-kit": "npm:7.4.4"
@@ -2203,14 +2203,14 @@ __metadata:
     tinyglobby: "npm:^0.2.6"
     unimport: "npm:^3.12.0"
     vite-plugin-inspect: "npm:^0.8.7"
-    vite-plugin-vue-inspector: "npm:^5.2.0"
+    vite-plugin-vue-inspector: "npm:5.1.3"
     which: "npm:^3.0.1"
     ws: "npm:^8.18.0"
   peerDependencies:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/fbd4d28acb7b2b90067aea90c5d5ae5345ea613a964b23348515439cfba82dbc7969f11cf13e1b9dcbffe95cd16cb472e83c68376ab2dc8c3215f7f5bfb835e5
+  checksum: 10c0/d1dcbd34e7faada49423a878d5ac2f9f94a93ec36920b67869ee739b03ad6e96f8c074c7ba8b526549783883ab4b1e8c2ce93c84a64661f8197a4ed751835904
   languageName: node
   linkType: hard
 
@@ -13736,9 +13736,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-vue-inspector@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "vite-plugin-vue-inspector@npm:5.2.0"
+"vite-plugin-vue-inspector@npm:5.1.3":
+  version: 5.1.3
+  resolution: "vite-plugin-vue-inspector@npm:5.1.3"
   dependencies:
     "@babel/core": "npm:^7.23.0"
     "@babel/plugin-proposal-decorators": "npm:^7.23.0"
@@ -13751,7 +13751,7 @@ __metadata:
     magic-string: "npm:^0.30.4"
   peerDependencies:
     vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
-  checksum: 10c0/fb5042f9fd45edeb3523902a7b6a1971caa4da38298d6199ecaab18c35da3a10b105e36b346e13d4fcf859bfc9994bfcf4c4162d2f1d85d0c789d9f1382002d2
+  checksum: 10c0/8d6d46778f87a32d0dd0dcaec24b9463f1d48405066212f2f0b2cfc6799ecd72f43a2e3fea7f762d9205fe519e4de4b44656637bd063b7a5f7018e00f09e9beb
   languageName: node
   linkType: hard
 
