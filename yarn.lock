@@ -2529,7 +2529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.13.1, @nuxt/schema@npm:^3.13.1":
+"@nuxt/schema@npm:3.13.1":
   version: 3.13.1
   resolution: "@nuxt/schema@npm:3.13.1"
   dependencies:
@@ -2598,12 +2598,12 @@ __metadata:
   linkType: hard
 
 "@nuxt/test-utils@npm:>=3.13.1, @nuxt/test-utils@npm:^3.12.1":
-  version: 3.14.2
-  resolution: "@nuxt/test-utils@npm:3.14.2"
+  version: 3.14.3
+  resolution: "@nuxt/test-utils@npm:3.14.3"
   dependencies:
-    "@nuxt/kit": "npm:^3.13.1"
-    "@nuxt/schema": "npm:^3.13.1"
-    c12: "npm:^1.11.2"
+    "@nuxt/kit": "npm:^3.13.2"
+    "@nuxt/schema": "npm:^3.13.2"
+    c12: "npm:^2.0.1"
     consola: "npm:^3.2.3"
     defu: "npm:^6.1.4"
     destr: "npm:^2.0.3"
@@ -2613,7 +2613,7 @@ __metadata:
     local-pkg: "npm:^0.5.0"
     magic-string: "npm:^0.30.11"
     node-fetch-native: "npm:^1.6.4"
-    ofetch: "npm:^1.3.4"
+    ofetch: "npm:^1.4.0"
     pathe: "npm:^1.1.2"
     perfect-debounce: "npm:^1.0.0"
     radix3: "npm:^1.1.2"
@@ -2622,7 +2622,7 @@ __metadata:
     tinyexec: "npm:^0.3.0"
     ufo: "npm:^1.5.4"
     unenv: "npm:^1.10.0"
-    unplugin: "npm:^1.14.0"
+    unplugin: "npm:^1.14.1"
     vitest-environment-nuxt: "npm:^1.0.1"
   peerDependencies:
     "@cucumber/cucumber": ^10.3.1 || ^11.0.0
@@ -2661,7 +2661,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/f909e9ef7e3b833a71f6a0706d4829410a3fcf52137b66445aa4c3dfd00ab8d3c398b5db483b32e77276aeb8f2bf05521d191c9eb9dd603628b529cada43f4b8
+  checksum: 10c0/9a18c2fc92792a55fd4cf4d5175ee356df5182d1244a4b0c0f756340ede53efa92035cd890380f927a2e4fb4b6c1784530385c0389f971ad6a240bd962fd62c6
   languageName: node
   linkType: hard
 
@@ -5105,6 +5105,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"c12@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "c12@npm:2.0.1"
+  dependencies:
+    chokidar: "npm:^4.0.1"
+    confbox: "npm:^0.1.7"
+    defu: "npm:^6.1.4"
+    dotenv: "npm:^16.4.5"
+    giget: "npm:^1.2.3"
+    jiti: "npm:^2.3.0"
+    mlly: "npm:^1.7.1"
+    ohash: "npm:^1.1.4"
+    pathe: "npm:^1.1.2"
+    perfect-debounce: "npm:^1.0.0"
+    pkg-types: "npm:^1.2.0"
+    rc9: "npm:^2.1.2"
+  peerDependencies:
+    magicast: ^0.3.5
+  peerDependenciesMeta:
+    magicast:
+      optional: true
+  checksum: 10c0/6a019047918102eda28c29988990fdf38aa88df05f94c5e06cbc501365dcdd80df2a7726d17d67882871ca931fd8d025a66d46bbc361275eeb0bcb849a06369a
+  languageName: node
+  linkType: hard
+
 "cac@npm:^6.7.14":
   version: 6.7.14
   resolution: "cac@npm:6.7.14"
@@ -5302,6 +5327,15 @@ __metadata:
     fsevents:
       optional: true
   checksum: 10c0/8361dcd013f2ddbe260eacb1f3cb2f2c6f2b0ad118708a343a5ed8158941a39cb8fb1d272e0f389712e74ee90ce8ba864eece9e0e62b9705cb468a2f6d917462
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "chokidar@npm:4.0.1"
+  dependencies:
+    readdirp: "npm:^4.0.1"
+  checksum: 10c0/4bb7a3adc304059810bb6c420c43261a15bb44f610d77c35547addc84faa0374265c3adc67f25d06f363d9a4571962b02679268c40de07676d260de1986efea9
   languageName: node
   linkType: hard
 
@@ -8267,6 +8301,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jiti@npm:^2.3.0":
+  version: 2.3.1
+  resolution: "jiti@npm:2.3.1"
+  bin:
+    jiti: lib/jiti-cli.mjs
+  checksum: 10c0/0388bd52ad623973bb17f0b9604b1a28f2bf0beb9bc7f5805facde2183f8203d80b8360d0b400faf80718077e206a997fa9f4dba62735e86cd3a76905ca8b071
+  languageName: node
+  linkType: hard
+
 "js-beautify@npm:^1.14.9":
   version: 1.15.1
   resolution: "js-beautify@npm:1.15.1"
@@ -10206,6 +10249,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ofetch@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "ofetch@npm:1.4.0"
+  dependencies:
+    destr: "npm:^2.0.3"
+    node-fetch-native: "npm:^1.6.4"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/8825bfd1e87117aba462c1e654ba37e09415e6161527a9ef20723ec220b5cd802b52b07a042f6582746240c65bd5fa6fefb289ea5c6d6ea987d2beca3cc0d2f9
+  languageName: node
+  linkType: hard
+
 "ohash@npm:^1.1.3":
   version: 1.1.3
   resolution: "ohash@npm:1.1.3"
@@ -11357,6 +11411,13 @@ __metadata:
   dependencies:
     minimatch: "npm:^5.1.0"
   checksum: 10c0/a37e0716726650845d761f1041387acd93aa91b28dd5381950733f994b6c349ddc1e21e266ec7cc1f9b92e205a7a972232f9b89d5424d07361c2c3753d5dbace
+  languageName: node
+  linkType: hard
+
+"readdirp@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "readdirp@npm:4.0.2"
+  checksum: 10c0/a16ecd8ef3286dcd90648c3b103e3826db2b766cdb4a988752c43a83f683d01c7059158d623cbcd8bdfb39e65d302d285be2d208e7d9f34d022d912b929217dd
   languageName: node
   linkType: hard
 
@@ -13306,7 +13367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^1.14.0, unplugin@npm:^1.14.1":
+"unplugin@npm:^1.14.1":
   version: 1.14.1
   resolution: "unplugin@npm:1.14.1"
   dependencies:
