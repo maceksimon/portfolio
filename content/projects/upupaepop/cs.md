@@ -43,7 +43,7 @@ Hlavní součástí webu je obsáhlá fotogalerie projektů. Zároveň Kuba s Ev
 
 ## Černé na bílém
 
-Web Upupaepop už zdobí internet přes dva roky a jeho návštěvnost stále roste. Pomáhá Kubovi a Evě představovat nové projekty, a generuje zisk prodejem jejich knih a tištěných prací. Ještě důležitější pro mě ale je, že s Kubou dál spolupracujeme na nových projektech, jako je např. web Kláštera v Opočně. Vládne spokojenost a budoucnost je nadějná.
+Web Upupaepop už zdobí internet přes dva roky a jeho návštěvnost stále roste. Pomáhá Kubovi a Evě představovat nové projekty, a generuje zisk prodejem jejich knih a tištěných prací. Ještě důležitější pro mě ale je, že s Kubou dál spolupracujeme na nových projektech, jako je např. web festivalu [Brno čte Bruna](https://brnoctebruna.cz/). Vládne spokojenost a budoucnost je nadějná.
 
 ::alert{icon="ph:eye-duotone"}
 #title

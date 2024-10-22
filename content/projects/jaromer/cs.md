@@ -12,6 +12,8 @@ url.web.readable: "divadlojaromer.cz"
 locale: "cs"
 ---
 
+# Voucher na kulturu: Redesign webu Městského kulturního střediska Jaroměř
+
 Městské kulturní středisko Jaroměř skvěle využilo dotace z programu kreativní vouchery k prezentaci kulturního dědictví - historických památek ve své správě - a také k propagaci akcí divadla a kulturního života v Jaroměři.
 
 Začalo to výzvou grantu Kreativní vouchery. zaměstnanci divadla v Jaroměři mě kontaktovali s nabídkou spolupráce na novém webu divadla.

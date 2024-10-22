@@ -2,7 +2,7 @@
   <div class="mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-12 lg:my-16">
     <!-- Breadcrumb -->
     <Breadcrumbs />
-    <div class="prose prose-invert text-white">
+    <div class="prose prose-invert">
       <ContentDoc :path="`/projects/${route.params.id}/${locale.toLowerCase()}`" />
       <!-- <ContentRenderer :value="project" /> -->
     </div>

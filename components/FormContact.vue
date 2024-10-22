@@ -61,8 +61,7 @@
       </DialogTitle>
       <div class="my-4">
         <p class="text-sm text-gray-300">
-          Your payment has been successfully submitted. We’ve sent you
-          an email with all of the details of your order.
+          Ozvu se vám co nejdřív na váš email.
         </p>
       </div>
       <!-- Form -->

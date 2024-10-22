@@ -12,9 +12,9 @@
         </div>
       </div>
       <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-3 lg:grid-rows-[auto_1fr] lg:gap-y-12 my-12">
-        <div class="lg:col-span-2 lg:order-first lg:row-span-2">
+        <div class="prose prose-invert lg:col-span-2 lg:order-first lg:row-span-2">
           <h1 class="lg:max-w-2xl text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">Jsem Šimon Jasný<br />Vyrábím weby odkudkoliv</h1>
-          <div class="prose mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div class="mt-6 space-y-7 text-base">
             <p>Odmalička se zabývám vizuální tvorbou a soustředím se na grafický projev. Proto mi dávalo smysl zabývat se webovými stránkami. V posledních letech do svých projektů zapojuji i zkušenosti s animací.</p>
             <p>Mimo svou práci pro webová a marktingová studia spolupracuji se spolkem Auto*Mat na jejich nové aplikaci Do práce na kole.</p>
             <p>Nejčastěji mě najdete v Hradci Králové, ale není to pravidlo. Práce developera mě pustí kamkoliv zrovna chci. Za pár posledních let to byl New York, Estonsko, Jižní Afrika nebo pláže za Lisabonem. Cestování je způsob, jak být v pohybu nejen fyzicky, ale i duchem. Je potřeba neustrnout.</p>
