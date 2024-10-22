@@ -25,9 +25,9 @@ Původní web studia Upupaepop fungoval na platformě Wix, nesplňoval požadavk
 
 ![E-shop webu Upupaepop](/image/portfolio/upupaepop/upupaepop-mockup-eshop.webp)
 
-## WordPress neboli "Slovotisk"
+## WordPress (Slovo - Tisk)
 
-Rozhodli jsme se postavit web na [WordPressu](https://wordpress.com/) a integrovat do něj e-shop pomocí pluginu [WooCommerce](https://woocommerce.com/). V zájmu efektivity jsme web postavili na koupené šabloně, která nám dala dobrý základ pro výsledný design. Kuba měl přesnou vizi o výsledné podobě a grafické úpravy, které Kuba navrhl zabraly jen pár hodin. Sám se také zhostil sazečských prací a plnění webu, a tak se web vešel do příjemně nízkého rozpočtu.
+Rozhodli jsme se postavit web na [WordPressu](https://wordpress.com/) a integrovat do něj e-shop pomocí pluginu [WooCommerce](https://woocommerce.com/). V zájmu efektivity jsme web postavili na koupené šabloně, která nám dala dobrý základ pro výsledný design. Kuba měl přesnou vizi o tom, jak chce aby web vypadal, a úpravy zabraly jen pár hodin. Protože Kuba si na web sám zadal i obsah, web se vešel do příjemně nízkého rozpočtu.
 
 Těžiště webu leží v **bohatém grafickém materiálu**, kterým se prezentuje každý z projektů v portfoliu. Cílem bylo propojit portfolio s e-shopem, tak aby Kuba s Evou mohli přijímat a odbavovat objednávky přímo na webu.
 
