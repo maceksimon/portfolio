@@ -4,7 +4,7 @@
       {{ t("highlight") }}
     </div>
     <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
-    <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300">{{ t('perex') }} <a href="#"
+    <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300 text-balance">{{ t('perex') }} <a href="#"
         class="font-medium text-blue-400 hover:text-blue-200 underline hover:no-underline"
         @click.prevent="toggle()">
         {{ t('linkContact') }}
@@ -36,7 +36,7 @@ const faqs = file.body
     "highlight": "Co by vás mohlo zajímat",
     "linkContact": "kontaktní formulář",
     "perex": "Pokud se chcete zeptat na cokoliv dalšího, napište mi přes ",
-    "perex2": " a já se vám ozvu co nejdříve."
+    "perex2": " a já se vám ozvu."
   },
   "en": {
     "title": "Frequently asked questions",

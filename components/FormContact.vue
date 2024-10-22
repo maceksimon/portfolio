@@ -56,7 +56,7 @@
         as="h3"
         class="text-lg font-medium leading-6 text-gray-50"
       >
-        Napište mi
+        Napište mi co vás zajímá
       </DialogTitle>
       <div class="my-4">
         <p class="text-sm text-gray-300">

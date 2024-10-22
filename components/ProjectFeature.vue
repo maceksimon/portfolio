@@ -15,7 +15,7 @@
           class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:max-w-md sm:text-3xl lg:text-5xl xl:max-w-3xl">
           {{ data.head.title }}
         </h2>
-        <div class="mt-6 text-lg text-gray-700 dark:text-gray-200">
+        <div class="mt-6 text-lg text-gray-700 dark:text-gray-200 text-balance">
           {{ data.head.description }}
         </div>
         <div>
