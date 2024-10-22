@@ -3,7 +3,7 @@ const { locale, locales, setLocale } = useI18n()
 </script>
 
 <template>
-  <button
+  <!-- <button
     v-if="locale !== 'en'"
     class="text-md"
     @click="setLocale('en')"
@@ -13,7 +13,7 @@ const { locale, locales, setLocale } = useI18n()
       name="flag:gb-1x1"
       class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-white"
     />
-  </button>
+  </button> -->
   <button
     v-if="locale !== 'cs'"
     class="text-md"

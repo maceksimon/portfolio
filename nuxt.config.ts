@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
@@ -11,9 +12,11 @@ export default defineNuxtConfig({
     '@formkit/nuxt',
     '@nuxt/test-utils/module'
   ],
+
   experimental: {
     scanPageMeta: true,
   },
+
   i18n: {
     locales: [
       {
@@ -62,11 +65,15 @@ export default defineNuxtConfig({
       },
     }
   },
+
   formkit: {
     // Experimental support for auto loading (see note):
     autoImport: true
   },
+
   content: {
     contentHead: true,
-  }
+  },
+
+  compatibilityDate: '2024-10-22'
 })
