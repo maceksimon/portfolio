@@ -69,13 +69,13 @@
             </li>
             <!-- <li class="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
               <a class="group flex text-sm font-medium text-zinc-800 transition hover:text-blue-500 dark:text-zinc-200 dark:hover:text-blue-500"
-                href="mailto:maceksimonlmd@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"
+                href="mailto:simon.macek@portadesign.cz"><svg viewBox="0 0 24 24" aria-hidden="true"
                   class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-blue-500">
                   <path fill-rule="evenodd"
                     d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z">
                   </path>
                 </svg>
-                <span class="ml-4">maceksimonlmd@gmail.com</span>
+                <span class="ml-4">simon.macek@portadesign.cz</span>
               </a>
             </li> -->
           </ul>

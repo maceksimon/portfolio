@@ -38,11 +38,10 @@
         as="h3"
         class="text-lg font-medium leading-6 text-gray-50 sm:text-center"
       >
-        Error
+        Chyba
       </DialogTitle>
       <div class="my-4">
-        An error occurred while sending the form. Please try again
-        later, or email me at
+        Něco se rozbilo. Napište mi prosím na
         <a
           class="text-blue-800 underline hover:no-underline"
           :href="`mailto:${emailAddress}`"
@@ -61,7 +60,7 @@
       </DialogTitle>
       <div class="my-4">
         <p class="text-sm text-gray-300">
-          Ozvu se vám co nejdřív na váš email.
+          Odpovím brzo.
         </p>
       </div>
       <!-- Form -->
