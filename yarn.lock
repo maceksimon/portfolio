@@ -856,22 +856,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/cascade-layer-name-parser@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@csstools/cascade-layer-name-parser@npm:2.0.2"
+"@csstools/cascade-layer-name-parser@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@csstools/cascade-layer-name-parser@npm:2.0.3"
   peerDependencies:
-    "@csstools/css-parser-algorithms": ^3.0.2
+    "@csstools/css-parser-algorithms": ^3.0.3
     "@csstools/css-tokenizer": ^3.0.2
-  checksum: 10c0/2cc840445328400bb3e1e4186e6081e6519a23d9abde36a16c95892b6ad75155b3af3410d79fdda1c53a068384f970cabff4b5f5ba6867578168cbd3419016c8
+  checksum: 10c0/a0f0d6c94122d0a82b0da94ee2619915a9e6e98211de6e1f28afebe34332a29cab1b7905a34b6e5c1df30a125df9f9860ce5fa960c676484417d4ef2c4db4757
   languageName: node
   linkType: hard
 
-"@csstools/css-parser-algorithms@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "@csstools/css-parser-algorithms@npm:3.0.2"
+"@csstools/css-parser-algorithms@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@csstools/css-parser-algorithms@npm:3.0.3"
   peerDependencies:
     "@csstools/css-tokenizer": ^3.0.2
-  checksum: 10c0/246afbf518ee9eaa24ed7f083360eb66884f1172fd4f8c663bff8c6099de2a8abd1e2a31d5b6fe42e010277d238469d780cff62bc7fdc6a52e7a90626b8924dc
+  checksum: 10c0/c1e634384affb10c3726a36f090867247005a2a470cb223de88debeab07921b78c0e7875e7847d90949c2b0ba88a290c71565f1839f7739c21a5bf1c870e137d
   languageName: node
   linkType: hard
 
@@ -10656,17 +10656,17 @@ __metadata:
   linkType: hard
 
 "postcss-custom-properties@npm:^14.0.0":
-  version: 14.0.2
-  resolution: "postcss-custom-properties@npm:14.0.2"
+  version: 14.0.3
+  resolution: "postcss-custom-properties@npm:14.0.3"
   dependencies:
-    "@csstools/cascade-layer-name-parser": "npm:^2.0.2"
-    "@csstools/css-parser-algorithms": "npm:^3.0.2"
+    "@csstools/cascade-layer-name-parser": "npm:^2.0.3"
+    "@csstools/css-parser-algorithms": "npm:^3.0.3"
     "@csstools/css-tokenizer": "npm:^3.0.2"
     "@csstools/utilities": "npm:^2.0.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10c0/ea2e0cb60c558bb1afb4e601dcc64a38e1b28e5df3e47b83b858fc12d909d0e3453013e6b368fc05a7db7098ffcdc702a30a92f1a3c0ef67dfb97bf089021f1a
+  checksum: 10c0/878ffd171ab9bbbba711930cf1b5bd48a12779e3b45d69f41366c2f65d84518f9338a92a277c0e390518c9e12272e06892cdc6575783bcdecfa6d26ebde3d043
   languageName: node
   linkType: hard
 
