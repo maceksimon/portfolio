@@ -9,7 +9,7 @@
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
           {{ t('title') }}
         </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">
+        <p class="mt-6 font-medium leading-8 text-gray-300">
           {{ t('description') }}
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
