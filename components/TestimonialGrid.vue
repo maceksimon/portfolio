@@ -14,7 +14,7 @@
     </div>
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="mx-auto text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">{{ t('highlight') }}</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">{{ t('highlight') }}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">{{ t('title') }}</p>
       </div>
       <div

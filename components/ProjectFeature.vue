@@ -8,7 +8,7 @@
           class="h-full w-full border-none"></iframe>
       </div>
       <div class="lg:w-2/5 shrink-0">
-        <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-200">
+        <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-300">
           {{ $t("projectFeature.highlight") }}
         </div>
         <h2
@@ -28,7 +28,7 @@
               <div
                 class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center lg:divide-x divide-gray-500">
                 <span class="hidden lg:block pr-6 text-gray-100">{{ data.url.web.readable }}</span>
-                <span class="lg:pl-6 text-blue-200 group-hover:text-gray-100 transition duration-200">{{
+                <span class="lg:pl-6 text-blue-300 group-hover:text-gray-100 transition duration-200">{{
     $t('projectFeature.buttonWebsite') }} &rarr;</span>
               </div>
             </NuxtLink>

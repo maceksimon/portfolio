@@ -2,7 +2,7 @@
   <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-200">
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">
         {{ t('highlight') }}
       </h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">

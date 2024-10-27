@@ -1,11 +1,11 @@
 <template>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-200">
+    <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-300">
       {{ t("highlight") }}
     </div>
     <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
     <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300 text-balance">{{ t('perex') }} <a href="#"
-        class="font-medium text-blue-400 hover:text-blue-200 underline hover:no-underline"
+        class="font-medium text-blue-300 hover:text-blue-100 underline hover:no-underline"
         @click.prevent="toggle()">
         {{ t('linkContact') }}
       </a> {{ t('perex2') }}</p>
