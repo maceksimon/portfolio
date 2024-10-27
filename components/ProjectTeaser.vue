@@ -74,7 +74,7 @@
               transform="translate(24 24)"
               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
             >
-              <img :src="imageMobile" alt="" />
+              <img :src="imageMobile" alt="" style="padding: 28px 0" />
             </foreignObject>
           </svg>
         </div>
@@ -340,8 +340,8 @@ const projects = [
     id: 1,
     title: 'MKS Jaroměř',
     description: 'Informační web kulturního střediska',
-    imageMobile: '/image/portfolio/jaromer-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.png',
+    imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
     urlPortfolio: '/portfolio/mks-jaromer',
     urlWeb: 'https://divadlojaromer.cz',
   },
@@ -349,8 +349,8 @@ const projects = [
     id: 2,
     title: 'Ekoloko',
     description: 'Stránky kulturní neziskové organizace',
-    imageMobile: '/image/portfolio/ekoloko-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.png',
+    imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
     urlPortfolio: '/portfolio/ekoloko',
     urlWeb: 'https://eko-loko.cz',
   },
@@ -358,8 +358,8 @@ const projects = [
     id: 3,
     title: 'KSKA',
     description: 'Web Katedry sociální a kulturní antropologie UPCE',
-    imageMobile: '/image/portfolio/kska-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/kska-homepage-desktop.png',
+    imageMobile: '/image/portfolio/kska-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/kska-homepage-desktop.webp',
     urlPortfolio: '/portfolio/kska',
     urlWeb: 'https://kska.upce.cz',
   },
@@ -367,8 +367,8 @@ const projects = [
     id: 4,
     title: 'DVA',
     description: 'Stránky kapely DVA',
-    imageMobile: '/image/portfolio/dva-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/dva-homepage-desktop.png',
+    imageMobile: '/image/portfolio/dva-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/dva-homepage-desktop.webp',
     urlPortfolio: '',
     urlWeb: 'https://2dva.cz',
   },
@@ -376,8 +376,8 @@ const projects = [
     id: 5,
     title: 'Brno čte Bruna',
     description: 'Web brněnského literárního festivalu',
-    imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.png',
+    imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.webp',
     urlPortfolio: '/portfolio/brno-cte-bruna',
     urlWeb: 'https://brnoctebruna.cz',
   },
@@ -385,8 +385,8 @@ const projects = [
     id: 6,
     title: 'Fellow Creatures',
     description: 'E-shop s veganskou čokoládou',
-    imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.png',
-    imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.png',
+    imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.webp',
     urlPortfolio: '/portfolio/fellow-creatures',
     urlWeb: 'https://fellowcreatures.co.uk',
   },
