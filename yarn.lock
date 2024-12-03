@@ -2043,16 +2043,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.6.2":
-  version: 1.6.2
-  resolution: "@nuxt/devtools-kit@npm:1.6.2"
+"@nuxt/devtools-kit@npm:1.6.3":
+  version: 1.6.3
+  resolution: "@nuxt/devtools-kit@npm:1.6.3"
   dependencies:
     "@nuxt/kit": "npm:^3.14.1592"
     "@nuxt/schema": "npm:^3.14.1592"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/c8f7c6a4f2cdba10b34acad9b930ea14113b06b0cc330008000553fc2cdd66d893830a85f6e30e9c529e1623357c3b38f11505b77dcf15576b84b2d6c683038a
+  checksum: 10c0/6d28b29d1080308ed5140264b170ef130205a4da383438377b8425a60c2fc6527a8a4903a7020eb38f55202e5ee9c45391886d618b7ce03ee5c6558f3c12af93
   languageName: node
   linkType: hard
 
@@ -2070,9 +2070,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.6.2":
-  version: 1.6.2
-  resolution: "@nuxt/devtools-wizard@npm:1.6.2"
+"@nuxt/devtools-wizard@npm:1.6.3":
+  version: 1.6.3
+  resolution: "@nuxt/devtools-wizard@npm:1.6.3"
   dependencies:
     consola: "npm:^3.2.3"
     diff: "npm:^7.0.0"
@@ -2086,17 +2086,17 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/1176a8fb0a4b4ad1627ad97dbf0a341c2f23a6d20621f56858b4534953058e17f5280ac2efe9ac9571121552ea08c577c34721fd6917dee10c347caa8cd7a5ff
+  checksum: 10c0/acae6f9e4c37b9f6f2bfbef50d51f736345cdce8d527839a61f1461bf0f6bdea3df83b9edfbdbb39469be9f252ae4e8b76ce6af088b7f9f886a6ec6cb94db92d
   languageName: node
   linkType: hard
 
 "@nuxt/devtools@npm:^1.2.0, @nuxt/devtools@npm:^1.6.0":
-  version: 1.6.2
-  resolution: "@nuxt/devtools@npm:1.6.2"
+  version: 1.6.3
+  resolution: "@nuxt/devtools@npm:1.6.3"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.6.2"
-    "@nuxt/devtools-wizard": "npm:1.6.2"
+    "@nuxt/devtools-kit": "npm:1.6.3"
+    "@nuxt/devtools-wizard": "npm:1.6.3"
     "@nuxt/kit": "npm:^3.14.1592"
     "@vue/devtools-core": "npm:7.6.4"
     "@vue/devtools-kit": "npm:7.6.4"
@@ -2127,8 +2127,7 @@ __metadata:
     sirv: "npm:^3.0.0"
     tinyglobby: "npm:^0.2.10"
     unimport: "npm:^3.14.2"
-    vite-plugin-inspect: "npm:^0.10.3"
-    vite-plugin-inspect-legacy: "npm:vite-plugin-inspect@0.8.8"
+    vite-plugin-inspect: "npm:~0.8.8"
     vite-plugin-vue-inspector: "npm:5.1.3"
     which: "npm:^3.0.1"
     ws: "npm:^8.18.0"
@@ -2136,7 +2135,7 @@ __metadata:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/9f293ddeb9c15b054353bdbe3c8199ad67527a0ca086f9918d607bd4b472c90dc7cd4aaf25691b5fe321869ccfd06f8d37a1ab3dc7b348e0dee3437f2b57e9d5
+  checksum: 10c0/0ccaca8bf95fd0fdeab51984d4322e4a6e44d231f383841f3deefb399bb35a41f18253f3f75d896a57f42b98046e8477c6b55983c33d2434524397d759d203da
   languageName: node
   linkType: hard
 
@@ -14001,9 +14000,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-inspect-legacy@npm:vite-plugin-inspect@0.8.8":
-  version: 0.8.8
-  resolution: "vite-plugin-inspect@npm:0.8.8"
+"vite-plugin-inspect@npm:~0.8.8":
+  version: 0.8.9
+  resolution: "vite-plugin-inspect@npm:0.8.9"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
     "@rollup/pluginutils": "npm:^5.1.3"
@@ -14015,33 +14014,11 @@ __metadata:
     picocolors: "npm:^1.1.1"
     sirv: "npm:^3.0.0"
   peerDependencies:
-    vite: ^3.1.0 || ^4.0.0 || ^5.0.0-0
+    vite: ^3.1.0 || ^4.0.0 || ^5.0.0-0 || ^6.0.1
   peerDependenciesMeta:
     "@nuxt/kit":
       optional: true
-  checksum: 10c0/9b055fad1fd70cab686ce42dd9d8e457a38ee6c57ffc35f2f5ee02b6d4eac34d709eca03e3fb89f28a50570c1697fb49a46dac1fa21277a240a683c9bbd63b51
-  languageName: node
-  linkType: hard
-
-"vite-plugin-inspect@npm:^0.10.3":
-  version: 0.10.3
-  resolution: "vite-plugin-inspect@npm:0.10.3"
-  dependencies:
-    "@antfu/utils": "npm:^0.7.10"
-    "@rollup/pluginutils": "npm:^5.1.3"
-    debug: "npm:^4.3.7"
-    error-stack-parser-es: "npm:^0.1.5"
-    fs-extra: "npm:^11.2.0"
-    open: "npm:^10.1.0"
-    perfect-debounce: "npm:^1.0.0"
-    picocolors: "npm:^1.1.1"
-    sirv: "npm:^3.0.0"
-  peerDependencies:
-    vite: ^6.0.0
-  peerDependenciesMeta:
-    "@nuxt/kit":
-      optional: true
-  checksum: 10c0/9a785217cccda2952669b5a6bbe435504c9619eb73ef4a34408e00c0a3a4df02d92a34c261adaa77e846ef455edabc3bdf3fc52b3887e853a6fba0a2beedec1a
+  checksum: 10c0/6ad775254b9ceaa63d17e6ef19fdf73c8d0c92cb51c379e8487c2d4e858b338f6a6199edf22d805179ef7b9511708f39e4f3fdff6fe2f4c6e3eac7f1ad010f91
   languageName: node
   linkType: hard
 
