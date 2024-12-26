@@ -2235,16 +2235,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.6.4":
-  version: 1.6.4
-  resolution: "@nuxt/devtools-kit@npm:1.6.4"
+"@nuxt/devtools-kit@npm:1.7.0":
+  version: 1.7.0
+  resolution: "@nuxt/devtools-kit@npm:1.7.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.14.1592"
-    "@nuxt/schema": "npm:^3.14.1592"
+    "@nuxt/kit": "npm:^3.15.0"
+    "@nuxt/schema": "npm:^3.15.0"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/5516e6e6ee589bbf512be564a4c14b85eba7bb4aad79b204d08aa6dcd0dd57e41d25bfe8538615a9378d9b33cb5379fe7e2f72456a5df64e5b27822363d5fc36
+  checksum: 10c0/9e868d3c147e373f522e5621135e876b8ae4af61cda9224256f8c7ca2822b40d7154ed0b423c89d360016fb1d4fe7cbcba56c2b6b05cdd2ad031b7ad8bafbe14
   languageName: node
   linkType: hard
 
@@ -2262,11 +2262,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.6.4":
-  version: 1.6.4
-  resolution: "@nuxt/devtools-wizard@npm:1.6.4"
+"@nuxt/devtools-wizard@npm:1.7.0":
+  version: 1.7.0
+  resolution: "@nuxt/devtools-wizard@npm:1.7.0"
   dependencies:
-    consola: "npm:^3.2.3"
+    consola: "npm:^3.3.1"
     diff: "npm:^7.0.0"
     execa: "npm:^7.2.0"
     global-directory: "npm:^4.0.1"
@@ -2278,22 +2278,22 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/6e016c5a3b193dd90f7669f2842c0971e911887ffa03af469bb4a914cf19d0bcc5e72eec9801f21fae82d93d343ccccbb5fb42e5eeaaca36d8d51817a2e1e24e
+  checksum: 10c0/2d9cb63030c3995517c0d977486d1e26392ef01b446b375a294886508e2b6607c2e21659262413ce4163aa2fa5c0483f422907f5dbaf1532f2752c2bc4fe989c
   languageName: node
   linkType: hard
 
 "@nuxt/devtools@npm:^1.2.0, @nuxt/devtools@npm:^1.6.4":
-  version: 1.6.4
-  resolution: "@nuxt/devtools@npm:1.6.4"
+  version: 1.7.0
+  resolution: "@nuxt/devtools@npm:1.7.0"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.6.4"
-    "@nuxt/devtools-wizard": "npm:1.6.4"
-    "@nuxt/kit": "npm:^3.14.1592"
+    "@nuxt/devtools-kit": "npm:1.7.0"
+    "@nuxt/devtools-wizard": "npm:1.7.0"
+    "@nuxt/kit": "npm:^3.15.0"
     "@vue/devtools-core": "npm:7.6.8"
     "@vue/devtools-kit": "npm:7.6.8"
     birpc: "npm:^0.2.19"
-    consola: "npm:^3.2.3"
+    consola: "npm:^3.3.1"
     cronstrue: "npm:^2.52.0"
     destr: "npm:^2.0.3"
     error-stack-parser-es: "npm:^0.1.5"
@@ -2320,14 +2320,14 @@ __metadata:
     tinyglobby: "npm:^0.2.10"
     unimport: "npm:^3.14.5"
     vite-plugin-inspect: "npm:~0.8.9"
-    vite-plugin-vue-inspector: "npm:5.1.3"
+    vite-plugin-vue-inspector: "npm:^5.3.1"
     which: "npm:^3.0.1"
     ws: "npm:^8.18.0"
   peerDependencies:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/c9d1b99b363e377687dc9cf8824f06c31c5456bb100b6c29cbc401e7088bed56ebd237c69a107c1cf3a2dcedf3f411628b91fe0a39a2a93d967cc50658906679
+  checksum: 10c0/f0347d2b383788ba8627cdf214032906be080fd2e9b2b6f5c777c885d45528a57a21b7ea8b3f4e2eae6d1209a9c062a6be268ac1de62b068922f6e008a84b66f
   languageName: node
   linkType: hard
 
@@ -2353,7 +2353,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.15.0":
+"@nuxt/kit@npm:3.15.0, @nuxt/kit@npm:^3.15.0":
   version: 3.15.0
   resolution: "@nuxt/kit@npm:3.15.0"
   dependencies:
@@ -2571,7 +2571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.15.0":
+"@nuxt/schema@npm:3.15.0, @nuxt/schema@npm:^3.15.0":
   version: 3.15.0
   resolution: "@nuxt/schema@npm:3.15.0"
   dependencies:
@@ -14646,9 +14646,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-vue-inspector@npm:5.1.3":
-  version: 5.1.3
-  resolution: "vite-plugin-vue-inspector@npm:5.1.3"
+"vite-plugin-vue-inspector@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "vite-plugin-vue-inspector@npm:5.3.1"
   dependencies:
     "@babel/core": "npm:^7.23.0"
     "@babel/plugin-proposal-decorators": "npm:^7.23.0"
@@ -14660,8 +14660,8 @@ __metadata:
     kolorist: "npm:^1.8.0"
     magic-string: "npm:^0.30.4"
   peerDependencies:
-    vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
-  checksum: 10c0/8d6d46778f87a32d0dd0dcaec24b9463f1d48405066212f2f0b2cfc6799ecd72f43a2e3fea7f762d9205fe519e4de4b44656637bd063b7a5f7018e00f09e9beb
+    vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0 || ^6.0.0-0
+  checksum: 10c0/bdf94da1af1ad8634280a3ecc040ff5a216beabb00566a5c105bd6abbb414847f7ca6e35aa30e8cc74443be0e7ca8ea1a58592f20b497db22f4b74e1cb863b02
   languageName: node
   linkType: hard
 
