@@ -2495,8 +2495,8 @@ __metadata:
   linkType: hard
 
 "@nuxt/test-utils@npm:>=3.13.1, @nuxt/test-utils@npm:^3.12.1":
-  version: 3.15.3
-  resolution: "@nuxt/test-utils@npm:3.15.3"
+  version: 3.15.4
+  resolution: "@nuxt/test-utils@npm:3.15.4"
   dependencies:
     "@nuxt/kit": "npm:^3.15.1"
     "@nuxt/schema": "npm:^3.15.1"
@@ -2555,7 +2555,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/aa6fc38b5596c2e0a157b435f2c4df597fb77eb672f496e5ce7ed0334b1fd5978c76e458dabe0cfa899d3e828f5231d20cafb0eb6a0207972d467199539c0e29
+  checksum: 10c0/0b5cbd30fafc052a3a944aaa42b580b0ea3911c1a2b7ce5ec6e131b0d2b6d783a1411424188b6e2d757cfab417b5764b09a477a5b60bb192f7efe697d2fce76a
   languageName: node
   linkType: hard
 
