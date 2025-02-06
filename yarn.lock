@@ -7621,13 +7621,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^16.0.0":
-  version: 16.7.3
-  resolution: "happy-dom@npm:16.7.3"
+"happy-dom@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "happy-dom@npm:17.0.0"
   dependencies:
     webidl-conversions: "npm:^7.0.0"
     whatwg-mimetype: "npm:^3.0.0"
-  checksum: 10c0/94497b686a545a3995646d85198456d7b1e0a9ef0785124e0c0bdd7b5feeb9b61b366cdcc22f880effbb0a5924405eadca56ac8d43f2d81450803d48d2fecf61
+  checksum: 10c0/52988c5732b4767f42bda6bd1837d4647fcd44371f121ab0a8aabc212aa50b58c2ab1f2fad3be587925d7b4aef6c20b26d07081543b94e6f475deae8c8111891
   languageName: node
   linkType: hard
 
@@ -10500,7 +10500,7 @@ __metadata:
     "@vue/test-utils": "npm:^2.4.3"
     "@vueuse/nuxt": "npm:^12.0.0"
     axios: "npm:^1.6.8"
-    happy-dom: "npm:^16.0.0"
+    happy-dom: "npm:^17.0.0"
     nuxt: "npm:^3.11.2"
     nuxt-icon: "npm:^0.6.10"
     playwright: "npm:^1.40.1"
