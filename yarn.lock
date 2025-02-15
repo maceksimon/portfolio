@@ -4500,15 +4500,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:12.6.1":
-  version: 12.6.1
-  resolution: "@vueuse/core@npm:12.6.1"
+"@vueuse/core@npm:12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/core@npm:12.7.0"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:12.6.1"
-    "@vueuse/shared": "npm:12.6.1"
+    "@vueuse/metadata": "npm:12.7.0"
+    "@vueuse/shared": "npm:12.7.0"
     vue: "npm:^3.5.13"
-  checksum: 10c0/6d9ba216918c0be204c9977b8596274258d249b32a2c19bcd6ae8787979aa375118552eca0e01453812377d487c2ba7ee6c31aa1b12a3313ada35285ef63cbaf
+  checksum: 10c0/d1ff4009097f15d4204b8b64f6ae4dda4f47e228c12588dcf8018f105eb804406344e35ef1f30b24e4e79b3cd19fd8c1289395f81f8a99a8f49daa7522cf7cbe
   languageName: node
   linkType: hard
 
@@ -4552,10 +4552,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:12.6.1":
-  version: 12.6.1
-  resolution: "@vueuse/metadata@npm:12.6.1"
-  checksum: 10c0/f5a0c993a4e6f9348645c48869f9f997eb12eecba29675496f87e4641f6efd9c126c655368bc3481a5d84e9d8377b99a5515335011ace36f3bf8170ba8a77538
+"@vueuse/metadata@npm:12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/metadata@npm:12.7.0"
+  checksum: 10c0/e85fd0cf4fc432ba8eb21381d31f08dccb5bb42ed8bc3d21aa755f5e4ec4400c8d3168048b9cfc229544ee417bbd66123d053f248cc64ac0b7889de54e1ac571
   languageName: node
   linkType: hard
 
@@ -4575,17 +4575,17 @@ __metadata:
   linkType: hard
 
 "@vueuse/nuxt@npm:^12.0.0":
-  version: 12.6.1
-  resolution: "@vueuse/nuxt@npm:12.6.1"
+  version: 12.7.0
+  resolution: "@vueuse/nuxt@npm:12.7.0"
   dependencies:
     "@nuxt/kit": "npm:^3.15.4"
-    "@vueuse/core": "npm:12.6.1"
-    "@vueuse/metadata": "npm:12.6.1"
+    "@vueuse/core": "npm:12.7.0"
+    "@vueuse/metadata": "npm:12.7.0"
     local-pkg: "npm:^1.0.0"
     vue: "npm:^3.5.13"
   peerDependencies:
     nuxt: ^3.0.0
-  checksum: 10c0/aa70962b2e246d232315f87546a908f23b085da112ae4ec8c26b50972794074be9eedc5300d622dffe7478ea0a77a0d4f06b548a35b074adecddd69f6844c8a5
+  checksum: 10c0/f92719805858888b98cb04fb9a7a9e3def008106508b7f7e2d9b956a52ce1534203133314b24943577b1b212dbfc6b97599781ac1b5a40d059d5db4c21e89432
   languageName: node
   linkType: hard
 
@@ -4607,12 +4607,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:12.6.1":
-  version: 12.6.1
-  resolution: "@vueuse/shared@npm:12.6.1"
+"@vueuse/shared@npm:12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/shared@npm:12.7.0"
   dependencies:
     vue: "npm:^3.5.13"
-  checksum: 10c0/a18cc45f552694b219e8ae5c58d1a6eb5a0b681198ea4f4276831670a4a4374896e4d258fafa7365d246bfe4bce41c68661f9d03220d2ac3569741d62a93ec98
+  checksum: 10c0/b9508af450146feb5f1e9c53f0854e9a7b4e819ebd56a8cdeaf717287c4ade72bbfa4d4c90d656c27141288986dd712156b4d0463582616be8bd42f9368e7243
   languageName: node
   linkType: hard
 
