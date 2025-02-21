@@ -2398,7 +2398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.15.1, @nuxt/schema@npm:^3.15.1":
+"@nuxt/schema@npm:3.15.1":
   version: 3.15.1
   resolution: "@nuxt/schema@npm:3.15.1"
   dependencies:
@@ -2446,24 +2446,24 @@ __metadata:
   linkType: hard
 
 "@nuxt/test-utils@npm:>=3.13.1, @nuxt/test-utils@npm:^3.12.1":
-  version: 3.15.4
-  resolution: "@nuxt/test-utils@npm:3.15.4"
+  version: 3.17.0
+  resolution: "@nuxt/test-utils@npm:3.17.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.15.1"
-    "@nuxt/schema": "npm:^3.15.1"
-    c12: "npm:^2.0.1"
-    consola: "npm:^3.3.3"
+    "@nuxt/kit": "npm:^3.15.4"
+    "@nuxt/schema": "npm:^3.15.4"
+    c12: "npm:^2.0.2"
+    consola: "npm:^3.4.0"
     defu: "npm:^6.1.4"
     destr: "npm:^2.0.3"
     estree-walker: "npm:^3.0.3"
     fake-indexeddb: "npm:^6.0.0"
     get-port-please: "npm:^3.1.2"
-    h3: "npm:^1.13.1"
+    h3: "npm:^1.15.0"
     local-pkg: "npm:^1.0.0"
     magic-string: "npm:^0.30.17"
-    node-fetch-native: "npm:^1.6.4"
+    node-fetch-native: "npm:^1.6.5"
     ofetch: "npm:^1.4.1"
-    pathe: "npm:^2.0.1"
+    pathe: "npm:^2.0.3"
     perfect-debounce: "npm:^1.0.0"
     radix3: "npm:^1.1.2"
     scule: "npm:^1.3.0"
@@ -2471,8 +2471,8 @@ __metadata:
     tinyexec: "npm:^0.3.2"
     ufo: "npm:^1.5.4"
     unenv: "npm:^1.10.0"
-    unplugin: "npm:^2.1.2"
-    vite: "npm:^6.0.7"
+    unplugin: "npm:^2.2.0"
+    vite: "npm:^6.1.1"
     vitest-environment-nuxt: "npm:^1.0.1"
     vue: "npm:^3.5.13"
   peerDependencies:
@@ -2481,10 +2481,10 @@ __metadata:
     "@playwright/test": ^1.43.1
     "@testing-library/vue": ^7.0.0 || ^8.0.1
     "@vue/test-utils": ^2.4.2
-    happy-dom: ^9.10.9 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    happy-dom: ^9.10.9 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     jsdom: ^22.0.0 || ^23.0.0 || ^24.0.0 || ^25.0.0 || ^26.0.0
     playwright-core: ^1.43.1
-    vitest: ^0.34.6 || ^1.0.0 || ^2.0.0 || ^3.0.0-beta.3
+    vitest: ^0.34.6 || ^1.0.0 || ^2.0.0 || ^3.0.0
   peerDependenciesMeta:
     "@cucumber/cucumber":
       optional: true
@@ -2506,7 +2506,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/0b5cbd30fafc052a3a944aaa42b580b0ea3911c1a2b7ce5ec6e131b0d2b6d783a1411424188b6e2d757cfab417b5764b09a477a5b60bb192f7efe697d2fce76a
+  checksum: 10c0/cfd02d94ffcbbf7f2b3501971e7dfdd2d521ae5eea1e1df8a42b0ef9dc4e7bfc77da0308da018b5059393c63c6e0faf29f8398b6918a75e6570f3d7a35d18c70
   languageName: node
   linkType: hard
 
@@ -5238,6 +5238,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"c12@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "c12@npm:2.0.2"
+  dependencies:
+    chokidar: "npm:^4.0.3"
+    confbox: "npm:^0.1.8"
+    defu: "npm:^6.1.4"
+    dotenv: "npm:^16.4.7"
+    giget: "npm:^1.2.4"
+    jiti: "npm:^2.4.2"
+    mlly: "npm:^1.7.4"
+    ohash: "npm:^1.1.4"
+    pathe: "npm:^2.0.2"
+    perfect-debounce: "npm:^1.0.0"
+    pkg-types: "npm:^1.3.1"
+    rc9: "npm:^2.1.2"
+  peerDependencies:
+    magicast: ^0.3.5
+  peerDependenciesMeta:
+    magicast:
+      optional: true
+  checksum: 10c0/07a8d2d7cc262349d2fe319c9daadea58488c5943d5a59ee4190f9e9700bf3fe123dd61203dac6ab1b6d69b34566453e4f204483e9d10bbd01bca0909d44b6bd
+  languageName: node
+  linkType: hard
+
 "cac@npm:^6.7.14":
   version: 6.7.14
   resolution: "cac@npm:6.7.14"
@@ -5898,6 +5923,15 @@ __metadata:
   dependencies:
     uncrypto: "npm:^0.1.3"
   checksum: 10c0/52f59dabec416a088e278a7d1efc23550f073485dbd196f042673db3902690bfd3724ce736359111d989057fce870c99510a8337f35ef2f64f61a6914ccd687f
+  languageName: node
+  linkType: hard
+
+"crossws@npm:^0.3.3":
+  version: 0.3.4
+  resolution: "crossws@npm:0.3.4"
+  dependencies:
+    uncrypto: "npm:^0.1.3"
+  checksum: 10c0/54a2b82d188f854051eef38a760093d35488a2a689cd3716945311e29ad61e5272b1ba2d2674c61876f6d83c321adaa911f523f15198b721bbdc05e283d4c2b3
   languageName: node
   linkType: hard
 
@@ -7707,6 +7741,24 @@ __metadata:
     uncrypto: "npm:^0.1.3"
     unenv: "npm:^1.10.0"
   checksum: 10c0/979dcd66db64bd607c7c536ff27e87ac51c64995ac9b51878d35cb54be69678fb810d4a9ac47e4f715fe5e200a21c995d63a0b4dc85b386c89771c35e6446a2b
+  languageName: node
+  linkType: hard
+
+"h3@npm:^1.15.0":
+  version: 1.15.0
+  resolution: "h3@npm:1.15.0"
+  dependencies:
+    cookie-es: "npm:^1.2.2"
+    crossws: "npm:^0.3.3"
+    defu: "npm:^6.1.4"
+    destr: "npm:^2.0.3"
+    iron-webcrypto: "npm:^1.2.1"
+    node-mock-http: "npm:^1.0.0"
+    ohash: "npm:^1.1.4"
+    radix3: "npm:^1.1.2"
+    ufo: "npm:^1.5.4"
+    uncrypto: "npm:^0.1.3"
+  checksum: 10c0/f0b251a89f24c4ec3f68e52ebe4edab0b4736a1030b295b66b2dff73e3980fe3540c646cb37c9dd206c3fb188cb26a7ea2dcb00198ee19925009db6c031f7a09
   languageName: node
   linkType: hard
 
@@ -10735,7 +10787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch-native@npm:^1.6.6":
+"node-fetch-native@npm:^1.6.5, node-fetch-native@npm:^1.6.6":
   version: 1.6.6
   resolution: "node-fetch-native@npm:1.6.6"
   checksum: 10c0/8c12dab0e640d8bc126a03d604af9cf3fc1b87f2cda5af0c71601079d5ed835c1dc149c7042b61c83f252a382e1cf1e541788f4c9e8e6c089af77497190f5dc3
@@ -10791,6 +10843,13 @@ __metadata:
   bin:
     node-gyp: bin/node-gyp.js
   checksum: 10c0/abddfff7d873312e4ed4a5fb75ce893a5c4fb69e7fcb1dfa71c28a6b92a7f1ef6b62790dffb39181b5a82728ba8f2f32d229cf8cbe66769fe02cea7db4a555aa
+  languageName: node
+  linkType: hard
+
+"node-mock-http@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "node-mock-http@npm:1.0.0"
+  checksum: 10c0/cb3fd7c17e7043b87a8d7a9ef1dcd4e2cde312cd224716c5fb3a4b56b48607c257a2e7356e73262db60ebf9e17e23b7a9c5230785f630c6a437090bfd26dd242
   languageName: node
   linkType: hard
 
@@ -12126,6 +12185,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/c4d90c59c98e8a0c102b77d3f4cac190f883b42d63dc60e2f3ed840f16197c0c8e25a4327d2e9a847b45a985612317dc0534178feeebd0a1cf3eb0eecf75cae4
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.2":
+  version: 8.5.3
+  resolution: "postcss@npm:8.5.3"
+  dependencies:
+    nanoid: "npm:^3.3.8"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/b75510d7b28c3ab728c8733dd01538314a18c52af426f199a3c9177e63eb08602a3938bfb66b62dc01350b9aed62087eabbf229af97a1659eb8d3513cec823b3
   languageName: node
   linkType: hard
 
@@ -14658,6 +14728,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unplugin@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "unplugin@npm:2.2.0"
+  dependencies:
+    acorn: "npm:^8.14.0"
+    webpack-virtual-modules: "npm:^0.6.2"
+  checksum: 10c0/265896fb541ffaad9da7e8f73e24aaa5d0d1f8161cb66445caf0962d2c357de0f17d208020b59b0fb1c68843e6307966f91706fba34ccaba30480881f37887ae
+  languageName: node
+  linkType: hard
+
 "unstorage@npm:^1.10.1":
   version: 1.10.2
   resolution: "unstorage@npm:1.10.2"
@@ -15180,7 +15260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0 || ^6.0.0, vite@npm:^6.0.7":
+"vite@npm:^5.0.0 || ^6.0.0":
   version: 6.0.7
   resolution: "vite@npm:6.0.7"
   dependencies:
@@ -15281,6 +15361,58 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/e1cad1cfbd29923a37d2dbd60f7387901ed8356758073a0226cbe844fd032425ba3bf41651332cab4965d5c54d0b51d208889ff32ce81bd282d230c0c9f0f8f1
+  languageName: node
+  linkType: hard
+
+"vite@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "vite@npm:6.1.1"
+  dependencies:
+    esbuild: "npm:^0.24.2"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.5.2"
+    rollup: "npm:^4.30.1"
+  peerDependencies:
+    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
+    jiti: ">=1.21.0"
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    sass-embedded: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.16.0
+    tsx: ^4.8.1
+    yaml: ^2.4.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    jiti:
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+    tsx:
+      optional: true
+    yaml:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10c0/4ec5ddc9436951a68b213cd59c2a157663ef423658c387400774582ea33da40dcae18e55f3adb3b629173e2183b10d49db8370bc51a0aa89797e4ca5a34702a0
   languageName: node
   linkType: hard
 
