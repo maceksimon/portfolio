@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-0 inset-x-0 z-10 bg-gradient-to-b from-black/60 to-black/0">
-    <div class="container mx-auto">
-      <div class="max-w-2xl sm:max-w-none px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl sm:max-w-none">
         <Popover>
           <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
             <!-- Mobile navigation -->

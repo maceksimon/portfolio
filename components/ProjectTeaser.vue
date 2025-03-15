@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">
