@@ -1,10 +1,10 @@
 <template>
-  <JumbotronCenter contact-buton />
-  <ServiceTeaser class="my-20 sm:my-28 lg:my-36" />
-  <ProjectFeature class="my-20 sm:my-28 lg:my-36" />
-  <HeroCenter class="my-20 sm:my-28 lg:my-36" />
-  <ProjectTeaser class="my-20 sm:my-28 lg:my-36" />
-  <HeroCenterPersonal class="my-20 sm:my-28 lg:my-36" />
-  <TestimonialGrid class="my-20 sm:my-28 lg:my-36" />
-  <Faq class="my-20 sm:my-28 lg:my-36" />
+  <JumbotronCenter id="home" contact-buton />
+  <ServiceTeaser class="py-10 sm:py-14 lg:py-16" />
+  <ProjectFeature class="py-10 sm:py-14 lg:py-16" />
+  <HeroCenter class="py-10 sm:py-14 lg:py-16" />
+  <ProjectTeaser id="projects" class="py-10 sm:py-14 lg:py-16" />
+  <HeroCenterPersonal class="py-10 sm:py-14 lg:py-16" />
+  <TestimonialGrid id="testimonials" class="py-10 sm:py-14 lg:py-16" />
+  <Faq id="faq" class="py-10 sm:py-14 lg:py-16" />
 </template>

@@ -1,12 +1,12 @@
 <template>
-  <div class="absolute top-0 inset-x-0 z-10">
+  <div class="fixed top-0 inset-x-0 z-10 bg-gradient-to-b from-black/60 to-black/0">
     <div class="container mx-auto">
       <div class="max-w-2xl sm:max-w-none px-4 sm:px-6 lg:px-8">
         <Popover>
           <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
             <!-- Mobile navigation -->
-            <NuxtLink to="/" class="font-semibold text-white md:hidden">
-              Šimon Macek
+            <NuxtLink to="/" class="shrink-0 text-lg text-white md:hidden">
+              Šimon Jasný
             </NuxtLink>
             <div class="flex items-center md:hidden">
               <button @click="toggle()"
@@ -31,7 +31,7 @@
             <!-- Desktop navigation -->
             <div class="hidden w-full items-center md:flex md:justify-between">
               <!-- Menu -->
-              <div class="flex flex-wrap gap-4 lg:text-lg font-medium text-gray-100 md:gap-6 lg:gap-8">
+              <div class="flex flex-wrap gap-4 lg:text-lg font-medium text-gray-100 md:gap-6 lg:gap-8 2xl:gap-12">
                 <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
                   {{ link.title }}
                 </NuxtLink>
@@ -102,23 +102,31 @@ const localePath = useLocalePath()
 
 const { toggle } = useDialogContact()
 
-const navigation = [
+const navigation: { title: string, _path: string }[] = [
   {
     title: t('menuHome'),
-    _path: '/',
+    _path: '/#home',
   },
   {
     title: t('menuProjects'),
-    _path: localePath('/projekty'),
+    _path: '/#projects',
   },
   {
-    title: t('menuBlog'),
-    _path: localePath('/blog'),
+    title: t('menuTestimonials'),
+    _path: '/#testimonials',
   },
   {
-    title: t('menuAbout'),
-    _path: localePath('/o-mne'),
+    title: t('menuFaq'),
+    _path: '/#faq',
   },
+  // {
+  //   title: t('menuBlog'),
+  //   _path: localePath('/blog'),
+  // },
+  // {
+  //   title: t('menuAbout'),
+  //   _path: localePath('/o-mne'),
+  // },
 ]
 </script>
 
@@ -132,6 +140,8 @@ const navigation = [
       "menuBlog": "Blog",
       "menuHome": "Domů",
       "menuProjects": "Projekty",
+      "menuTestimonials": "Reference",
+      "menuFaq": "FAQ",
       "openMenu": "Otevřít hlavní menu"
     },
     "en": {
@@ -142,6 +152,8 @@ const navigation = [
       "menuBlog": "Blog",
       "menuHome": "Home",
       "menuProjects": "Projects",
+      "menuTestimonials": "Testimonials",
+      "menuFaq": "FAQ",
       "openMenu": "Open main menu"
     }
   }
