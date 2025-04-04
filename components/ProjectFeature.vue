@@ -20,17 +20,8 @@
         </div>
         <div>
           <div class="flex">
-            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8">
-              <!-- Animated shadow -->
-              <div
-                class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
-              </div>
-              <div
-                class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center lg:divide-x divide-gray-500">
-                <span class="hidden lg:block pr-6 text-gray-100">{{ data.url.web.readable }}</span>
-                <span class="lg:pl-6 text-blue-300 group-hover:text-gray-100 transition duration-200">{{
-    $t('projectFeature.buttonWebsite') }} &rarr;</span>
-              </div>
+            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8 text-gray-300 hover:text-gray-100">
+              {{ data.url.web.readable }}
             </NuxtLink>
           </div>
           <!-- <NuxtLink :href="data._path"

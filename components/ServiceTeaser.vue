@@ -61,15 +61,15 @@ const primaryFeatures = [
     "service": {
       "control": {
         "title": "Web ve vlastních rukou",
-        "description": "Stavím weby tak, abyste je měli plně pod kontrolou, mohli měnit texty i obrázky, jednoduše tvořit nové stránky i upravovat ty existující. Používám WordPress jako osvědčené open-source řešení, nastavené tak aby se používalo co nejsnáze i těm, kdo s ním ještě nemají zkušenost."
+        "description": "Stavím weby tak, abyste nad nimi měli plnou kontrolu. Můžete upravovat texty, měnit obrázky, snadno přidávat nové stránky nebo měnit ty stávající. Používám WordPress – osvědčené open-source řešení, které přizpůsobím tak, aby se vám s ním dobře pracovalo. I bez předchozí zkušenosti se v něm rychle zorientujete."
       },
       "design": {
-        "title": "Digitální vizuál přesně pro vás",
-        "description": "Web by měl mít svůj vizuální styl, který vám odpovídá. Proto řeším design individuálně a rád ho navrhnu přesně podle vašich potřeb. Vždy beru ohled na základní zásady UI a UX, aby byl web přehledný a dobře se používal. Baví mě oživovat design interaktivními prvky, efekty a animacemi."
+        "title": "Design podle vás",
+        "description": "Web by měl mít styl, který odpovídá tomu, pro koho vzniká. Proto ke každému designu přistupuji individuálně a navrhuji jej podle konkrétních potřeb a představ. Zároveň si dávám záležet na tom, aby byl web přehledný a dobře se ovládal – držím se zásad UI a UX. A protože jedním z mých koníčků je animace, rád ji zapojuji i do designů stránek."
       },
       "function": {
         "title": "Online vizitka, která funguje",
-        "description": "Abyste byli vidět potřebujete stránky optimalizované pro internetové vyhledávače. Používám technologie, které pomáhají s indexací a zajišťuji rychlost a přístupnost. To zlepšuje vaši pozici ve výsledcích vyhledávání. Díky datům o návštěvnosti můžete sledovat svůj růst a vývoj."
+        "description": "Aby byl web dobře dohledatelný, musí splňovat technické požadavky vyhledávačů. Používám postupy, které zlepšují indexaci, rychlost i přístupnost – a tím i pozici ve výsledcích hledání. Díky přehledným datům o návštěvnosti navíc získáte představu o tom, jak se váš web vyvíjí a kdo ho navštěvuje."
       }
     }
   },

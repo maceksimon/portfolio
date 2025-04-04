@@ -38,7 +38,7 @@
               </div>
               <!-- Social icons & Color Mode -->
               <div id="navbar-icons" class="flex items-center space-x-4 md:space-x-6 text-gray-100 transition">
-                <button @click="toggle()"
+                <button @click.prevent="toggle()"
                   class="inline-flex items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                   <Icon name="mi:email" size="18px" class="text-gray-500" />
                   <span class="ml-2 text-sm font-semibold">{{ t("contact") }}</span>
@@ -108,12 +108,12 @@ const navigation: { title: string, _path: string }[] = [
     _path: '/#home',
   },
   {
-    title: t('menuProjects'),
-    _path: '/#projects',
-  },
-  {
     title: t('menuTestimonials'),
     _path: '/#testimonials',
+  },
+  {
+    title: t('menuProjects'),
+    _path: '/#projects',
   },
   {
     title: t('menuFaq'),

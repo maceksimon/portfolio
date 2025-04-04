@@ -26,7 +26,7 @@ const { toggle } = useDialogContact()
 <i18n lang="json">{
   "cs": {
     "title": "Precizní weby nejsou jen pro velké firmy.",
-    "description": "Nemusíte být zavedení podnikatelé se stotisícovým rozpočtem abyste si mohli dovolit web, který splňuje vaše představy. Moderní technologie umožňují schopným vývojářům pracovat efektivně rychle a levně. Zajímá vás jak to funguje? Dejte mi vědět a můžeme se o tom pobavit. Váš vysněný web je možná blíž než si myslíte?",
+    "description": "Nepotřebujete stotisícový rozpočet abyste si mohli dovolit web, který splňuje vaše představy. Díky dnešním technologiím se dá spousta věcí udělat chytře, úsporně a bez zbytečných mezikroků. Zajímá vás, jak by to šlo u vás? Ozvěte se. Váš vysněný web je možná blíž než si myslíte?",
     "contact": "Napište mi"
   },
   "en": {
