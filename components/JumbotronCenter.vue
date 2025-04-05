@@ -1,7 +1,7 @@
 <template>
   <div class="isolate overflow-hidden pt-14">
     <NuxtImg src="/image/sunrise.webp" alt="" class="max-w-2xl mx-auto absolute inset-x-0 top-0 -z-10 h-auto w-full object-cover" />
-    <div class="mx-auto max-w-3xl px-4 pt-32 sm:pt-48 lg:pt-56 xl:pt-72">
+    <div class="mx-auto max-w-3xl px-4 pt-32 sm:pt-48 lg:pt-56 xl:pt-64">
       <div class="text-center">
         <h1 class="text-4xl font-bold tracking-snug text-balance text-white sm:text-6xl">
           {{ t('highlight') }}<br />

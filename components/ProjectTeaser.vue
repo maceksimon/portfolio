@@ -47,7 +47,7 @@
         </div>
       </RadioGroup>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
+    <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
       <div class="relative sm:col-span-4">
         <!-- Mockup mobile -->
         <div
@@ -355,7 +355,7 @@ const { t } = useI18n({
 const projects = [
   {
     id: 1,
-    title: 'Městské kulturní středisko Jaroměř',
+    title: 'MKS Jaroměř',
     description: 'Nový web vznikl díky programu Kreativní vouchery a pomáhá prezentovat historické památky MKS i kulturní život ve městě – od divadelních představení po činnost místních spolků a klubů.',
     imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',

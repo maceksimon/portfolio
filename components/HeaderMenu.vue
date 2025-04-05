@@ -5,7 +5,7 @@
         <Popover>
           <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
             <!-- Mobile navigation -->
-            <NuxtLink to="/" class="shrink-0 text-lg text-white md:hidden">
+            <NuxtLink to="/#home" class="shrink-0 text-lg text-white md:hidden">
               <svg class="h-8 w-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80"><circle cx="40" cy="31" r="26" fill="url(#a)"/><circle cx="40" cy="49" r="26" fill="#000"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(0 26 -26 0 40 31)" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs></svg>
             </NuxtLink>
             <div class="flex items-center md:hidden">

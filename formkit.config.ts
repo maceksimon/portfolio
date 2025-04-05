@@ -7,5 +7,17 @@ export default defineFormKitConfig({
   locale: 'cs',
   config: {
     rootClasses,
-  }
+  },
+  messages: {
+    cs: {
+      validation: {
+        required({ name }) {
+          return `${name} je povinný údaj.`
+        },
+      },
+      ui: {
+        incomplete: 'Bohužel, některá pole nejsou vyplněna správně.',
+      },
+    },
+  },
 })
