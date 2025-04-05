@@ -6,17 +6,17 @@
           <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
             <!-- Mobile navigation -->
             <NuxtLink to="/" class="shrink-0 text-lg text-white md:hidden">
-              Šimon Jasný
+              <svg class="h-8 w-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80"><circle cx="40" cy="31" r="26" fill="url(#a)"/><circle cx="40" cy="49" r="26" fill="#000"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(0 26 -26 0 40 31)" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs></svg>
             </NuxtLink>
             <div class="flex items-center md:hidden">
               <button @click="toggle()"
-                class="dark:hover-gray-600 mr-2 inline-flex items-center justify-center rounded-md bg-gray-50 px-3 py-2 text-gray-800 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-100">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-auto text-gray-500 dark:text-gray-300"
+                class="dark:hover-gray-600 mr-2 inline-flex items-center justify-center rounded-md bg-gray-50 px-3 py-2 text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-auto text-gray-600"
                   viewBox="0 0 24 24">
-                  <path fill="#888888"
+                  <path fill="currentColor"
                     d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z" />
                 </svg>
-                <span class="ml-2 text-sm font-semibold">
+                <span class="ml-2 text-xs font-semibold">
                   {{ t("contact") }}
                 </span>
               </button>
@@ -40,7 +40,7 @@
               <div id="navbar-icons" class="flex items-center space-x-4 md:space-x-6 text-gray-100 transition">
                 <button @click.prevent="toggle()"
                   class="inline-flex items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                  <Icon name="mi:email" size="18px" class="text-gray-500" />
+                  <Icon name="mi:email" size="18px" class="text-gray-600" />
                   <span class="ml-2 text-sm font-semibold">{{ t("contact") }}</span>
                 </button>
                 <SocialIcons />
@@ -65,10 +65,12 @@
                     </PopoverButton>
                   </div>
                 </div>
-                <div class="px-2 pt-2 pb-3">
-                  <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
-                    {{ link.title }}
-                  </NuxtLink>
+                <div class="px-5 pt-4 pb-6">
+                  <div class="flex flex-col gap-2">
+                    <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
+                      {{ link.title }}
+                    </NuxtLink>
+                  </div>
                   <!-- <MenuLink
                     v-for="link in navigation"
                     :key="link._path"
@@ -77,9 +79,11 @@
                     class="menu-link dark:hover-bg-gray-500 dark:hover-text-white block rounded-md px-3 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-200"
                     @click="close()"
                   /> -->
-                  <div class="space-x-3 px-3 py-2 text-gray-500 transition">
-                    <SocialIcons />
-                    <LanguageSwitch />
+                  <div class="space-x-3 pt-6 text-gray-300 transition">
+                    <div class="flex items-center gap-4">
+                      <SocialIcons />
+                    </div>
+                    <!-- <LanguageSwitch /> -->
                   </div>
                 </div>
               </div>
