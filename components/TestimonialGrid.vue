@@ -63,8 +63,8 @@ const testimonials = file.body
 
 <i18n lang="json">{
   "cs": {
-    "highlight": "Nechám mluvit ty, kteří mi svěřili svůj projekt",
-    "title": "Klienti o spolupráci"
+    "highlight": "Co na to moje klientstvo",
+    "title": "Reference od těch, kdo mi svěřili svůj projekt"
   },
   "en": {
     "highlight": "What do others say?",
