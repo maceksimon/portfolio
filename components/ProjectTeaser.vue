@@ -16,7 +16,7 @@
     <div class="flex justify-center mt-16 sm:mt-20 lg:mt-24">
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
-        <div class="flex flex-wrap justify-center gap-2 p-1 bg-gray-950 border border-gray-700 rounded-xl">
+        <div class="flex flex-wrap justify-center gap-2 p-1 bg-gray-950 border border-gray-600 rounded-xl">
           <RadioGroupOption
             as="template"
             v-for="project in projects"
@@ -27,8 +27,8 @@
             <div
               :class="[
                 'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-transparent',
-                active ? 'bg-gray-800 border-gray-700 text-white' : '',
-                checked ? 'bg-gray-800 border-gray-700 text-white' : '',
+                active ? 'bg-gray-700 border-gray-600 text-white' : '',
+                checked ? 'bg-gray-700 border-gray-600 text-white' : '',
               ]"
             >
               <span class="flex flex-1 sm:justify-center">
@@ -47,7 +47,7 @@
         </div>
       </RadioGroup>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
+    <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
       <div class="relative sm:col-span-4">
         <!-- Mockup mobile -->
         <div
@@ -323,6 +323,23 @@
           </svg>
         </div>
       </div>
+      <div class="relative sm:col-span-2">
+        <dl>
+          <div v-for="project in projects" :key="project.id">
+            <template v-if="project.id === selectedProject">
+              <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+                {{ project.title }}
+              </dt>
+              <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
+                <p class="flex-auto">{{ project.description }}</p>
+                <p class="mt-6">
+                  <a :href="project.urlWeb" target="_blank" class="text-sm/6 text-gray-400 hover:text-gray-100 transition-colors">{{ project.urlWebDomain }}</a>
+                </p>
+              </dd>
+            </template>
+          </div>
+        </dl>
+      </div>
     </div>
   </div>
 </template>
@@ -339,56 +356,62 @@ const projects = [
   {
     id: 1,
     title: 'MKS Jaroměř',
-    description: 'Informační web kulturního střediska',
+    description: 'Nový web vznikl díky programu Kreativní vouchery a pomáhá prezentovat historické památky MKS i kulturní život ve městě – od divadelních představení po činnost místních spolků a klubů.',
     imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
     urlPortfolio: '/portfolio/mks-jaromer',
     urlWeb: 'https://divadlojaromer.cz',
+    urlWebDomain: 'divadlojaromer.cz',
   },
   {
     id: 2,
     title: 'Ekoloko',
-    description: 'Stránky kulturní neziskové organizace',
+    description: 'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, komunitní tančírny, i péči o komunitní zahradu.',
     imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
     urlPortfolio: '/portfolio/ekoloko',
     urlWeb: 'https://eko-loko.cz',
+    urlWebDomain: 'eko-loko.cz',
   },
   {
     id: 3,
     title: 'KSKA',
-    description: 'Web Katedry sociální a kulturní antropologie UPCE',
+    description: 'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
     imageMobile: '/image/portfolio/kska-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/kska-homepage-desktop.webp',
     urlPortfolio: '/portfolio/kska',
     urlWeb: 'https://kska.upce.cz',
+    urlWebDomain: 'kska.upce.cz',
   },
   {
     id: 4,
     title: 'DVA',
-    description: 'Stránky kapely DVA',
+    description: 'Pokud nechcete přijít o žádný koncert kapely DVA, vyplatí se sledovat webové stránky, které jsem pro ně připravil při příležitosti vydání alba Piri Piri.',
     imageMobile: '/image/portfolio/dva-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/dva-homepage-desktop.webp',
     urlPortfolio: '',
     urlWeb: 'https://2dva.cz',
+    urlWebDomain: '2dva.cz',
   },
   {
     id: 5,
     title: 'Brno čte Bruna',
-    description: 'Web brněnského literárního festivalu',
+    description: 'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
     imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.webp',
     urlPortfolio: '/portfolio/brno-cte-bruna',
     urlWeb: 'https://brnoctebruna.cz',
+    urlWebDomain: 'brnoctebruna.cz',
   },
   {
     id: 6,
     title: 'Fellow Creatures',
-    description: 'E-shop s veganskou čokoládou',
+    description: 'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
     imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.webp',
     urlPortfolio: '/portfolio/fellow-creatures',
     urlWeb: 'https://fellowcreatures.co.uk',
+    urlWebDomain: 'fellowcreatures.co.uk',
   },
 ]
 

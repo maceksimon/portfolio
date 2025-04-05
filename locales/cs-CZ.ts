@@ -33,7 +33,7 @@ export default {
     },
   },
   projectFeature: {
-    highlight: 'Čím to začalo?',
+    highlight: 'První vlaštovka',
     buttonDetail: 'Přečtěte si víc',
     buttonWebsite: 'Prohlédněte si web',
   },

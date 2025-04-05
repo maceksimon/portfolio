@@ -26,7 +26,7 @@ const { toggle } = useDialogContact()
 <i18n lang="json">{
   "cs": {
     "title": "Web bez agentury",
-    "description": "Chcete nové stránky a nesedí vám přístup webových studií a marketingových agentur? Jde to i bez firemních zástupců, technických termínů, a nepřehledných kalkulací. Jestli je vám bližší dohodnout se osobně, přímo s vývojářem, který mluví vaším jazykem, zkuste mi napsat.",
+    "description": "Pokud přemýšlíte o nových stránkách, ale nesedí vám přístup webových studií a marketingových agentur, jde to i jinak. Bez firemních zástupců, technických výrazů a nepřehledných kalkulací. Je vám bližší domluvit se přímo s vývojářem, který mluví jasně a k věci? Napište mi.",
     "contact": "Poslat zprávu"
   },
   "en": {

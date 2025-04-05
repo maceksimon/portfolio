@@ -60,7 +60,7 @@
       </DialogTitle>
       <div class="my-4">
         <p class="text-sm text-gray-300">
-          Odpovím brzo.
+          Konzultace je nezávazná a bezplatná. Odpovím brzo.
         </p>
       </div>
       <!-- Form -->
@@ -73,28 +73,13 @@
       >
         <div class="grid grid-cols-8 gap-x-6 mt-6">
           <div
-            class="grid grid-cols-8 gap-x-6"
-            :class="props.large ? 'col-span-8 lg:col-span-4' : 'col-span-8'"
+            class="grid grid-cols-8 col-span-8 gap-x-6"
+            :class="props.large ? 'col-span-8' : 'col-span-8'"
           >
-            <!-- Name -->
-            <div
-              class="relative col-span-8"
-              :class="props.large ? '' : 'lg:col-span-4'"
-            >
-              <FormKit
-                type="text"
-                :label="$t('formContact.labelName')"
-                name="name"
-                id="name"
-                autocomplete="name"
-                validation="required|length:1,100"
-                maxlength="100"
-              />
-            </div>
             <!-- Email -->
             <div
               class="relative"
-              :class="props.large ? 'col-span-8' : 'col-span-8 lg:col-span-4'"
+              :class="props.large ? 'col-span-8' : 'col-span-8'"
             >
               <FormKit
                 type="email"
@@ -103,6 +88,7 @@
                 id="email"
                 autocomplete="email"
                 validation="required|email"
+                :classes="{ outer: 'max-w-none' }"
                 maxlength="100"
               />
             </div>
