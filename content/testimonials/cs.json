@@ -3,12 +3,12 @@
     [
       [
         {
-          "id": "ekoloko",
-          "body": "Šimona jsme poprosili o tvorbu webových stránek, které by prezentovaly aktivity naší neziskové organizace. Spolupráce byla velmi příjemná, komunikace rychlá. Šimon nám ve všem vyšel vstříc a dotvořil web podle našich představ. Děkujeme!",
+          "id": "kska",
+          "body": "Spolupráce se Šimonem byla od samého začátku bezproblémová a příjemná. Oceňujeme jeho profesionalitu, vstřícnost a ochotu vždy nám vyjít vstříc. Dokázal nám naslouchat a naše požadavky kreativně a inovativně zpracovat.",
           "author": {
-            "name": "Vanda Paulíčková",
-            "project": "Ekoloko",
-            "imageUrl": "/image/testimonial/vanda.webp"
+            "name": "Milan Durňak",
+            "project": "KSKA",
+            "imageUrl": "/image/testimonial/milan.webp"
           }
         },
         {
@@ -22,6 +22,16 @@
         }
       ],
       [
+
+        {
+          "id": "kontrapunkt",
+          "body": "Jednoduchý a čístý design, snadná a přímočará struktura a hlavně skvělá a flexibilní komunikace! Děkujeme.",
+          "author": {
+            "name": "Barbora Hodonická",
+            "project": "Kontrapunkt",
+            "imageUrl": "/image/testimonial/bara.webp"
+          }
+        },
         {
           "id": "animato",
           "body": "Šimon je zkušený, spolehlivý a precizní v detailech. S takovým člověkem prostě chcete spolupracovat.",
@@ -30,14 +40,16 @@
             "project": "Animato",
             "imageUrl": "/image/testimonial/stepan.webp"
           }
-        },
+        }
+      ],
+      [
         {
-          "id": "kska",
-          "body": "Spolupráce se Šimonem byla od samého začátku bezproblémová a příjemná. Oceňujeme jeho profesionalitu, vstřícnost a ochotu vždy nám vyjít vstříc. Dokázal nám naslouchat a naše požadavky kreativně a inovativně zpracovat.",
+          "id": "ekoloko",
+          "body": "Šimona jsme poprosili o tvorbu webových stránek, které by prezentovaly aktivity naší neziskové organizace. Spolupráce byla velmi příjemná, komunikace rychlá. Šimon nám ve všem vyšel vstříc a dotvořil web podle našich představ. Děkujeme!",
           "author": {
-            "name": "Milan Durňak",
-            "project": "KSKA",
-            "imageUrl": "/image/testimonial/milan.webp"
+            "name": "Vanda Paulíčková",
+            "project": "Ekoloko",
+            "imageUrl": "/image/testimonial/vanda.webp"
           }
         }
       ]
