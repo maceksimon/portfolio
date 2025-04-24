@@ -143,7 +143,7 @@ const isSuccess = ref(false);
 const isError = ref(false);
 const emailAddress = "simon.macek@portadesign.cz";
 
-async function handleSubmit({ form }) {
+async function handleSubmit(form) {
   const axiosConfig = {
     header: { "Content-Type": "application/x-www-form-urlencoded" },
   };
