@@ -1,14 +1,11 @@
 <template>
   <div v-if="data" class="isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-    <div class="mx-auto flex flex-col gap-16 lg:gap-8 items-center lg:flex-row-reverse max-w-2xl sm:max-w-none">
-      <div v-if="isLargeScreen" class="aspect-[7/4] shrink-0 grow">
+    <div class="mx-auto w-full flex flex-col gap-16 lg:gap-8 items-center lg:flex-row-reverse max-w-2xl sm:max-w-none">
+      <div class="aspect-[7/4] shrink-0 grow">
         <!-- Mockup -->
-        <!-- TODO: Use image on mobile -->
-        <iframe v-if="data.rive.mockup" :src="data.rive.mockup" loading="lazy"
+        <iframe v-if="isLargeScreen && data.rive.mockup" :src="data.rive.mockup" loading="lazy"
           class="h-full w-full border-none"></iframe>
-      </div>
-      <div v-else class="shrink-0 grow">
-        <img src="/image/upupaepop-mobile-mockup.webp" alt="Upupaepop mockup" class="w-full h-full object-contain">
+        <img v-else src="/image/upupaepop-mobile-mockup.webp" alt="Upupaepop mockup" class="w-full h-full object-contain">
       </div>
       <div class="lg:w-2/5 shrink-0">
         <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-300">
