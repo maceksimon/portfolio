@@ -4,6 +4,11 @@
     <div class="pt-16 min-h-screen">
       <slot />
     </div>
+    <NetlifyFormHidden />
     <DialogContact />
   </div>
 </template>
+
+<script setup>
+import NetlifyFormHidden from '~/components/NetlifyFormHidden.vue'
+</script>

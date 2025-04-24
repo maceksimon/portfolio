@@ -67,6 +67,7 @@
       <FormKit
         type="form"
         id="formContact"
+        name="contact"
         @submit="handleSubmit"
         :actions="false"
         #default="{ disabled }"
@@ -149,7 +150,7 @@ async function handleSubmit({ form }) {
   const response = await axios.post(
     "/",
     encodeData({
-      "form-name": "contact-form",
+      "form-name": "contact",
       ...form,
     }),
     axiosConfig
