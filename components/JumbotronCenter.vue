@@ -37,8 +37,8 @@ const { toggle } = useDialogContact()
       "buttonContact": "Kontaktovat",
       "buttonLearn": "Ukázky práce",
       "description": "Navrhuju a stavím weby, které dobře vypadají, dělají svou práci a nekomplikují tu vaši.",
-      "highlight": "Váš web funguje",
-      "title": "když vám rozjasní den"
+      "highlight": "",
+      "title": "Web, který vás těší"
     },
     "en": {
       "buttonContact": "Contact",
