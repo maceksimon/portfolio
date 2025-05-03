@@ -13,6 +13,10 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module'
   ],
 
+  plugins: [
+    '~/plugins/matomo.client.ts',
+  ],
+
   experimental: {
     scanPageMeta: true,
   },
