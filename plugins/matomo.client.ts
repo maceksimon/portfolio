@@ -10,14 +10,21 @@ declare global {
 
 export default defineNuxtPlugin(nuxtApp => {
   if (import.meta.client) {
-    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
-    if (isLocalhost) return
-
     const _paq = (window._paq = window._paq || [])
 
     _paq.push(['enableLinkTracking'])
     _paq.push(['setTrackerUrl', 'https://phpstack-1209068-5475663.cloudwaysapps.com/matomo.php'])
-    _paq.push(['setSiteId', '1'])
+
+
+    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    if (isLocalhost) {
+      // Localhost - Šimon Jasný TEST
+      _paq.push(['setSiteId', '1'])
+    } else {
+      // Production - Šimon Jasný PRODUCTION
+      _paq.push(['setSiteId', '2'])
+    }
+
     _paq.push(['trackPageView'])
 
     const d = document
