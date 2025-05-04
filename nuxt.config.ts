@@ -15,6 +15,7 @@ export default defineNuxtConfig({
 
   plugins: [
     '~/plugins/matomo.client.ts',
+    '~/plugins/cookieconsent.client.ts'
   ],
 
   experimental: {
@@ -79,5 +80,5 @@ export default defineNuxtConfig({
     contentHead: true,
   },
 
-  compatibilityDate: '2024-10-22'
+  compatibilityDate: '2025-05-04',
 })

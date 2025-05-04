@@ -1,38 +1,34 @@
 import type { Router } from 'vue-router'
 
-// ~/plugins/matomo.client.ts
 declare global {
   interface Window {
     _paq: any[][]
     _mtm: any[]
+    startMatomoTracking: () => void
   }
 }
 
 export default defineNuxtPlugin(nuxtApp => {
-  if (import.meta.client) {
+  if (!import.meta.client) return
+
+  // initialize Matomo
+  window.startMatomoTracking = () => {
+    // prevent double init
+    if (window._paq && document.querySelector('script[src*="matomo.js"]')) return
+
     const _paq = (window._paq = window._paq || [])
 
     _paq.push(['enableLinkTracking'])
     _paq.push(['setTrackerUrl', 'https://phpstack-1209068-5475663.cloudwaysapps.com/matomo.php'])
 
-
-    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
-    if (isLocalhost) {
-      // Localhost - Šimon Jasný TEST
-      _paq.push(['setSiteId', '1'])
-    } else {
-      // Production - Šimon Jasný PRODUCTION
-      _paq.push(['setSiteId', '2'])
-    }
-
+    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+    _paq.push(['setSiteId', isLocalhost ? '1' : '2'])
     _paq.push(['trackPageView'])
 
-    const d = document
-    const g = d.createElement('script')
+    const g = document.createElement('script')
     g.async = true
     g.src = 'https://phpstack-1209068-5475663.cloudwaysapps.com/matomo.js'
-    const s = d.getElementsByTagName('script')[0]
-    s.parentNode?.insertBefore(g, s)
+    document.head.appendChild(g)
 
     // Track SPA route changes
     const router: Router = nuxtApp.$router as Router

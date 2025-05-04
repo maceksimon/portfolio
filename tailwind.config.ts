@@ -5,6 +5,7 @@ module.exports = {
     './formkit.theme.ts',
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./plugins/**/*.{ts,js}",
   ],
   theme: {
     extend: {
