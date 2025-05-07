@@ -54,5 +54,3 @@ Nepoužívám žádné reklamní, remarketingové, ani personalizované cookies.
 ## Jak můžete cookies ovlivnit?
 
 Cookies můžete kdykoli smazat nebo zakázat ve svém prohlížeči. Web však nemusí bez technických cookies fungovat správně.
-
----
