@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module'
   ],
 
+  plugins: [
+    '~/plugins/matomo.client.ts',
+    '~/plugins/cookieconsent.client.ts'
+  ],
+
   experimental: {
     scanPageMeta: true,
   },
@@ -75,5 +80,5 @@ export default defineNuxtConfig({
     contentHead: true,
   },
 
-  compatibilityDate: '2024-10-22'
+  compatibilityDate: '2025-05-04',
 })

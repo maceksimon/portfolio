@@ -155,6 +155,12 @@ async function handleSubmit(form) {
     }),
     axiosConfig
   );
+
+  // Track goal (Matomo)
+  if (window._paq) {
+    window._paq.push(['trackGoal', 1]);
+  }
+
   if (response.status === 200) {
     reset('formContact')
     // Display confirmation
