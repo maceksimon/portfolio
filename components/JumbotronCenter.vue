@@ -7,7 +7,7 @@
           <span v-html="t('highlight')"></span><br />
           <span v-html="t('title')"></span>
         </h1>
-        <p class="max-w-xl mx-auto mt-6 text-balance text-lg font-medium leading-8 text-gray-600 xl:mt-12 xl:text-xl/relaxed">
+        <p class="max-w-xl mx-auto mt-6 text-balance text-lg leading-8 text-gray-600 xl:mt-12 xl:text-xl/relaxed">
           {{ t('description') }}
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6 lg:mt-16 xl:mt-20">
@@ -36,7 +36,7 @@ const { toggle } = useDialogContact()
     "cs": {
       "buttonContact": "Kontaktovat",
       "buttonLearn": "Ukázky práce",
-      "description": "Navrhuju a stavím weby, které dobře vypadají, dělají svou práci a nekomplikují tu vaši.",
+      "description": "Stavím profi webovky pro fajn lidi. Řeším věci osobně a bez průtahů.",
       "highlight": "",
       "title": "Když přestaneš řešit web a&nbsp;prostě ho máš"
     },
