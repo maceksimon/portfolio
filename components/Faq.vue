@@ -1,20 +1,20 @@
 <template>
   <div class="isolate relative">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-300">
+      <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-600">
         {{ t("highlight") }}
       </div>
-      <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ t('title') }}</h2>
       <div class="mt-20">
         <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
           <div v-for="faq in faqs" :key="faq.id">
-            <dt class="text-base font-semibold leading-7 text-white">{{ faq.question }}</dt>
-            <dd class="mt-2 text-base leading-7 text-gray-300">{{ faq.answer }}</dd>
+            <dt class="text-base font-semibold leading-7 text-gray-900">{{ faq.question }}</dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">{{ faq.answer }}</dd>
           </div>
         </dl>
       </div>
-      <p class="mt-8 max-w-2xl text-base leading-7 text-gray-300 text-balance lg:pt-10">{{ t('perex') }} <a href="#"
-          class="font-medium text-blue-200 hover:text-blue-50 underline hover:no-underline"
+      <p class="mt-8 max-w-2xl text-base leading-7 text-gray-600 text-balance lg:pt-10">{{ t('perex') }} <a href="#"
+          class="font-medium text-blue-600 hover:text-blue-800 underline hover:no-underline"
           @click.prevent="toggle()">
           {{ t('linkContact') }}
         </a> {{ t('perex2') }}</p>

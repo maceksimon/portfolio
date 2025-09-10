@@ -1,13 +1,13 @@
 <template>
   <div class="relative isolate overflow-hidden px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</h2>
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300 text-balance">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ t('title') }}</h2>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 text-balance">
         {{ t("description") }}
       </p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <button
-          class="rounded-md bg-gray-50 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+          class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
           @click="toggle()">
           {{ t("contact") }}
         </button>

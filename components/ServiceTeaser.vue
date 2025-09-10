@@ -2,22 +2,22 @@
   <!-- Feature section -->
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">{{ t('highlight') }}
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-600">{{ t('highlight') }}
       </h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</p>
-      <p class="mt-6 text-lg leading-8 text-gray-300 text-balance">{{ t('perex') }}</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ t('title') }}</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 text-balance">{{ t('perex') }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:max-w-none sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:gap-x-12 lg:max-w-none lg:grid-cols-3">
         <div v-for="feature in primaryFeatures" :key="feature.name" class="flex flex-col group">
-          <dt class="text-base font-semibold leading-7 text-white">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-300/90 border bg-blue-400/10 border-blue-400/25 group-hover:text-blue-300 group-hover:bg-blue-400/15 transition-colors duration-300">
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-600/90 border bg-blue-600/10 border-blue-300/40 group-hover:text-blue-600 group-hover:bg-blue-600/15 transition-colors duration-300">
               <Icon :name="feature.icon" class="h-10 w-10" aria-hidden="true" />
             </div>
             {{ feature.name }}
           </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">{{ feature.description }}</p>
           </dd>
         </div>

@@ -1,11 +1,11 @@
 <template>
-  <div class="fixed top-0 inset-x-0 z-10 bg-gradient-to-b from-black/60 to-black/0">
+  <div class="fixed top-0 inset-x-0 z-10 bg-gradient-to-b from-white/90 to-white/0">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl sm:max-w-none">
         <Popover>
           <nav aria-label="Global" class="flex items-center justify-between py-2 sm:py-4 md:justify-center">
             <!-- Mobile navigation -->
-            <NuxtLink to="/#home" class="shrink-0 text-lg text-white md:hidden">
+            <NuxtLink to="/#home" class="shrink-0 text-lg text-gray-900 md:hidden">
               <svg class="h-8 w-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80"><circle cx="40" cy="31" r="26" fill="url(#a)"/><circle cx="40" cy="49" r="26" fill="#000"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(0 26 -26 0 40 31)" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs></svg>
             </NuxtLink>
             <div class="flex items-center md:hidden">
@@ -31,16 +31,16 @@
             <!-- Desktop navigation -->
             <div class="hidden w-full items-center md:flex md:justify-between">
               <!-- Menu -->
-              <div class="flex flex-wrap gap-4 lg:text-lg font-medium text-gray-100 md:gap-6 lg:gap-8 2xl:gap-12">
+              <div class="flex flex-wrap gap-4 lg:text-lg font-medium text-gray-900 md:gap-6 lg:gap-8 2xl:gap-12">
                 <NuxtLink v-for="link in navigation" :to="localePath(link._path)">
                   {{ link.title }}
                 </NuxtLink>
               </div>
               <!-- Social icons & Color Mode -->
-              <div id="navbar-icons" class="flex items-center space-x-4 md:space-x-6 text-gray-100 transition">
+              <div id="navbar-icons" class="flex items-center space-x-4 md:space-x-6 text-gray-900 transition">
                 <button @click.prevent="toggle()"
-                  class="inline-flex items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                  <Icon name="mi:email" size="18px" class="text-gray-600" />
+                  class="inline-flex items-center rounded-md bg-gray-900 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+                  <Icon name="mi:email" size="18px" class="text-gray-300" />
                   <span class="ml-2 text-sm font-semibold">{{ t("contact") }}</span>
                 </button>
                 <SocialIcons />
