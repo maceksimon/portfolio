@@ -356,7 +356,7 @@ const projects = [
   {
     id: 4,
     title: 'DVA',
-    description: 'Pokud nechcete přijít o žádný koncert kapely DVA, vyplatí se sledovat webové stránky, které jsem pro ně připravil při příležitosti vydání alba Piri Piri.',
+    description: 'Jestli nechceš přijít o žádný koncert kapely DVA, můžeš sledovat webové stránky, které jsem pro ně nachystal k vydání alba Piri Piri.',
     imageMobile: '/image/portfolio/dva-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/dva-homepage-desktop.webp',
     urlPortfolio: '',
@@ -366,7 +366,7 @@ const projects = [
   {
     id: 7,
     title: 'Hradec sauna day',
-    description: 'Pro Festival, jehož první ročník zahřál v roce 2025 Hradec Králové, jsem nachystal informační a navigační web – užitečnou příručku do kapsy u županu.',
+    description: 'První ročník festivalu Hradec Sauna Day zahřál Hradec Králové, a já jsem pro něj nachystal informační a navigační web - průvodce do kapsy u županu.',
     imageMobile: '/image/portfolio/hradec-sauna-day-mobile.webp',
     imageDesktop: '/image/portfolio/hradec-sauna-day-desktop.webp',
     urlPortfolio: '',
@@ -376,7 +376,7 @@ const projects = [
   {
     id: 1,
     title: 'MKS Jaroměř',
-    description: 'Nový web vznikl díky programu Kreativní vouchery a pomáhá prezentovat historické památky MKS i kulturní život ve městě – od divadelních představení po činnost místních spolků a klubů.',
+    description: 'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
     imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
     urlPortfolio: '/portfolio/mks-jaromer',
@@ -386,7 +386,7 @@ const projects = [
   {
     id: 2,
     title: 'Ekoloko',
-    description: 'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, komunitní tančírny, i péči o komunitní zahradu.',
+    description: 'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, latino tančírny, i péči o komunitní zahradu.',
     imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
     urlPortfolio: '/portfolio/ekoloko',
@@ -446,8 +446,8 @@ const imageMobile = computed(() => {
   "cs": {
     "projectList": "Seznam projektů",
     "highlight": "Co už je online",
-    "title": "Prohlédněte si dokončené projekty",
-    "perex": "Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy."
+    "title": "Výběr z dokončených projektů",
+    "perex": "Realizací už vznikla spousta, od prezentačních webů po eshopy. Každá trochu jiná, každá s příběhem. Mám z nich radost, tak se trochu chlubím."
   }
 }
 </i18n>

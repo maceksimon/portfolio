@@ -36,7 +36,7 @@ const { toggle } = useDialogContact()
     "cs": {
       "buttonContact": "Kontaktovat",
       "buttonLearn": "Ukázky práce",
-      "description": "Stavím profi webovky pro fajn lidi. Řeším věci osobně a bez průtahů.",
+      "description": "Stavím profi webovky pro fajn lidi. Řeším věci osobně a na míru.",
       "highlight": "",
       "title": "Když přestaneš řešit web a&nbsp;prostě ho máš"
     },
