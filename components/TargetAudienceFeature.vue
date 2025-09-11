@@ -49,7 +49,7 @@ const features = [
   {
     name: 'Značka antikvariát',
     description:
-      'Web je, ale dávno se na něj nikdo nepodíval. Původní vývojář už nemá čas, ty potřebuješ opravit zastaralé údaje a texty ale nikdo neví jak do toho.',
+      'Web sice je, ale dávno se na něj nikdo nepodíval. Původní vývojář už nemá čas, ty potřebuješ opravit zastaralé údaje a texty, ale nikdo neví jak do toho.',
     href: '#',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" class="h-full max-w-full" viewBox="0 0 12 12"><path fill="currentColor" d="M1 12h9V9H9v2H7v-1H6V8H5v2H4v1H2V9H1Zm1-3h1V8H2Zm1-1h1V7H3ZM2 5h1V4H2Zm1 1h1V5H3Zm1 1h1V6H4Zm2 0h1V6H6Zm1 1h1V7H7Zm1 1h1V8H8ZM5 6h1V5h1V4h1V3H3v1h1v1h1Zm2 0h1V5H7ZM1 4h1V2h7v2h1V1H1Zm7 1h1V4H8Zm0 0"/></svg>',
   },
@@ -68,7 +68,7 @@ const features = [
   "cs": {
     "highlight": "Jsi tu správně?",
     "title": "Komu umím pomoct",
-    "description": "Hodí se některý popis na tebe? Nebo prostě hledáš někoho kdo ti poradí? Jesti jo, dej vědět - tyhle problémy znám a umím je vyřešit rychleji než si myslíš.",
+    "description": "Hodí se některý popis na tebe? Nebo prostě hledáš někoho, kdo ti poradí? Jestli jo, dej vědět - tyhle problémy znám a umím je vyřešit rychleji než si myslíš.",
     "learnMore": "Zjistit více",
     "contact": "Poslat zprávu"
   }

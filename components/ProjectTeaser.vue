@@ -21,7 +21,7 @@
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
         <div
-          class="flex flex-wrap justify-center gap-2 p-1 bg-gray-700 rounded-xl"
+          class="flex flex-wrap justify-center gap-1.5 p-1 bg-gray-900 rounded-xl"
         >
           <RadioGroupOption
             as="template"
@@ -32,7 +32,7 @@
           >
             <div
               :class="[
-                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-gray-500 bg-gray-600 text-white',
+                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-gray-500/50 bg-gray-600 text-white',
                 active ? '!bg-white' : '',
                 checked ? '!bg-white' : '',
               ]"
