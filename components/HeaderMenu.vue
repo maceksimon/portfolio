@@ -10,8 +10,8 @@
             </NuxtLink>
             <div class="flex items-center md:hidden">
               <button @click="toggle()"
-                class="dark:hover-gray-600 mr-2 inline-flex items-center justify-center rounded-md bg-gray-50 px-3 py-2 text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-auto text-gray-600"
+                class="mr-2 inline-flex items-center justify-center rounded-md bg-gray-900 px-3 py-2 text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-auto text-gray-300"
                   viewBox="0 0 24 24">
                   <path fill="currentColor"
                     d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z" />
@@ -22,7 +22,7 @@
               </button>
               <div class="-mr-2 flex items-center">
                 <PopoverButton
-                  class="dark:hover-gray-600 inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300">
+                  class="inline-flex items-center justify-center rounded-md p-2 bg-gray-900 text-gray-200 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                   <span class="sr-only">{{ t("openMenu") }}</span>
                   <Icon name="heroicons-outline:menu-alt-3" />
                 </PopoverButton>
@@ -51,15 +51,15 @@
           <transition enter-active-class="duration-150 ease-out" enter-from-class="opacity-0 scale-95"
             enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in"
             leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
-            <PopoverPanel focus class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
+            <PopoverPanel focus class="absolute inset-x-0 top-0 z-10 origin-top-right transform transition md:hidden"
               v-slot="{ close }">
               <div
-                class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5 dark:bg-gray-700 dark:text-gray-300">
-                <div class="flex items-center justify-between px-5 pt-4">
+                class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5 ">
+                <div class="flex items-center justify-between px-4 pt-2">
                   <div class="text-xl font-bold">{{ t("menu") }}</div>
                   <div class="-mr-2">
                     <PopoverButton
-                      class="dark:hover-text-gray-100 inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300">
+                      class="inline-flex items-center justify-center rounded-md p-2 bg-gray-900 text-gray-200 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                       <span class="sr-only">{{ t("closeMenu") }}</span>
                       <Icon name="heroicons-outline:x" />
                     </PopoverButton>

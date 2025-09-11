@@ -1,17 +1,17 @@
 <template>
   <div class="isolate overflow-hidden pt-14">
     <!-- Animation: Lightbulb -->
-    <NuxtImg src="/image/star.png" alt="" class="absolute w-48 left-[calc(10%-15px)] top-[calc(20%-45px)] object-contain -z-10 animate-spin" />
+    <NuxtImg src="/image/star.png" alt="" class="absolute w-24 xl:w-48 left-[calc(10%-9px)] top-[calc(15%-22px)] object-contain -z-10 animate-spin" />
     <!-- Lightbulb -->
-    <NuxtImg src="/image/lightbulb.webp" alt="" class="absolute w-40 left-[10%] top-[20%] object-contain -z-10" />
+    <NuxtImg src="/image/lightbulb.webp" alt="" class="absolute w-20 xl:w-40 left-[10%] top-[15%] object-contain -z-10" />
 
     <!-- Animation: Hands clap -->
     <!-- Hand 1 (back hand) -->
-    <NuxtImg id="hand1" src="/image/hand-clap-2.webp" alt="" class="absolute w-40 right-[calc(10%-40px)] top-[calc(50%-50px)] object-contain hand-animation" />
+    <NuxtImg id="hand1" src="/image/hand-clap-2.webp" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%-40px)] top-[calc(50%-50px)] object-contain hand-animation" />
     <!-- Clap -->
-    <NuxtImg id="clap" src="/image/clap.webp" alt="" class="absolute w-56 right-[calc(10%-50px)] top-[calc(50%-90px)] object-contain hand-animation" />
+    <NuxtImg id="clap" src="/image/clap.webp" alt="" class="hidden xl:inline-block absolute w-56 right-[calc(10%-50px)] top-[calc(50%-90px)] object-contain hand-animation" />
     <!-- Hand 2 (front hand) -->
-    <NuxtImg id="hand2" src="/image/hand-clap-1.webp" alt="" class="absolute w-40 right-[calc(10%)] top-[calc(50%-60px)] object-contain hand-animation" />
+    <NuxtImg id="hand2" src="/image/hand-clap-1.webp" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%)] top-[calc(50%-60px)] object-contain hand-animation" />
 
     <!-- Content -->
     <div class="mx-auto max-w-3xl px-4 pt-12">
