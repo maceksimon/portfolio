@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
+      <div class="xl:max-w-2xl mx-auto lg:text-center">
         <h2 class="text-base/7 font-semibold text-blue-600">{{ t('highlight') }}</h2>
         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">{{ t('title') }}</p>
         <p class="mt-6 text-lg/8 text-gray-700">{{ t('description') }}</p>
