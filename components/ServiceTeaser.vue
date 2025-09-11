@@ -63,13 +63,13 @@ const primaryFeatures = [
 
 <i18n lang="json">{
   "cs": {
-    "highlight": "Co z toho bude?",
+    "highlight": "Co z toho budeš mít?",
     "title": "Web, kterého si každý všimne",
-    "perex": "Na internetové doméně vzniká tvoje online identita. Chceš mít web, který ti bude sedět, zaujme na první pohled a bude perfektně fungovat. Jak na to? To už nech na mě.",
+    "perex": "Na internetové doméně vzniká tvoje online identita. Chceš mít web, který ti bude sedět, zaujme na první pohled a bude perfektně fungovat. Detaily už můžeš nechat na mě.",
     "service": {
       "control": {
         "title": "Web, kterému rozumíš",
-        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientuješ. Zdarma dávám kompletní instruktáž a můžeš se mi kdykoliv ozvat s dotazy."
+        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientuješ. Dávám bezplatnou instruktáž a můžeš se mi kdykoliv ozvat s dotazy."
       },
       "design": {
         "title": "Design, co je tvůj",
@@ -77,7 +77,7 @@ const primaryFeatures = [
       },
       "function": {
         "title": "Systém, který funguje",
-        "description": "Dostat svůj projekt do online prostoru je delší proces. Od editace obsahu, přes technické nastavení, až po monitorování návštěvnosti, aktualizace a zálohy. Ty ale můžeš všechny technické kroky nechat na mě a užít si kreativní práci a funkční výsledek."
+        "description": "Dostat svůj projekt do online prostoru je delší proces. Od editace obsahu, přes technické nastavení, až po monitorování návštěvnosti, aktualizace a zálohy. Dobrá zpráva je, že ti se všemi technickými kroky pomůžu a ty si můžeš užít kreativní práci a funkční výsledek."
       }
     },
     "contact": "Chci web"
