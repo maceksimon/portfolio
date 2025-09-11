@@ -1,7 +1,7 @@
 <template>
   <div class="isolate overflow-hidden pt-14">
     <!-- Animation: Lightbulb -->
-    <NuxtImg src="/image/star.png" alt="" class="absolute w-24 xl:w-48 left-[calc(10%-9px)] top-[calc(15%-22px)] object-contain -z-10 animate-spin" />
+    <NuxtImg src="/image/star.png" alt="" class="absolute w-24 xl:w-48 left-[calc(10%-9px)] top-[calc(15%-22px)] object-contain -z-10 animate-spin xl:top-[calc(15%-45px)] xl:left-[calc(10%-15px)]" />
     <!-- Lightbulb -->
     <NuxtImg src="/image/lightbulb.webp" alt="" class="absolute w-20 xl:w-40 left-[10%] top-[15%] object-contain -z-10" />
 
