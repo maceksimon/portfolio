@@ -32,7 +32,7 @@
                 <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
                 <div>
                   <div class="font-semibold text-gray-900">{{ testimonial.author.name }}</div>
-                  <div class="text-gray-600">{{ `${testimonial.author.project}` }}</div>
+                  <div class="text-gray-700">{{ `${testimonial.author.project}` }}</div>
                 </div>
               </figcaption>
             </figure>

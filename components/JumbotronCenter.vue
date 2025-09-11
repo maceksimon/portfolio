@@ -20,7 +20,7 @@
           <span v-html="t('highlight')"></span><br />
           <span v-html="t('title')"></span>
         </h1>
-        <p class="max-w-xl mx-auto mt-6 text-balance text-lg leading-8 text-gray-600 xl:mt-12 xl:text-xl/relaxed">
+        <p class="max-w-xl mx-auto mt-6 text-balance text-lg leading-8 text-gray-700 xl:mt-12 xl:text-xl/relaxed">
           {{ t('description') }}
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6 lg:mt-16 xl:mt-20">
@@ -101,6 +101,21 @@ onMounted(() => {
 
   // Animation sequence
   tl
+    // Anticipation: Small wind-up in opposite direction
+    .to("#hand1", {
+      x: animationConfig.startOffsetX * 0.65, // pull back slightly more
+      y: animationConfig.startOffsetY * 0.65,
+      rotation: animationConfig.maxRotation * 0.8,
+      duration: 0.2,
+      ease: "power2.out"
+    }, 0)
+    .to("#hand2", {
+      x: -animationConfig.startOffsetX * 0.65, // pull back slightly more
+      y: -animationConfig.startOffsetY * 0.65,
+      rotation: -animationConfig.maxRotation * 0.8,
+      duration: 0.2,
+      ease: "power2.out"
+    }, 0)
 
     // Phase 1: Move hands together with rotation
     .to("#hand1", {
@@ -109,14 +124,14 @@ onMounted(() => {
       rotation: -animationConfig.maxRotation,
       duration: animationConfig.togetherDuration,
       ease: animationConfig.togetherEase
-    }, 0)
+    }, 0.2)
     .to("#hand2", {
       x: animationConfig.startOffsetX/4,
       y: animationConfig.startOffsetY/4,
       rotation: animationConfig.maxRotation,
       duration: animationConfig.togetherDuration,
       ease: animationConfig.togetherEase
-    }, 0)
+    }, 0.2)
 
     // Clap effect: Show briefly when hands meet
     .to("#clap", {
@@ -124,13 +139,13 @@ onMounted(() => {
       scale: 1,
       duration: 0.1,
       ease: "power2.out"
-    }, animationConfig.togetherDuration - 0.05)
+    }, 0.2 + animationConfig.togetherDuration - 0.05)
     .to("#clap", {
       opacity: 0,
       scale: 0.9,
       duration: 0.15,
       ease: "power2.in"
-    }, animationConfig.togetherDuration + 0.05)
+    }, 0.2 + animationConfig.togetherDuration + 0.05)
 
     // Phase 2: Move hands apart with counter-rotation
     .to("#hand1", {
@@ -139,14 +154,14 @@ onMounted(() => {
       rotation: animationConfig.maxRotation/2,
       duration: animationConfig.apartDuration,
       ease: animationConfig.apartEase
-    }, animationConfig.togetherDuration)
+    }, 0.2 + animationConfig.togetherDuration)
     .to("#hand2", {
       x: -animationConfig.startOffsetX/2,
       y: -animationConfig.startOffsetY/2,
       rotation: -animationConfig.maxRotation/2,
       duration: animationConfig.apartDuration,
       ease: animationConfig.apartEase
-    }, animationConfig.togetherDuration)
+    }, 0.2 + animationConfig.togetherDuration)
 })
 </script>
 

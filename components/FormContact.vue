@@ -1,6 +1,6 @@
 <template>
   <button
-    class="absolute right-6 top-6 h-6 w-6 text-gray-600"
+    class="absolute right-6 top-6 h-6 w-6 text-gray-700"
     @click.prevent="close"
   >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -22,7 +22,7 @@
         Hotovo
       </DialogTitle>
       <div class="my-4">
-        <p class="text-sm text-gray-600">
+        <p class="text-sm text-gray-700">
           Díky, vaše zpráva dorazila. Ozvu se vám co nejdříve.
         </p>
       </div>
@@ -59,7 +59,7 @@
         Napište mi co vás zajímá
       </DialogTitle>
       <div class="my-4">
-        <p class="text-sm text-gray-600">
+        <p class="text-sm text-gray-700">
           Konzultace je nezávazná a bezplatná. Odpovím brzo.
         </p>
       </div>

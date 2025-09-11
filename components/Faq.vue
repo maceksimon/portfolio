@@ -9,11 +9,11 @@
         <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
           <div v-for="faq in faqs" :key="faq.id">
             <dt class="text-base font-semibold leading-7 text-gray-900">{{ faq.question }}</dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">{{ faq.answer }}</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-700">{{ faq.answer }}</dd>
           </div>
         </dl>
       </div>
-      <p class="mt-8 max-w-2xl text-base leading-7 text-gray-600 text-balance lg:pt-10">{{ t('perex') }} <a href="#"
+      <p class="mt-8 max-w-2xl text-base leading-7 text-gray-700 text-balance lg:pt-10">{{ t('perex') }} <a href="#"
           class="font-medium text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors"
           @click.prevent="toggle()">
           {{ t('linkContact') }}

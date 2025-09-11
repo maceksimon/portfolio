@@ -5,7 +5,7 @@
       <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-600">{{ t('highlight') }}
       </h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ t('title') }}</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600 text-balance">{{ t('perex') }}</p>
+      <p class="mt-6 text-lg leading-8 text-gray-700 text-balance">{{ t('perex') }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:max-w-none sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:gap-x-12 lg:max-w-none lg:grid-cols-3">
@@ -17,7 +17,7 @@
             </div>
             {{ feature.name }}
           </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-700">
             <p class="flex-auto">{{ feature.description }}</p>
           </dd>
         </div>

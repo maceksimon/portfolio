@@ -15,7 +15,7 @@
     /> -->
     <div class="isolate max-w-2xl sm:max-w-none">
       <div class="not-prose">
-        <div class="mb-2 font-bold text-gray-600 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
+        <div class="mb-2 font-bold text-gray-700 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
           {{ $t('index.hero.highlight') }}
         </div>
         <h1

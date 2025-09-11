@@ -12,7 +12,7 @@
       <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         {{ t('title') }}
       </p>
-      <p class="mt-6 text-lg leading-8 text-gray-600 text-balance">
+      <p class="mt-6 text-lg leading-8 text-gray-700 text-balance">
         {{ t('perex') }}
       </p>
     </div>
