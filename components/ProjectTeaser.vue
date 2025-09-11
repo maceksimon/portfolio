@@ -21,7 +21,7 @@
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
         <div
-          class="flex flex-wrap justify-center gap-2 p-1 bg-gray-100 border border-gray-300 rounded-xl"
+          class="flex flex-wrap justify-center gap-2 p-1 bg-gray-700 rounded-xl"
         >
           <RadioGroupOption
             as="template"
@@ -32,9 +32,9 @@
           >
             <div
               :class="[
-                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-transparent',
-                active ? 'bg-white border-gray-300 text-gray-900' : '',
-                checked ? 'bg-white border-gray-300 text-gray-900' : '',
+                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-gray-500 bg-gray-600 text-white',
+                active ? '!bg-white' : '',
+                checked ? '!bg-white' : '',
               ]"
             >
               <span class="flex flex-1 sm:justify-center">
@@ -42,7 +42,7 @@
                   <RadioGroupLabel
                     as="span"
                     class="block text-sm font-medium"
-                    :class="[checked ? 'text-gray-900' : 'text-gray-600']"
+                    :class="[checked ? 'text-gray-900' : 'text-white']"
                   >
                     {{ project.title }}
                   </RadioGroupLabel>
@@ -339,12 +339,9 @@
               <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-700">
                 <p class="flex-auto">{{ project.description }}</p>
                 <p class="mt-6">
-                  <a
-                    :href="project.urlWeb"
-                    target="_blank"
-                    class="text-sm/6 text-gray-700 underline underline-offset-2 hover:text-gray-900 hover:no-underline transition-colors"
-                    >{{ project.urlWebDomain }}</a
-                  >
+                  <NuxtLink :to="project.urlWeb" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
+                    {{ project.urlWebDomain }}
+                  </NuxtLink>
                 </p>
               </dd>
             </template>

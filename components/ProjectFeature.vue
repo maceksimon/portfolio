@@ -20,7 +20,7 @@
         </div>
         <div>
           <div class="flex">
-            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800">
+            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
               {{ data.url.web.readable }}
             </NuxtLink>
           </div>
