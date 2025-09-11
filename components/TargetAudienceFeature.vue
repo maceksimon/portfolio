@@ -22,13 +22,6 @@
           </div>
         </dl>
       </div>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button
-          class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
-          @click="toggle()">
-          {{ t("contact") }}
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -75,7 +68,7 @@ const features = [
   "cs": {
     "highlight": "Jsi tu správně?",
     "title": "Komu umím pomoct",
-    "description": "Třeba jsi v téhle situaci, anebo v hodně podobné. Jesti jo, dej vědět - tyhle problémy znám a umím je vyřešit rychleji a levněji než si myslíš.",
+    "description": "Hodí se některý popis na tebe? Nebo prostě hledáš někoho kdo ti poradí? Jesti jo, dej vědět - tyhle problémy znám a umím je vyřešit rychleji než si myslíš.",
     "learnMore": "Zjistit více",
     "contact": "Poslat zprávu"
   }

@@ -12,7 +12,7 @@
         <div v-for="feature in primaryFeatures" :key="feature.name" class="flex flex-col group">
           <dt class="text-base font-semibold leading-7 text-gray-900">
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-600/90 border bg-blue-600/10 border-blue-300/40 group-hover:text-blue-600 group-hover:bg-blue-600/15 transition-colors duration-300">
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-600 border bg-blue-600/10 border-blue-300/50 group-hover:text-blue-700 group-hover:bg-blue-300/10 group-hover:border-blue-600/50 transition-colors duration-300">
               <Icon :name="feature.icon" class="h-10 w-10" aria-hidden="true" />
             </div>
             {{ feature.name }}
@@ -23,6 +23,13 @@
         </div>
       </dl>
     </div>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <button
+        class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+        @click="toggle()">
+        {{ t("contact") }}
+      </button>
+    </div>
   </div>
 </template>
 
@@ -30,6 +37,7 @@
 const { t } = useI18n({
   useScope: 'local'
 })
+const { toggle } = useDialogContact()
 
 const primaryFeatures = [
   {
@@ -57,21 +65,22 @@ const primaryFeatures = [
   "cs": {
     "highlight": "Co z toho bude?",
     "title": "Web, kterého si každý všimne",
-    "perex": "S internetovou doménou vzniká vaše online identita. Měli byste chtít web, který vystihne váš charakter, bude perfektně fungovat a zaujme na první pohled.",
+    "perex": "Na internetové doméně vzniká tvoje online identita. Chceš mít web, který ti bude sedět, zaujme na první pohled a bude perfektně fungovat. Jak na to? To už nech na mě.",
     "service": {
       "control": {
         "title": "Web, kterému rozumíš",
-        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientujete. Zdarma dávám kompletní instruktáž a můžete se mi kdykoliv ozvat s dotazy."
+        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientuješ. Zdarma dávám kompletní instruktáž a můžeš se mi kdykoliv ozvat s dotazy."
       },
       "design": {
         "title": "Design, co je tvůj",
-        "description": "Web by měl mít styl, který tě charakterizuje. Nad každým designem přemýšlím individuálně, na základě konkrétních potřeb a představ. Všechno podle nejlepší praxe UI, UX a přístupnosti. Navíc mě baví animovat, takže moje weby si umí žít vlastním životem."
+        "description": "Web by měl mít styl, který tě charakterizuje. Nad každým designem přemýšlím individuálně, na základě konkrétních potřeb a představ. Všechno podle nejlepší praxe UI, UX a přístupnosti. Navíc mě baví animovat, takže moje weby umí být živé a vtipné."
       },
       "function": {
         "title": "Systém, který funguje",
         "description": "Dostat svůj projekt do online prostoru je delší proces. Od editace obsahu, přes technické nastavení, až po monitorování návštěvnosti, aktualizace a zálohy. Ty ale můžeš všechny technické kroky nechat na mě a užít si kreativní práci a funkční výsledek."
       }
-    }
+    },
+    "contact": "Chci web"
   },
   "en": {
     "highlight": "What will it be?",
@@ -90,7 +99,8 @@ const primaryFeatures = [
         "title": "Online banner that impresses",
         "description": "To really draw attention, you will need to optimize for SEO. This comes included in the package. The website will be optimized for your keywords to help you get traction through google searches. You can track your progress with your favoured suite of analytics tools."
       }
-    }
+    },
+    "contact": "I want a website"
   }
 }
 </i18n>

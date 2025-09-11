@@ -14,7 +14,7 @@
         </dl>
       </div>
       <p class="mt-8 max-w-2xl text-base leading-7 text-gray-600 text-balance lg:pt-10">{{ t('perex') }} <a href="#"
-          class="font-medium text-blue-600 hover:text-blue-800 underline hover:no-underline"
+          class="font-medium text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors"
           @click.prevent="toggle()">
           {{ t('linkContact') }}
         </a> {{ t('perex2') }}</p>
@@ -41,10 +41,10 @@ const faqs = file.body
 <i18n lang="json">{
   "cs": {
     "title": "Odpovědi na nejčastější otázky",
-    "highlight": "Co by vás mohlo zajímat",
+    "highlight": "Co by tě mohlo zajímat",
     "linkContact": "kontaktní formulář",
-    "perex": "Pokud se chcete zeptat na cokoliv dalšího, napište mi přes ",
-    "perex2": " a já se vám ozvu."
+    "perex": "Pokud se chceš zeptat na cokoliv dalšího, napiš mi přes ",
+    "perex2": " a já se ti ozvu."
   },
   "en": {
     "title": "Frequently asked questions",

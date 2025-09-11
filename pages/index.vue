@@ -9,3 +9,11 @@
   <!-- <HeroCenterPersonal class="py-14 lg:py-16 xl:py-24" /> -->
   <Faq id="faq" class="py-14 lg:py-16 xl:py-24" />
 </template>
+
+<script setup>
+// use meta
+useSeoMeta({
+  title: 'Šimon Jasný | Webový vývojář',
+  description: 'Stavím weby pro jednotlivce, menší firmy a organizace. Jestli kromě technických zkušeností hledáte i osobitější a kreativnější přístup, budeme si rozumět.',
+})
+</script>
