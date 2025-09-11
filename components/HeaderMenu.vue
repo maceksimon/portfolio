@@ -112,12 +112,12 @@ const navigation: { title: string, _path: string }[] = [
     _path: '/#home',
   },
   {
-    title: t('menuTestimonials'),
-    _path: '/#testimonials',
-  },
-  {
     title: t('menuProjects'),
     _path: '/#projects',
+  },
+  {
+    title: t('menuTestimonials'),
+    _path: '/#testimonials',
   },
   {
     title: t('menuFaq'),
@@ -142,8 +142,8 @@ const navigation: { title: string, _path: string }[] = [
       "menu": "Menu",
       "menuAbout": "O mně",
       "menuBlog": "Blog",
-      "menuHome": "Domů",
-      "menuProjects": "Projekty",
+      "menuHome": "Úvod",
+      "menuProjects": "Realizace",
       "menuTestimonials": "Reference",
       "menuFaq": "FAQ",
       "openMenu": "Otevřít hlavní menu"
