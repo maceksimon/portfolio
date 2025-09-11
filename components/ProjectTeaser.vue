@@ -1,5 +1,9 @@
 <template>
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+  <div class="relative isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+    <!-- Background -->
+    <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+      <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff80b5] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)" />
+    </div>
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-600">
@@ -16,7 +20,9 @@
     <div class="flex justify-center mt-16 sm:mt-20 lg:mt-24">
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
-        <div class="flex flex-wrap justify-center gap-2 p-1 bg-gray-100 border border-gray-300 rounded-xl">
+        <div
+          class="flex flex-wrap justify-center gap-2 p-1 bg-gray-100 border border-gray-300 rounded-xl"
+        >
           <RadioGroupOption
             as="template"
             v-for="project in projects"
@@ -333,7 +339,12 @@
               <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-700">
                 <p class="flex-auto">{{ project.description }}</p>
                 <p class="mt-6">
-                  <a :href="project.urlWeb" target="_blank" class="text-sm/6 text-gray-700 underline underline-offset-2 hover:text-gray-900 hover:no-underline transition-colors">{{ project.urlWebDomain }}</a>
+                  <a
+                    :href="project.urlWeb"
+                    target="_blank"
+                    class="text-sm/6 text-gray-700 underline underline-offset-2 hover:text-gray-900 hover:no-underline transition-colors"
+                    >{{ project.urlWebDomain }}</a
+                  >
                 </p>
               </dd>
             </template>
@@ -356,7 +367,8 @@ const projects = [
   {
     id: 4,
     title: 'DVA',
-    description: 'Jestli nechceš přijít o žádný koncert kapely DVA, můžeš sledovat webové stránky, které jsem pro ně nachystal k vydání alba Piri Piri.',
+    description:
+      'Jestli nechceš přijít o žádný koncert kapely DVA, můžeš sledovat webové stránky, které jsem pro ně nachystal k vydání alba Piri Piri.',
     imageMobile: '/image/portfolio/dva-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/dva-homepage-desktop.webp',
     urlPortfolio: '',
@@ -366,7 +378,8 @@ const projects = [
   {
     id: 7,
     title: 'Hradec sauna day',
-    description: 'První ročník festivalu Hradec Sauna Day zahřál Hradec Králové, a já jsem pro něj nachystal informační a navigační web - průvodce do kapsy u županu.',
+    description:
+      'První ročník festivalu Hradec Sauna Day zahřál Hradec Králové, a já jsem pro něj nachystal informační a navigační web - průvodce do kapsy u županu.',
     imageMobile: '/image/portfolio/hradec-sauna-day-mobile.webp',
     imageDesktop: '/image/portfolio/hradec-sauna-day-desktop.webp',
     urlPortfolio: '',
@@ -376,7 +389,8 @@ const projects = [
   {
     id: 1,
     title: 'MKS Jaroměř',
-    description: 'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
+    description:
+      'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
     imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
     urlPortfolio: '/portfolio/mks-jaromer',
@@ -386,7 +400,8 @@ const projects = [
   {
     id: 2,
     title: 'Ekoloko',
-    description: 'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, latino tančírny, i péči o komunitní zahradu.',
+    description:
+      'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, latino tančírny, i péči o komunitní zahradu.',
     imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
     urlPortfolio: '/portfolio/ekoloko',
@@ -396,7 +411,8 @@ const projects = [
   {
     id: 5,
     title: 'Brno čte Bruna',
-    description: 'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
+    description:
+      'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
     imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.webp',
     urlPortfolio: '/portfolio/brno-cte-bruna',
@@ -406,7 +422,8 @@ const projects = [
   {
     id: 3,
     title: 'KSKA UPCE',
-    description: 'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
+    description:
+      'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
     imageMobile: '/image/portfolio/kska-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/kska-homepage-desktop.webp',
     urlPortfolio: '/portfolio/kska',
@@ -416,7 +433,8 @@ const projects = [
   {
     id: 6,
     title: 'Fellow Creatures',
-    description: 'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
+    description:
+      'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
     imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.webp',
     urlPortfolio: '/portfolio/fellow-creatures',

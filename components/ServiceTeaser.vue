@@ -60,16 +60,16 @@ const primaryFeatures = [
     "perex": "S internetovou doménou vzniká vaše online identita. Měli byste chtít web, který vystihne váš charakter, bude perfektně fungovat a zaujme na první pohled.",
     "service": {
       "control": {
-        "title": "Web ve vlastních rukou",
-        "description": "Stavím weby tak, abyste nad nimi měli plnou kontrolu. Můžete upravovat texty, měnit obrázky, snadno přidávat nové stránky nebo měnit ty stávající. Používám WordPress – osvědčené open-source řešení, které přizpůsobím tak, aby se vám s ním dobře pracovalo. I bez předchozí zkušenosti se v něm rychle zorientujete."
+        "title": "Web, kterému rozumíš",
+        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientujete. Zdarma dávám kompletní instruktáž a můžete se mi kdykoliv ozvat s dotazy."
       },
       "design": {
-        "title": "Design podle vás",
-        "description": "Web by měl mít styl, který odpovídá tomu, pro koho vzniká. Proto ke každému designu přistupuji individuálně a navrhuji jej podle konkrétních potřeb a představ. Zároveň si dávám záležet na tom, aby byl web přehledný a dobře se ovládal – držím se zásad UI a UX. A protože jedním z mých koníčků je animace, rád ji zapojuji i do designů stránek."
+        "title": "Design, co je tvůj",
+        "description": "Web by měl mít styl, který tě charakterizuje. Nad každým designem přemýšlím individuálně, na základě konkrétních potřeb a představ. Všechno podle nejlepší praxe UI, UX a přístupnosti. Navíc mě baví animovat, takže moje weby si umí žít vlastním životem."
       },
       "function": {
-        "title": "Online vizitka, která funguje",
-        "description": "Aby byl web dobře dohledatelný, musí splňovat technické požadavky vyhledávačů. Používám postupy, které zlepšují indexaci, rychlost i přístupnost – a tím i pozici ve výsledcích hledání. Díky přehledným datům o návštěvnosti navíc získáte představu o tom, jak se váš web vyvíjí a kdo ho navštěvuje."
+        "title": "Systém, který funguje",
+        "description": "Dostat svůj projekt do online prostoru je delší proces. Od editace obsahu, přes technické nastavení, až po monitorování návštěvnosti, aktualizace a zálohy. Ty ale můžeš všechny technické kroky nechat na mě a užít si kreativní práci a funkční výsledek."
       }
     }
   },
