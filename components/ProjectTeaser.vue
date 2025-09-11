@@ -1,5 +1,5 @@
 <template>
-  <div class="relative isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+  <div class="relative isolate overflow-x-clip mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
     <!-- Background -->
     <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
       <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff80b5] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)" />
@@ -21,7 +21,7 @@
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
         <div
-          class="flex flex-wrap justify-center gap-1.5 p-1 bg-gray-900 rounded-xl"
+          class="-mx-4 w-screen flex flex-wrap justify-center gap-1.5 py-4 bg-blue-100 lg:w-auto lg:mx-0 lg:py-1 lg:px-1 lg:bg-gray-900 lg:rounded-xl"
         >
           <RadioGroupOption
             as="template"
@@ -53,11 +53,11 @@
         </div>
       </RadioGroup>
     </div>
-    <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
-      <div class="relative sm:col-span-4">
+    <div class="grid grid-cols-1 gap-y-12 lg:grid-cols-6 mt-8 lg:mt-12">
+      <div class="relative lg:col-span-4">
         <!-- Mockup mobile -->
         <div
-          class="sm:absolute right-[20%] bottom-0 mx-auto pointer-events-none"
+          class="lg:absolute right-[20%] bottom-0 mx-auto pointer-events-none"
           aria-hidden="true"
         >
           <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[12rem] max-w-full drop-shadow-xl">
@@ -85,7 +85,7 @@
           </svg>
         </div>
         <!-- Mockup desktop -->
-        <div class="hidden sm:block">
+        <div class="hidden lg:block">
           <svg
             width="600"
             height="482"
@@ -329,7 +329,7 @@
           </svg>
         </div>
       </div>
-      <div class="relative sm:col-span-2">
+      <div class="relative lg:col-span-2">
         <dl>
           <div v-for="project in projects" :key="project.id">
             <template v-if="project.id === selectedProject">
