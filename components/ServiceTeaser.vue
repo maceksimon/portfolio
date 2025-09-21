@@ -2,26 +2,33 @@
   <!-- Feature section -->
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">{{ t('highlight') }}
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-600">{{ t('highlight') }}
       </h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ t('title') }}</p>
-      <p class="mt-6 text-lg leading-8 text-gray-300 text-balance">{{ t('perex') }}</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ t('title') }}</p>
+      <p class="mt-6 text-lg leading-8 text-gray-700 text-balance">{{ t('perex') }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:max-w-none sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:gap-x-12 lg:max-w-none lg:grid-cols-3">
         <div v-for="feature in primaryFeatures" :key="feature.name" class="flex flex-col group">
-          <dt class="text-base font-semibold leading-7 text-white">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-300/90 border bg-blue-400/10 border-blue-400/25 group-hover:text-blue-300 group-hover:bg-blue-400/15 transition-colors duration-300">
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-lg text-blue-600 border bg-blue-600/10 border-blue-300/50 group-hover:text-blue-700 group-hover:bg-blue-300/10 group-hover:border-blue-600/50 transition-colors duration-300">
               <Icon :name="feature.icon" class="h-10 w-10" aria-hidden="true" />
             </div>
             {{ feature.name }}
           </dt>
-          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-700">
             <p class="flex-auto">{{ feature.description }}</p>
           </dd>
         </div>
       </dl>
+    </div>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <button
+        class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+        @click="toggle()">
+        {{ t("contact") }}
+      </button>
     </div>
   </div>
 </template>
@@ -30,6 +37,7 @@
 const { t } = useI18n({
   useScope: 'local'
 })
+const { toggle } = useDialogContact()
 
 const primaryFeatures = [
   {
@@ -55,23 +63,24 @@ const primaryFeatures = [
 
 <i18n lang="json">{
   "cs": {
-    "highlight": "Co z toho bude?",
+    "highlight": "Co z toho budeš mít?",
     "title": "Web, kterého si každý všimne",
-    "perex": "S internetovou doménou vzniká vaše online identita. Měli byste chtít web, který vystihne váš charakter, bude perfektně fungovat a zaujme na první pohled.",
+    "perex": "Na internetové doméně vzniká tvoje online identita. Chceš mít web, který ti bude sedět, zaujme na první pohled a bude perfektně fungovat. Detaily už můžeš nechat na mě.",
     "service": {
       "control": {
-        "title": "Web ve vlastních rukou",
-        "description": "Stavím weby tak, abyste nad nimi měli plnou kontrolu. Můžete upravovat texty, měnit obrázky, snadno přidávat nové stránky nebo měnit ty stávající. Používám WordPress – osvědčené open-source řešení, které přizpůsobím tak, aby se vám s ním dobře pracovalo. I bez předchozí zkušenosti se v něm rychle zorientujete."
+        "title": "Web, kterému rozumíš",
+        "description": "Stavím weby tak, aby si je každý klient uměl sám upravit. Jednoduchým a intuitivním způsobem jde přidávat nové stránky a měnit ty stávající. I bez předchozí zkušenosti se v systému rychle zorientuješ. Dávám bezplatnou instruktáž a můžeš se mi kdykoliv ozvat s dotazy."
       },
       "design": {
-        "title": "Design podle vás",
-        "description": "Web by měl mít styl, který odpovídá tomu, pro koho vzniká. Proto ke každému designu přistupuji individuálně a navrhuji jej podle konkrétních potřeb a představ. Zároveň si dávám záležet na tom, aby byl web přehledný a dobře se ovládal – držím se zásad UI a UX. A protože jedním z mých koníčků je animace, rád ji zapojuji i do designů stránek."
+        "title": "Design, co je tvůj",
+        "description": "Web by měl mít styl, který tě charakterizuje. Nad každým designem přemýšlím individuálně, na základě konkrétních potřeb a představ. Všechno podle nejlepší praxe UI, UX a přístupnosti. Navíc mě baví animovat, takže moje weby umí být živé a vtipné."
       },
       "function": {
-        "title": "Online vizitka, která funguje",
-        "description": "Aby byl web dobře dohledatelný, musí splňovat technické požadavky vyhledávačů. Používám postupy, které zlepšují indexaci, rychlost i přístupnost – a tím i pozici ve výsledcích hledání. Díky přehledným datům o návštěvnosti navíc získáte představu o tom, jak se váš web vyvíjí a kdo ho navštěvuje."
+        "title": "Systém, který funguje",
+        "description": "Dostat svůj projekt do online prostoru je delší proces. Od editace obsahu, přes technické nastavení, až po monitorování návštěvnosti, aktualizace a zálohy. Dobrá zpráva je, že ti se všemi technickými kroky pomůžu a ty si můžeš užít kreativní práci a funkční výsledek."
       }
-    }
+    },
+    "contact": "Chci web"
   },
   "en": {
     "highlight": "What will it be?",
@@ -90,7 +99,8 @@ const primaryFeatures = [
         "title": "Online banner that impresses",
         "description": "To really draw attention, you will need to optimize for SEO. This comes included in the package. The website will be optimized for your keywords to help you get traction through google searches. You can track your progress with your favoured suite of analytics tools."
       }
-    }
+    },
+    "contact": "I want a website"
   }
 }
 </i18n>

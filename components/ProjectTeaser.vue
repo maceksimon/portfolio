@@ -1,14 +1,18 @@
 <template>
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+  <div class="relative isolate mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+    <!-- Background -->
+    <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+      <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff80b5] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)" />
+    </div>
     <!-- Section: heading -->
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-300">
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-blue-600">
         {{ t('highlight') }}
       </h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         {{ t('title') }}
       </p>
-      <p class="mt-6 text-lg leading-8 text-gray-300 text-balance">
+      <p class="mt-6 text-lg leading-8 text-gray-700 text-balance">
         {{ t('perex') }}
       </p>
     </div>
@@ -16,7 +20,9 @@
     <div class="flex justify-center mt-16 sm:mt-20 lg:mt-24">
       <RadioGroup v-model="selectedProject" class="sm:col-span-2">
         <RadioGroupLabel class="sr-only">{{ t('projectList') }}</RadioGroupLabel>
-        <div class="flex flex-wrap justify-center gap-2 p-1 bg-gray-950 border border-gray-600 rounded-xl">
+        <div
+          class="-mx-4 w-screen flex flex-wrap justify-center gap-1.5 p-1 lg:w-auto lg:mx-0 lg:bg-gray-900 lg:rounded-xl"
+        >
           <RadioGroupOption
             as="template"
             v-for="project in projects"
@@ -26,9 +32,9 @@
           >
             <div
               :class="[
-                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-transparent',
-                active ? 'bg-gray-700 border-gray-600 text-white' : '',
-                checked ? 'bg-gray-700 border-gray-600 text-white' : '',
+                'relative shrink-0 flex cursor-pointer rounded-lg px-3 py-2 focus:outline-none border border-gray-500/50 bg-gray-600 text-white',
+                active ? '!bg-white' : '',
+                checked ? '!bg-white' : '',
               ]"
             >
               <span class="flex flex-1 sm:justify-center">
@@ -36,7 +42,7 @@
                   <RadioGroupLabel
                     as="span"
                     class="block text-sm font-medium"
-                    :class="[checked ? 'text-white' : 'text-gray-200']"
+                    :class="[checked ? 'text-gray-900' : 'text-white']"
                   >
                     {{ project.title }}
                   </RadioGroupLabel>
@@ -47,11 +53,11 @@
         </div>
       </RadioGroup>
     </div>
-    <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-6 mt-8 sm:mt-12 lg:mt-16">
-      <div class="relative sm:col-span-4">
+    <div class="grid grid-cols-1 gap-y-12 lg:grid-cols-6 mt-8 lg:mt-12">
+      <div class="relative lg:col-span-4">
         <!-- Mockup mobile -->
         <div
-          class="sm:absolute right-[20%] bottom-0 mx-auto pointer-events-none"
+          class="lg:absolute right-[20%] bottom-0 mx-auto pointer-events-none"
           aria-hidden="true"
         >
           <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[12rem] max-w-full drop-shadow-xl">
@@ -79,7 +85,7 @@
           </svg>
         </div>
         <!-- Mockup desktop -->
-        <div class="hidden sm:block">
+        <div class="hidden lg:block">
           <svg
             width="600"
             height="482"
@@ -323,17 +329,19 @@
           </svg>
         </div>
       </div>
-      <div class="relative sm:col-span-2">
+      <div class="relative lg:col-span-2">
         <dl>
           <div v-for="project in projects" :key="project.id">
             <template v-if="project.id === selectedProject">
-              <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+              <dt class="flex items-center gap-x-3 text-base/7 font-semibold">
                 {{ project.title }}
               </dt>
-              <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
+              <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-700">
                 <p class="flex-auto">{{ project.description }}</p>
                 <p class="mt-6">
-                  <a :href="project.urlWeb" target="_blank" class="text-sm/6 text-gray-400 hover:text-gray-100 transition-colors">{{ project.urlWebDomain }}</a>
+                  <a :href="project.urlWeb" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
+                    {{ project.urlWebDomain }}
+                  </a>
                 </p>
               </dd>
             </template>
@@ -356,7 +364,8 @@ const projects = [
   {
     id: 4,
     title: 'DVA',
-    description: 'Pokud nechcete přijít o žádný koncert kapely DVA, vyplatí se sledovat webové stránky, které jsem pro ně připravil při příležitosti vydání alba Piri Piri.',
+    description:
+      'Jestli nechceš přijít o žádný koncert kapely DVA, můžeš sledovat webové stránky, které jsem pro ně nachystal k vydání alba Piri Piri.',
     imageMobile: '/image/portfolio/dva-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/dva-homepage-desktop.webp',
     urlPortfolio: '',
@@ -366,7 +375,8 @@ const projects = [
   {
     id: 7,
     title: 'Hradec sauna day',
-    description: 'Pro Festival, jehož první ročník zahřál v roce 2025 Hradec Králové, jsem nachystal informační a navigační web – užitečnou příručku do kapsy u županu.',
+    description:
+      'První ročník festivalu Hradec Sauna Day zahřál Hradec Králové, a já jsem pro něj nachystal informační a navigační web - průvodce do kapsy u županu.',
     imageMobile: '/image/portfolio/hradec-sauna-day-mobile.webp',
     imageDesktop: '/image/portfolio/hradec-sauna-day-desktop.webp',
     urlPortfolio: '',
@@ -376,7 +386,8 @@ const projects = [
   {
     id: 1,
     title: 'MKS Jaroměř',
-    description: 'Nový web vznikl díky programu Kreativní vouchery a pomáhá prezentovat historické památky MKS i kulturní život ve městě – od divadelních představení po činnost místních spolků a klubů.',
+    description:
+      'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
     imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
     urlPortfolio: '/portfolio/mks-jaromer',
@@ -386,7 +397,8 @@ const projects = [
   {
     id: 2,
     title: 'Ekoloko',
-    description: 'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, komunitní tančírny, i péči o komunitní zahradu.',
+    description:
+      'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, latino tančírny, i péči o komunitní zahradu.',
     imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
     urlPortfolio: '/portfolio/ekoloko',
@@ -396,7 +408,8 @@ const projects = [
   {
     id: 5,
     title: 'Brno čte Bruna',
-    description: 'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
+    description:
+      'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
     imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.webp',
     urlPortfolio: '/portfolio/brno-cte-bruna',
@@ -406,7 +419,8 @@ const projects = [
   {
     id: 3,
     title: 'KSKA UPCE',
-    description: 'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
+    description:
+      'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
     imageMobile: '/image/portfolio/kska-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/kska-homepage-desktop.webp',
     urlPortfolio: '/portfolio/kska',
@@ -416,7 +430,8 @@ const projects = [
   {
     id: 6,
     title: 'Fellow Creatures',
-    description: 'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
+    description:
+      'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
     imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.webp',
     urlPortfolio: '/portfolio/fellow-creatures',
@@ -446,8 +461,8 @@ const imageMobile = computed(() => {
   "cs": {
     "projectList": "Seznam projektů",
     "highlight": "Co už je online",
-    "title": "Prohlédněte si dokončené projekty",
-    "perex": "Každý projekt má svoje charakteristiky a potřeby. Na základě toho už vznikla spousta různých realizací od prezentačních webů po eshopy."
+    "title": "Výběr z dokončených projektů",
+    "perex": "Realizací už vznikla spousta, od prezentačních webů po eshopy. Každá trochu jiná, každá s příběhem. Mám z nich radost, tak se trochu chlubím."
   }
 }
 </i18n>

@@ -80,5 +80,5 @@ export default defineNuxtConfig({
     contentHead: true,
   },
 
-  compatibilityDate: '2025-05-04',
+  compatibilityDate: '2025-09-10',
 })

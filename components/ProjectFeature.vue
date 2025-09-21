@@ -8,19 +8,19 @@
         <img v-else src="/image/upupaepop-mobile-mockup.webp" alt="Upupaepop mockup" class="w-full h-full object-contain">
       </div>
       <div class="lg:w-2/5 shrink-0">
-        <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-300">
+        <div class="mb-2 text-lg font-semibold leading-8 tracking-tight text-blue-600">
           {{ $t("projectFeature.highlight") }}
         </div>
         <h2
-          class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:max-w-md sm:text-3xl lg:text-5xl xl:max-w-3xl">
+          class="text-2xl font-bold tracking-tight text-gray-900 sm:max-w-md sm:text-3xl lg:text-5xl xl:max-w-3xl">
           {{ data.head.title }}
         </h2>
-        <div class="mt-6 text-lg text-gray-700 dark:text-gray-200 text-balance">
+        <div class="mt-6 text-lg text-gray-700 text-balance">
           {{ data.head.description }}
         </div>
         <div>
           <div class="flex">
-            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8 text-gray-300 hover:text-gray-100">
+            <NuxtLink :to="data.url.web.full" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
               {{ data.url.web.readable }}
             </NuxtLink>
           </div>

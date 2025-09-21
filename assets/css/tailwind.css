@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply font-sans bg-black;
+    @apply font-sans bg-white;
     scroll-behavior: smooth;
   }
 }

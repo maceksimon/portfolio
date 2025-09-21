@@ -15,16 +15,16 @@
     /> -->
     <div class="isolate max-w-2xl sm:max-w-none">
       <div class="not-prose">
-        <div class="mb-2 font-bold text-gray-700 dark:text-gray-200 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
+        <div class="mb-2 font-bold text-gray-700 sm:mb-4 sm:mt-12 sm:text-lg lg:mb-6 lg:text-xl">
           {{ $t('index.hero.highlight') }}
         </div>
         <h1
-          class="sm:max-w-md text-4xl font-extrabold uppercase tracking-tight sm:text-5xl lg:text-7xl xl:max-w-2xl text-gray-900 dark:text-gray-50">
+          class="sm:max-w-md text-4xl font-extrabold uppercase tracking-tight sm:text-5xl lg:text-7xl xl:max-w-2xl text-gray-900">
           <span class="bg-clip-text bg-gradient-to-r text-transparent from-violet-500 via-blue-400 to-pink-500">{{
             $t('index.hero.titleHighlight') }}</span> <span>{{ $t('index.hero.title') }}</span>
         </h1>
       </div>
-      <div class="mt-6 text-lg dark:text-gray-100 lg:text-xl">
+      <div class="mt-6 text-lg text-gray-700 lg:text-xl">
         <p>{{ $t('index.hero.perex') }}</p>
         <p>{{ $t('index.hero.perex2') }}</p>
       </div>
