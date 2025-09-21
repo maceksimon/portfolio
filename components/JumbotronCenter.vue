@@ -7,7 +7,7 @@
 
     <!-- Animation: Hands clap -->
     <!-- Hand 1 (back hand) -->
-    <NuxtImg id="hand1" src="/image/hand-clap-2.png" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%-40px)] top-[calc(50%-50px)] object-contain hand-animation" />
+    <NuxtImg id="hand1" src="/image/hand-clap-2.png" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%-50px)] top-[calc(50%-50px)] object-contain hand-animation" />
     <!-- Clap -->
     <NuxtImg id="clap" src="/image/clap.png" alt="" class="hidden xl:inline-block absolute w-48 right-[calc(10%-50px)] top-[calc(50%-70px)] object-contain hand-animation" />
     <!-- Hand 2 (front hand) -->
@@ -65,16 +65,16 @@ onMounted(() => {
     apartEase: "power2.out" // decelerating away from each other
   }
 
-  // Set initial positions (hands apart)
+  // Set initial positions (hands apart and angled away from each other)
   gsap.set("#hand1", {
     x: animationConfig.startOffsetX/2,
     y: animationConfig.startOffsetY/2,
-    rotation: animationConfig.maxRotation/2
+    rotation: 15 // clockwise (away from hand2)
   })
   gsap.set("#hand2", {
     x: -animationConfig.startOffsetX/2,
     y: -animationConfig.startOffsetY/2,
-    rotation: -animationConfig.maxRotation/2
+    rotation: -15 // counterclockwise (away from hand1)
   })
 
   // Hide clap effect initially
@@ -106,14 +106,14 @@ onMounted(() => {
     .to("#hand1", {
       x: animationConfig.startOffsetX * 0.65, // pull back slightly more
       y: animationConfig.startOffsetY * 0.65,
-      rotation: animationConfig.maxRotation * 0.8,
+      rotation: 20, // pull back even more clockwise
       duration: 0.2,
       ease: "power2.out"
     }, 0)
     .to("#hand2", {
       x: -animationConfig.startOffsetX * 0.65, // pull back slightly more
       y: -animationConfig.startOffsetY * 0.65,
-      rotation: -animationConfig.maxRotation * 0.8,
+      rotation: -20, // pull back even more counterclockwise
       duration: 0.2,
       ease: "power2.out"
     }, 0)
@@ -127,7 +127,7 @@ onMounted(() => {
       ease: animationConfig.togetherEase
     }, 0.2)
     .to("#hand2", {
-      x: animationConfig.startOffsetX/4,
+      x: animationConfig.startOffsetX/2, // travel further to the right
       y: animationConfig.startOffsetY/4,
       rotation: animationConfig.maxRotation,
       duration: animationConfig.togetherDuration,
@@ -148,18 +148,18 @@ onMounted(() => {
       ease: "power2.in"
     }, 0.2 + animationConfig.togetherDuration + 0.05)
 
-    // Phase 2: Move hands apart with counter-rotation
+    // Phase 2: Move hands apart with counter-rotation (return to initial positions)
     .to("#hand1", {
       x: animationConfig.startOffsetX/2,
       y: animationConfig.startOffsetY/2,
-      rotation: animationConfig.maxRotation/2,
+      rotation: 15, // return to initial clockwise position
       duration: animationConfig.apartDuration,
       ease: animationConfig.apartEase
     }, 0.2 + animationConfig.togetherDuration)
     .to("#hand2", {
       x: -animationConfig.startOffsetX/2,
       y: -animationConfig.startOffsetY/2,
-      rotation: -animationConfig.maxRotation/2,
+      rotation: -15, // return to initial counterclockwise position
       duration: animationConfig.apartDuration,
       ease: animationConfig.apartEase
     }, 0.2 + animationConfig.togetherDuration)
