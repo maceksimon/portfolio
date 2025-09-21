@@ -333,15 +333,15 @@
         <dl>
           <div v-for="project in projects" :key="project.id">
             <template v-if="project.id === selectedProject">
-              <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+              <dt class="flex items-center gap-x-3 text-base/7 font-semibold">
                 {{ project.title }}
               </dt>
               <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-700">
                 <p class="flex-auto">{{ project.description }}</p>
                 <p class="mt-6">
-                  <NuxtLink :to="project.urlWeb" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
+                  <a :href="project.urlWeb" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
                     {{ project.urlWebDomain }}
-                  </NuxtLink>
+                  </a>
                 </p>
               </dd>
             </template>
