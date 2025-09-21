@@ -1,17 +1,17 @@
 <template>
   <div class="isolate overflow-hidden pt-14">
     <!-- Animation: Lightbulb -->
-    <NuxtImg src="/image/star.png" alt="" class="absolute w-24 xl:w-48 left-[calc(10%-9px)] top-[calc(15%-22px)] object-contain -z-10 animate-spin-custom xl:top-[calc(15%-45px)] xl:left-[calc(10%-15px)]" />
+    <NuxtImg src="/image/star.png" alt="" class="absolute w-24 xl:w-64 left-[calc(10%-9px)] top-[calc(15%-22px)] object-contain -z-10 animate-spin-custom xl:top-[calc(15%-72px)] xl:left-[calc(10%-46px)]" />
     <!-- Lightbulb -->
     <NuxtImg src="/image/lightbulb.webp" alt="" class="absolute w-20 xl:w-40 left-[10%] top-[15%] object-contain -z-10" />
 
     <!-- Animation: Hands clap -->
     <!-- Hand 1 (back hand) -->
-    <NuxtImg id="hand1" src="/image/hand-clap-2.webp" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%-40px)] top-[calc(50%-50px)] object-contain hand-animation" />
+    <NuxtImg id="hand1" src="/image/hand-clap-2.png" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%-40px)] top-[calc(50%-50px)] object-contain hand-animation" />
     <!-- Clap -->
-    <NuxtImg id="clap" src="/image/clap.webp" alt="" class="hidden xl:inline-block absolute w-56 right-[calc(10%-50px)] top-[calc(50%-90px)] object-contain hand-animation" />
+    <NuxtImg id="clap" src="/image/clap.png" alt="" class="hidden xl:inline-block absolute w-48 right-[calc(10%-50px)] top-[calc(50%-70px)] object-contain hand-animation" />
     <!-- Hand 2 (front hand) -->
-    <NuxtImg id="hand2" src="/image/hand-clap-1.webp" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%)] top-[calc(50%-60px)] object-contain hand-animation" />
+    <NuxtImg id="hand2" src="/image/hand-clap-1.png" alt="" class="hidden xl:inline-block absolute w-40 right-[calc(10%)] top-[calc(50%-60px)] object-contain hand-animation" />
 
     <!-- Content -->
     <div class="mx-auto max-w-3xl px-4 pt-12">
@@ -94,10 +94,11 @@ onMounted(() => {
   // Looping animation timeline (starts after fade-in)
   const tl = gsap.timeline({
     repeat: -1, // infinite loop
-    repeatDelay: 6, // pause between cycles
+    repeatDelay: 0, // no pause - filled with hovering animation
     yoyo: false, // don't reverse, just repeat
     delay: 0.8 // wait for fade-in to complete
   })
+
 
   // Animation sequence
   tl
@@ -162,6 +163,44 @@ onMounted(() => {
       duration: animationConfig.apartDuration,
       ease: animationConfig.apartEase
     }, 0.2 + animationConfig.togetherDuration)
+
+    // Add independent hovering animations to fill the time until next cycle
+    // Hand 1: Slower, larger movements
+    .to("#hand1", {
+      y: `+=${4}`,
+      duration: 2,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: 2
+    }, 0.2 + animationConfig.togetherDuration + animationConfig.apartDuration)
+
+    // Hand 2: Faster, smaller movements with offset timing
+    .to("#hand2", {
+      y: `+=${3}`,
+      duration: 1.3,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: 3
+    }, 0.2 + animationConfig.togetherDuration + animationConfig.apartDuration + 0.7)
+
+    // Add subtle rotation variation for hand 1
+    .to("#hand1", {
+      rotation: `+=${2}`,
+      duration: 3,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: 1
+    }, 0.2 + animationConfig.togetherDuration + animationConfig.apartDuration + 0.5)
+
+    // Add subtle rotation variation for hand 2 (opposite direction)
+    .to("#hand2", {
+      rotation: `+=${-1.5}`,
+      duration: 2.5,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: 1
+    }, 0.2 + animationConfig.togetherDuration + animationConfig.apartDuration + 1)
+
 })
 </script>
 
