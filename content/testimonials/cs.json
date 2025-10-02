@@ -22,7 +22,6 @@
         }
       ],
       [
-
         {
           "id": "kontrapunkt",
           "body": "Jednoduchý a čistý design, snadná a přímočará struktura a hlavně skvělá a flexibilní komunikace! Děkujeme.",
@@ -31,7 +30,11 @@
             "project": "Kontrapunkt",
             "imageUrl": "/image/testimonial/bara.webp"
           }
-        },
+        }
+      ]
+    ],
+    [
+      [
         {
           "id": "animato",
           "body": "Šimon je zkušený, spolehlivý a precizní v detailech. S takovým člověkem prostě chcete spolupracovat.",
