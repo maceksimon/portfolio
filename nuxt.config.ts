@@ -41,7 +41,7 @@ export default defineNuxtConfig({
       name: 'Šimon Jasný',
       image: '/profile-photo.webp',
       description: 'Webový vývojář',
-      url: 'simonjasny.com',
+      url: 'https://simonjasny.com',
       sameAs: [
         'https://x.com/maceksimondev',
         'https://github.com/maceksimon'
