@@ -11,21 +11,21 @@
       </header>
       <div class="mt-16 sm:mt-20">
         <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-          <li v-for="project in projects"
+          <!-- <li v-for="project in projects"
             class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 border border-transparent hover:border-white/20 transition-colors">
             <NuxtPicture :src="project.fields.image" aria-hidden="true" format="jpg" :imgAttrs="{
             class: 'absolute inset-0 -z-10 h-full w-full object-cover'
-          }" />
+          }" /> -->
             <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
             <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             <!-- Title and link -->
-            <h3 class="mt-3 text-lg font-semibold leading-6 text-white hover:text-gray-200 transition-colors">
+            <!-- <h3 class="mt-3 text-lg font-semibold leading-6 text-white hover:text-gray-200 transition-colors">
               <a v-if="project._path" :href="stripTrailingLocale(project._path)">
                 <span class="absolute inset-0" />
                 {{ project.title }}
               </a>
-            </h3>
-          </li>
+            </h3> -->
+          <!-- </li> -->
         </ul>
       </div>
     </div>
@@ -37,13 +37,13 @@ const { locale, t } = useI18n({
   useScope: 'local'
 })
 
-const { data: projects } = await useAsyncData(
-  'projects',
-  () => queryContent('projects').where({
-    locale: locale.value.toLowerCase()
-  })
-    .find()
-)
+// const { data: projects } = await useAsyncData(
+//   'projects',
+//   () => queryContent('projects').where({
+//     locale: locale.value.toLowerCase()
+//   })
+//     .find()
+// )
 
 function stripTrailingLocale(path: string): string {
   return path.replace(locale.value.toLowerCase(), "")

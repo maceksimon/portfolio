@@ -13,7 +13,8 @@
 <script setup>
 // use meta
 useSeoMeta({
-  title: 'Šimon Jasný | Webový vývojář',
+  title: 'Šimon Jasný - Webový vývojář',
   description: 'Stavím weby pro jednotlivce, menší firmy a organizace. Jestli kromě technických zkušeností hledáte i osobitější a kreativnější přístup, budeme si rozumět.',
 })
+defineOgImageComponent('Simon')
 </script>

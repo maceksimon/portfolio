@@ -12,7 +12,7 @@
       <div
         class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
-        <ArticleTeaser v-for="post in posts" :key="post.id" :post="post" />
+        <!-- <ArticleTeaser v-for="post in posts" :key="post.id" :post="post" /> -->
       </div>
     </div>
   </div>
@@ -21,11 +21,11 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
-const posts = await queryContent('blog')
-  .where({
-    locale: locale.value.toLowerCase(),
-  })
-  .find()
+// const posts = await queryContent('blog')
+//   .where({
+//     locale: locale.value.toLowerCase(),
+//   })
+//   .find()
 </script>
 
 <i18n lang="json">

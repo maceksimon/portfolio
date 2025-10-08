@@ -43,11 +43,19 @@
 const { locale } = useI18n()
 const isLargeScreen = useMediaQuery('(min-width: 768px)')
 
-const { data } = useAsyncData("portfolioItemFeatured", () =>
-  queryContent(
-    "projects",
-    "upupaepop",
-    locale.value.toLowerCase()
-  ).findOne()
-);
+const data = {
+  head: {
+    title: "Studio Upupaepop",
+    description: "Pro hradecké designové studio jsem připravil web, který teď skvěle funguje i jako internetový obchod."
+  },
+  url: {
+    web: {
+      full: "https://upupaepop.cz/",
+      readable: "upupaepop.cz"
+    }
+  },
+  rive: {
+    mockup: "https://rive.app/s/wi2V2T55e0KhmeUyjB4HMQ/embed"
+  }
+}
 </script>

@@ -1,27 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-
   modules: [
-    '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content',
+    '@nuxt/icon',
     '@nuxt/image',
+    '@nuxtjs/i18n',
     '@vueuse/nuxt',
-    'nuxt-icon',
+    'nuxt-og-image',
     '@formkit/nuxt',
-    '@nuxt/test-utils/module'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/devtools'
   ],
-
-  plugins: [
-    '~/plugins/matomo.client.ts',
-    '~/plugins/cookieconsent.client.ts'
-  ],
-
-  experimental: {
-    scanPageMeta: true,
-  },
-
   i18n: {
     locales: [
       {
@@ -33,7 +23,7 @@ export default defineNuxtConfig({
       {
         code: 'cs',
         iso: 'cs-CZ',
-        name: 'Čeština',
+        name: 'Čeština',
         file: "cs-CZ.ts",
       }
     ],
@@ -41,44 +31,13 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     defaultLocale: 'cs',
     detectBrowserLanguage: false,
-    vueI18n: './i18n.config.ts',
-    customRoutes: 'config',
-    pages: {
-      index: {
-        cs: '/',
-        en: '/',
-      },
-      'about/index': {
-        cs: '/o-mne',
-        en: '/about',
-      },
-      'blog/index': {
-        cs: '/blog',
-        en: '/blog',
-      },
-      'blog/[slug]': {
-        cs: '/blog/[slug]',
-        en: '/blog/[slug]',
-      },
-      'projects/index': {
-        cs: '/projekty',
-        en: '/projects',
-      },
-      'projects/[slug]': {
-        cs: '/projekty/[slug]',
-        en: '/projects/[slug]',
-      },
-    }
   },
-
   formkit: {
     // Experimental support for auto loading (see note):
     autoImport: true
   },
-
-  content: {
-    contentHead: true,
+  site: {
+    url: 'https://simonjasny.com',
+    name: 'Šimon Jasný'
   },
-
-  compatibilityDate: '2025-09-10',
 })

@@ -3,9 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: [
     './formkit.theme.ts',
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./plugins/**/*.{ts,js}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -68,6 +66,5 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
   ],
 }

@@ -146,8 +146,66 @@ const featuredTestimonial = {
 const { locale, t } = useI18n({
   useScope: 'local',
 })
-const file = await queryContent('testimonials', locale.value.toLowerCase()).findOne()
-const testimonials = file.body
+
+const testimonials = [
+  [
+    [
+      {
+        "id": "kska",
+        "body": "Spolupráce se Šimonem byla od samého začátku bezproblémová a příjemná. Oceňujeme jeho profesionalitu, vstřícnost a ochotu vždy nám vyjít vstříc. Dokázal nám naslouchat a naše požadavky kreativně a inovativně zpracovat.",
+        "author": {
+          "name": "Milan Durňak",
+          "project": "KSKA",
+          "imageUrl": "/image/testimonial/milan.webp"
+        }
+      },
+      {
+        "id": "dominika",
+        "body": "Se Šimonem jsme prošli celým procesem tvorby online portfolia. Moc oceňuji jeho pomoc při designu stránek i při tvorbě a editaci obsahu.",
+        "author": {
+          "name": "Dominika Špalková",
+          "project": "",
+          "imageUrl": "/image/testimonial/dominika.webp"
+        }
+      }
+    ],
+    [
+      {
+        "id": "kontrapunkt",
+        "body": "Jednoduchý a čistý design, snadná a přímočará struktura a hlavně skvělá a flexibilní komunikace! Děkujeme.",
+        "author": {
+          "name": "Barbora Hodonická",
+          "project": "Kontrapunkt",
+          "imageUrl": "/image/testimonial/bara.webp"
+        }
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "id": "animato",
+        "body": "Šimon je zkušený, spolehlivý a precizní v detailech. S takovým člověkem prostě chcete spolupracovat.",
+        "author": {
+          "name": "Štěpán Rambousek",
+          "project": "Animato",
+          "imageUrl": "/image/testimonial/stepan.webp"
+        }
+      }
+    ],
+    [
+      {
+        "id": "ekoloko",
+        "body": "Šimona jsme poprosili o tvorbu webových stránek, které by prezentovaly aktivity naší neziskové organizace. Spolupráce byla velmi příjemná, komunikace rychlá. Šimon nám ve všem vyšel vstříc a dotvořil web podle našich představ. Děkujeme!",
+        "author": {
+          "name": "Vanda Paulíčková",
+          "project": "Ekoloko",
+          "imageUrl": "/image/testimonial/vanda.webp"
+        }
+      }
+    ]
+  ]
+]
 </script>
 
 <i18n lang="json">

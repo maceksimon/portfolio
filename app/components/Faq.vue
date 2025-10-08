@@ -33,8 +33,41 @@ const { toggle } = useDialogContact()
 const { locale, t } = useI18n({
   useScope: 'local'
 })
-const file = await queryContent("faq", locale.value.toLowerCase()).findOne()
-const faqs = file.body
+
+const faqs = [
+  {
+    "question": "Kolik stojí web?",
+    "answer": "To je individuální. Cena se mění s rozsahem a složitostí projektu. Jestli chceš vědět kolik by stál tvůj vysněný web, napiš mi. Probereme pár detailů a já ti nachystám přibližnou kalkulaci, zdarma a nezávazně."
+  },
+  {
+    "question": "Jak probíhá platba?",
+    "answer": "Ideálně se domlouvám na platbě ve dvou částech: první polovina při zadání, druhá po dokončení práce. Když ale bude potřeba, můžeme se domluvit i jinak."
+  },
+  {
+    "question": "Bavíme se nezávazně?",
+    "answer": "Ano. Až napíšeš, co nejdřív se ti ozvu a domluvíme si schůzku, kde probereme tvůj projekt. Pak ti připravím nabídku, podle které se rozhodneš, jestli chceš web ode mě."
+  },
+  {
+    "question": "Co budu potřebovat?",
+    "answer": "Určitě pár informací o projektu. Jestli máš vlastní texty, grafický design nebo logo, bude fajn, když mi je pošleš co nejdřív. Před samotnou realizací se domluvíme na obsahu webu, rád s tím pomůžu, pokud ještě nemáš přesnou představu. Fotografie můžeš dodat vlastní, nebo ti zařídím spolupráci s profesionální fotografkou."
+  },
+  {
+    "question": "Dostanu grafický návrh webu?",
+    "answer": "Ano. Jestli nemáš vlastní grafiku, připravím návrh jako součást zakázky. Podle předchozí domluvy navrhnu design, který si budeš moct projít a upravit, aby odpovídal tvojí představě. Pak se dohodneme na finálním návrhu, podle kterého udělám web."
+  },
+  {
+    "question": "Kdo napíše a zadá obsah?",
+    "answer": "Na tom se dohodneme. Někdo si rád tvoří a spravuje obsah sám - to pak projdeme možnosti editace webu a je to. Pokud texty nejsou tvůj oblíbený žánr, dá se tenhle úkol delegovat. Rád to zajistím jako součást zakázky."
+  },
+  {
+    "question": "Bude můj web na první stránce Googlu?",
+    "answer": "Jo, ale ne hned. Tohle je záležitost optimalizace pro vyhledávače (SEO), a to je dlouhodobý a postupný proces. Záleží na kvalitě obsahu, důvěryhodnosti webu a na tom, jak je propojený s jinými stránkami. Weby, které stavím, mají pro dobré umístění všechny potřebné předpoklady: rychlost, technickou čistotu i dobře strukturovaný kód."
+  },
+  {
+    "question": "Můžu si nechat upravit už existující web?",
+    "answer": "Záleží na domluvě. Nejdřív budu potřebovat víc informací o tvém webu a o tom, co přesně chceš upravit. Ozvi se a můžeme to probrat."
+  }
+]
 </script>
 
 
