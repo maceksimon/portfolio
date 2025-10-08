@@ -1,3 +1,5 @@
+import { definePerson } from 'nuxt-schema-org/schema'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -34,4 +36,16 @@ export default defineNuxtConfig({
     url: 'https://simonjasny.com',
     name: 'Šimon Jasný'
   },
+  schemaOrg: {
+    identity: definePerson({
+      name: 'Šimon Jasný',
+      image: '/profile-photo.webp',
+      description: 'Webový vývojář',
+      url: 'simonjasny.com',
+      sameAs: [
+        'https://x.com/maceksimondev',
+        'https://github.com/maceksimon'
+      ],
+    })
+  }
 })
