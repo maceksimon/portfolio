@@ -7,19 +7,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
-    'nuxt-og-image',
     '@formkit/nuxt',
     '@nuxtjs/tailwindcss',
-    '@nuxt/devtools'
+    '@nuxt/devtools',
+    '@nuxtjs/seo',
   ],
   i18n: {
     locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        file: "en-US.ts",
-      },
       {
         code: 'cs',
         iso: 'cs-CZ',
