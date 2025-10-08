@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/devtools',
     '@nuxtjs/seo',
+    'nuxt-og-image'
   ],
   i18n: {
     locales: [
