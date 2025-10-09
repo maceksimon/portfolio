@@ -1,5 +1,5 @@
 ---
-head.title: Studio Upupaepop
+title: Studio Upupaepop
 head.description: Pro hradecké designové studio jsem připravil web, který teď skvěle funguje i jako internetový obchod.
 head.image: /image/portfolio/upupaepop/upupaepop-mockup-home.webp
 fields.image: /image/portfolio/upupaepop/upupaepop-mockup-home.webp

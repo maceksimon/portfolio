@@ -10,7 +10,16 @@ export default defineContentConfig({
       schema: z.object({
         tags: z.array(z.string()),
         image: z.string(),
-        date: z.date()
+        created: z.date()
+      })
+    }),
+    references: defineCollection({
+      type: 'page',
+      source: 'references/*.md',
+      schema: z.object({
+        tags: z.array(z.string()),
+        image: z.string(),
+        created: z.date()
       })
     })
   }
