@@ -1,3 +1,5 @@
+import { definePerson } from 'nuxt-schema-org/schema'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -7,19 +9,14 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
-    'nuxt-og-image',
     '@formkit/nuxt',
     '@nuxtjs/tailwindcss',
-    '@nuxt/devtools'
+    '@nuxt/devtools',
+    '@nuxtjs/seo',
+    'nuxt-og-image'
   ],
   i18n: {
     locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        file: "en-US.ts",
-      },
       {
         code: 'cs',
         iso: 'cs-CZ',
@@ -40,4 +37,16 @@ export default defineNuxtConfig({
     url: 'https://simonjasny.com',
     name: 'Šimon Jasný'
   },
+  schemaOrg: {
+    identity: definePerson({
+      name: 'Šimon Jasný',
+      image: '/profile-photo.webp',
+      description: 'Webový vývojář',
+      url: 'https://simonjasny.com',
+      sameAs: [
+        'https://x.com/maceksimondev',
+        'https://github.com/maceksimon'
+      ],
+    })
+  }
 })

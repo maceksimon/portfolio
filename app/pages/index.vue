@@ -14,7 +14,7 @@
 // use meta
 useSeoMeta({
   title: 'Šimon Jasný - Webový vývojář',
-  description: 'Stavím weby pro jednotlivce, menší firmy a organizace. Jestli kromě technických zkušeností hledáte i osobitější a kreativnější přístup, budeme si rozumět.',
+  description: 'Stavím weby pro jednotlivce, menší firmy a organizace. Jestli kromě technických zkušeností hledáte i osobní a kreativní přístup, jste tady správně.',
 })
 defineOgImageComponent('Simon')
 </script>
