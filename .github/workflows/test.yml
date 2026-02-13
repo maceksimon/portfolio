@@ -25,7 +25,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Install Playwright browsers
-        run: yarn playwright install --with-deps chromium
+        run: npx playwright-core install --with-deps chromium
 
       - name: Build application
         run: yarn build
