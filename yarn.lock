@@ -2125,7 +2125,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.18.0, @nuxt/kit@npm:^3.18.1, @nuxt/kit@npm:^3.19.3, @nuxt/kit@npm:^3.20.2, @nuxt/kit@npm:^3.21.0":
+"@nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.18.0, @nuxt/kit@npm:^3.19.3, @nuxt/kit@npm:^3.20.2, @nuxt/kit@npm:^3.21.0":
   version: 3.21.1
   resolution: "@nuxt/kit@npm:3.21.1"
   dependencies:
@@ -5425,20 +5425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:13.9.0":
-  version: 13.9.0
-  resolution: "@vueuse/core@npm:13.9.0"
-  dependencies:
-    "@types/web-bluetooth": "npm:^0.0.21"
-    "@vueuse/metadata": "npm:13.9.0"
-    "@vueuse/shared": "npm:13.9.0"
-  peerDependencies:
-    vue: ^3.5.0
-  checksum: 10c0/f1e6c5e02584e018e53e0e5f93844afbcd33742c5a2454e57aaa3433e9068efbe84b7b423f34628738e28e3ba4bfe7d648f2edaae39706a236ae48bc1a22709b
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:^14.1.0":
+"@vueuse/core@npm:14.3.0, @vueuse/core@npm:^14.1.0":
   version: 14.3.0
   resolution: "@vueuse/core@npm:14.3.0"
   dependencies:
@@ -5451,13 +5438,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:13.9.0":
-  version: 13.9.0
-  resolution: "@vueuse/metadata@npm:13.9.0"
-  checksum: 10c0/7e4620c6e5acbf8f2e5eba0db80a8de887f4816221b383e5d829ee833139d262b8a89e9709d58d7aacb263927ce2c55e262eb29372f784aa9138c8fa7a86506a
-  languageName: node
-  linkType: hard
-
 "@vueuse/metadata@npm:14.3.0":
   version: 14.3.0
   resolution: "@vueuse/metadata@npm:14.3.0"
@@ -5465,27 +5445,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:13.9.0":
-  version: 13.9.0
-  resolution: "@vueuse/nuxt@npm:13.9.0"
+"@vueuse/nuxt@npm:14.3.0":
+  version: 14.3.0
+  resolution: "@vueuse/nuxt@npm:14.3.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.18.1"
-    "@vueuse/core": "npm:13.9.0"
-    "@vueuse/metadata": "npm:13.9.0"
+    "@nuxt/kit": "npm:^4.4.4"
+    "@vueuse/core": "npm:14.3.0"
+    "@vueuse/metadata": "npm:14.3.0"
     local-pkg: "npm:^1.1.2"
   peerDependencies:
     nuxt: ^3.0.0 || ^4.0.0-0
     vue: ^3.5.0
-  checksum: 10c0/dca904cb7089c653963020b98ae7dda657e89dc4d6539a6bc6f89171d998fad6888aa9566bdfc2111f67c56f089c0b0707fba03d169585eb9be65785ae616ccd
-  languageName: node
-  linkType: hard
-
-"@vueuse/shared@npm:13.9.0":
-  version: 13.9.0
-  resolution: "@vueuse/shared@npm:13.9.0"
-  peerDependencies:
-    vue: ^3.5.0
-  checksum: 10c0/4820f71caab3c94bc88343270bb4408d8818baa9c0223e6f7499aeb05f9227a87724c15b792f2aaf308137ac996cccd93c0cbe338f7cf3ae50045981abc223a3
+  checksum: 10c0/4d790640242a84c4a4446d066bea911111c89ea49648ad5485ab0b75102025ac7580eff0abfa62b2b3b9847ef20a4ac7dd90dd8c04cf5f15d82a36da5249baa4
   languageName: node
   linkType: hard
 
@@ -12578,7 +12549,7 @@ __metadata:
     "@tailwindcss/typography": "npm:^0.5.20"
     "@unhead/vue": "npm:^2.1.15"
     "@vue/test-utils": "npm:^2.4.11"
-    "@vueuse/nuxt": "npm:13.9.0"
+    "@vueuse/nuxt": "npm:14.3.0"
     axios: "npm:^1.18.1"
     better-sqlite3: "npm:^12.11.1"
     gsap: "npm:^3.15.0"
