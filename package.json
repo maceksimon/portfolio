@@ -16,7 +16,7 @@
     "@formkit/nuxt": "^1.6.9",
     "@headlessui/vue": "^1.7.23",
     "@nuxt/content": "^3.7.1",
-    "@nuxt/icon": "2.0.0",
+    "@nuxt/icon": "2.3.1",
     "@nuxt/image": "1.11.0",
     "@nuxtjs/i18n": "10.1.0",
     "@nuxtjs/seo": "3.2.2",
