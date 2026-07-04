@@ -1,6 +1,9 @@
-const colors = require("tailwindcss/colors");
+import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
+import typography from '@tailwindcss/typography'
+import forms from '@tailwindcss/forms'
 
-module.exports = {
+export default {
   content: [
     './formkit.theme.ts',
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -63,8 +66,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-  ],
-}
+  plugins: [typography, forms],
+} satisfies Config
