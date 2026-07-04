@@ -21,6 +21,14 @@ export default defineContentConfig({
         image: z.string(),
         created: z.date()
       })
+    }),
+    grants: defineCollection({
+      type: 'page',
+      source: 'granty-na-web/*.md',
+      schema: z.object({
+        description: z.string().optional(),
+        created: z.date().optional()
+      })
     })
   }
 })
