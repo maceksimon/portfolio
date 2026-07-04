@@ -1,16 +1,19 @@
 ---
 title: Studio Upupaepop
-head.description: Pro hradecké designové studio jsem připravil web, který teď skvěle funguje i jako internetový obchod.
-head.image: /image/portfolio/upupaepop/upupaepop-mockup-home.webp
-fields.image: /image/portfolio/upupaepop/upupaepop-mockup-home.webp
-fields.order: 200
-fields.skills: ["WordPress", "WooCommerce"]
+description: Pro hradecké designové studio jsem připravil web, který teď skvěle funguje i jako internetový obchod.
+image: /image/portfolio/upupaepop/upupaepop-mockup-home.webp
+tags: ["WordPress", "WooCommerce"]
+created: 2023-01-01
+order: 200
 featured: true
-type: "full"
-url.web.full: "https://upupaepop.cz/"
-url.web.readable: "upupaepop.cz"
-rive.mockup: "https://rive.app/s/wi2V2T55e0KhmeUyjB4HMQ/embed"
-locale: "cs"
+type: full
+locale: cs
+url:
+  web:
+    full: "https://upupaepop.cz/"
+    readable: "upupaepop.cz"
+rive:
+  mockup: "https://rive.app/s/wi2V2T55e0KhmeUyjB4HMQ/embed"
 ---
 
 # Letterpress na WordPressu: <br>Stránky studia Upupaepop
