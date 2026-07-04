@@ -4256,7 +4256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unocss/core@npm:66.6.0, @unocss/core@npm:^66.5.1, @unocss/core@npm:^66.5.10, @unocss/core@npm:^66.6.0":
+"@unocss/core@npm:66.6.0, @unocss/core@npm:^66.5.10, @unocss/core@npm:^66.6.0":
   version: 66.6.0
   resolution: "@unocss/core@npm:66.6.0"
   checksum: 10c0/ae231ee498141d72ddd1563b75742bdbe6a63bce9786305c15049acbeef51bc4c6c93fdef02340f93a1591ad58e74fdb22cc3fcf67456c4c475ece9f711e4089
@@ -4283,7 +4283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unocss/preset-wind3@npm:^66.5.1, @unocss/preset-wind3@npm:^66.5.10":
+"@unocss/preset-wind3@npm:^66.5.10":
   version: 66.6.0
   resolution: "@unocss/preset-wind3@npm:66.6.0"
   dependencies:
@@ -5738,7 +5738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chrome-launcher@npm:^1.2.0, chrome-launcher@npm:^1.2.1":
+"chrome-launcher@npm:^1.2.1":
   version: 1.2.1
   resolution: "chrome-launcher@npm:1.2.1"
   dependencies:
@@ -6125,13 +6125,6 @@ __metadata:
   peerDependencies:
     postcss: ^8.0.9
   checksum: 10c0/a715c90ac1b849e52cb697eb3c28ae86ee80fa9ccb26a9da60eb5621a0a6657c41a8126e27d96a622f96ca70692e210ac33362888f0274ba23056ac401089fa5
-  languageName: node
-  linkType: hard
-
-"css-gradient-parser@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "css-gradient-parser@npm:0.0.16"
-  checksum: 10c0/7f05794ad99927ed4dcb9b96571117eea5d4426366f6dc38932035f0e73729ed0edc2a4144576851b2987cdfe8acf9e8d9f2f08c9daf69d085ae2679779bbc5a
   languageName: node
   linkType: hard
 
@@ -10476,48 +10469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-og-image@npm:5.1.11":
-  version: 5.1.11
-  resolution: "nuxt-og-image@npm:5.1.11"
-  dependencies:
-    "@nuxt/devtools-kit": "npm:^2.6.3"
-    "@nuxt/kit": "npm:^4.1.2"
-    "@resvg/resvg-js": "npm:^2.6.2"
-    "@resvg/resvg-wasm": "npm:^2.6.2"
-    "@unocss/core": "npm:^66.5.1"
-    "@unocss/preset-wind3": "npm:^66.5.1"
-    chrome-launcher: "npm:^1.2.0"
-    consola: "npm:^3.4.2"
-    defu: "npm:^6.1.4"
-    execa: "npm:^9.6.0"
-    image-size: "npm:^2.0.2"
-    magic-string: "npm:^0.30.19"
-    mocked-exports: "npm:^0.1.1"
-    nuxt-site-config: "npm:^3.2.5"
-    nypm: "npm:^0.6.2"
-    ofetch: "npm:^1.4.1"
-    ohash: "npm:^2.0.11"
-    pathe: "npm:^2.0.3"
-    pkg-types: "npm:^2.3.0"
-    playwright-core: "npm:^1.55.0"
-    radix3: "npm:^1.1.2"
-    satori: "npm:^0.15.2"
-    satori-html: "npm:^0.3.2"
-    sirv: "npm:^3.0.2"
-    std-env: "npm:^3.9.0"
-    strip-literal: "npm:^3.0.0"
-    ufo: "npm:^1.6.1"
-    unplugin: "npm:^2.3.10"
-    unwasm: "npm:^0.3.11"
-    yoga-wasm-web: "npm:^0.3.3"
-  peerDependencies:
-    "@unhead/vue": ^2.0.5
-    unstorage: ^1.15.0
-  checksum: 10c0/22c168c9045b2727fc780473bfda920a8d606f292c8bcaf9e95bb9db74ea5262f44674aae8a6a50cdd161a29649016c3fb904690d6b9526179a00e17ec0d3f9e
-  languageName: node
-  linkType: hard
-
-"nuxt-og-image@npm:^5.1.11":
+"nuxt-og-image@npm:5.1.13, nuxt-og-image@npm:^5.1.11":
   version: 5.1.13
   resolution: "nuxt-og-image@npm:5.1.13"
   dependencies:
@@ -11452,7 +11404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:^1.49.1, playwright-core@npm:^1.55.0, playwright-core@npm:^1.57.0":
+"playwright-core@npm:^1.49.1, playwright-core@npm:^1.57.0":
   version: 1.58.2
   resolution: "playwright-core@npm:1.58.2"
   bin:
@@ -11495,7 +11447,7 @@ __metadata:
     gsap: "npm:^3.13.0"
     happy-dom: "npm:^15.7.4"
     nuxt: "npm:^4.1.3"
-    nuxt-og-image: "npm:5.1.11"
+    nuxt-og-image: "npm:5.1.13"
     playwright-core: "npm:^1.49.1"
     unstorage: "npm:^1.15.0"
     vanilla-cookieconsent: "npm:^3.1.0"
@@ -12803,25 +12755,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satori@npm:^0.15.2":
-  version: 0.15.2
-  resolution: "satori@npm:0.15.2"
-  dependencies:
-    "@shuding/opentype.js": "npm:1.4.0-beta.0"
-    css-background-parser: "npm:^0.1.0"
-    css-box-shadow: "npm:1.0.0-3"
-    css-gradient-parser: "npm:^0.0.16"
-    css-to-react-native: "npm:^3.0.0"
-    emoji-regex-xs: "npm:^2.0.1"
-    escape-html: "npm:^1.0.3"
-    linebreak: "npm:^1.1.0"
-    parse-css-color: "npm:^0.2.1"
-    postcss-value-parser: "npm:^4.2.0"
-    yoga-wasm-web: "npm:^0.3.3"
-  checksum: 10c0/9fc2c120837858c95e23f89d40b6f322c2b4fa0166eb8ca021f147a9b5e1917e45e0758863c888599586f818b82b0b3501cc418592f8c0b48283c9976664bab3
-  languageName: node
-  linkType: hard
-
 "satori@npm:^0.18.3":
   version: 0.18.4
   resolution: "satori@npm:0.18.4"
@@ -13405,7 +13338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-literal@npm:^3.0.0, strip-literal@npm:^3.1.0":
+"strip-literal@npm:^3.1.0":
   version: 3.1.0
   resolution: "strip-literal@npm:3.1.0"
   dependencies:
