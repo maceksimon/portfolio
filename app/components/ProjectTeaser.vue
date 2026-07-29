@@ -338,11 +338,14 @@
               </dt>
               <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-700">
                 <p class="flex-auto">{{ project.description }}</p>
-                <p class="mt-6">
-                  <a :href="project.urlWeb" target="_blank" class="relative group mt-8 text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
+                <div class="mt-6 flex flex-col items-start gap-3">
+                  <NuxtLink v-if="project.urlPortfolio" :to="project.urlPortfolio" class="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition-colors">
+                    {{ t('readMore') }}
+                  </NuxtLink>
+                  <a :href="project.urlWeb" target="_blank" class="text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:no-underline transition-colors">
                     {{ project.urlWebDomain }}
                   </a>
-                </p>
+                </div>
               </dd>
             </template>
           </div>
@@ -361,6 +364,17 @@ const { t } = useI18n({
 })
 
 const projects = [
+  {
+    id: 1,
+    title: 'MKS Jaroměř',
+    description:
+      'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
+    imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
+    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
+    urlPortfolio: '/projekty/mestske-kulturni-stredisko-jaromer',
+    urlWeb: 'https://divadlojaromer.cz',
+    urlWebDomain: 'divadlojaromer.cz',
+  },
   {
     id: 4,
     title: 'DVA',
@@ -384,24 +398,13 @@ const projects = [
     urlWebDomain: 'hradecsaunaday.cz',
   },
   {
-    id: 1,
-    title: 'MKS Jaroměř',
-    description:
-      'Nový web Městského kulturního střediska Jaroměř vznikl díky programu Kreativní vouchery a svěží formou informuje o historických památkách i kulturním životě ve městě.',
-    imageMobile: '/image/portfolio/jaromer-homepage-mobile.webp',
-    imageDesktop: '/image/portfolio/jaromer-homepage-desktop.webp',
-    urlPortfolio: '/portfolio/mks-jaromer',
-    urlWeb: 'https://divadlojaromer.cz',
-    urlWebDomain: 'divadlojaromer.cz',
-  },
-  {
     id: 2,
     title: 'Ekoloko',
     description:
       'Nový web pro neziskovku Ekoloko zastřešuje jejich rozmanité aktivity – swapy, latino tančírny, i péči o komunitní zahradu.',
     imageMobile: '/image/portfolio/ekoloko-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/ekoloko-homepage-desktop.webp',
-    urlPortfolio: '/portfolio/ekoloko',
+    urlPortfolio: '',
     urlWeb: 'https://eko-loko.cz',
     urlWebDomain: 'eko-loko.cz',
   },
@@ -412,7 +415,7 @@ const projects = [
       'Festival Brno čte Bruna je fascinující branou do světa méně známého, ale o to zajímavějšího polského spisovatele Bruna Schulze. Kafkovskou atmosféru jeho díla doplňují animace, které jsem vytvořil společně s webem.',
     imageMobile: '/image/portfolio/brno-cte-bruna-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/brno-cte-bruna-homepage-desktop.webp',
-    urlPortfolio: '/portfolio/brno-cte-bruna',
+    urlPortfolio: '',
     urlWeb: 'https://brnoctebruna.cz',
     urlWebDomain: 'brnoctebruna.cz',
   },
@@ -423,7 +426,7 @@ const projects = [
       'Pro Katedru sociální a kulturní antropologie Univerzity Pardubice jsem vytvořil portál, kde studenti najdou informace o akcích katedry, přednáškách, publikacích a dalších aktivitách.',
     imageMobile: '/image/portfolio/kska-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/kska-homepage-desktop.webp',
-    urlPortfolio: '/portfolio/kska',
+    urlPortfolio: '',
     urlWeb: 'https://kska.upce.cz',
     urlWebDomain: 'kska.upce.cz',
   },
@@ -434,7 +437,7 @@ const projects = [
       'Díky Fellow Creatures jsem měl příležitost zjistit něco o umění ochutnávání čokolády a vyzkoušet si, co obnáší tvorba e-shopu na Shopify. První projekt, u kterého jsem si přál být placený v naturáliích.',
     imageMobile: '/image/portfolio/fellow-creatures-homepage-mobile.webp',
     imageDesktop: '/image/portfolio/fellow-creatures-homepage-desktop.webp',
-    urlPortfolio: '/portfolio/fellow-creatures',
+    urlPortfolio: '',
     urlWeb: 'https://fellowcreatures.co.uk',
     urlWebDomain: 'fellowcreatures.co.uk',
   },
@@ -456,13 +459,15 @@ const imageMobile = computed(() => {
     "projectList": "Project list",
     "highlight": "What is already online",
     "title": "Browse the completed projects",
-    "perex": "Each website has their own characteristics and requirements. With this approach I have created a whole range of different realizations from presentation websites to e-commerce."
+    "perex": "Each website has their own characteristics and requirements. With this approach I have created a whole range of different realizations from presentation websites to e-commerce.",
+    "readMore": "Read more"
   },
   "cs": {
     "projectList": "Seznam projektů",
     "highlight": "Co už je online",
     "title": "Výběr z dokončených projektů",
-    "perex": "Realizací už vznikla spousta, od prezentačních webů po eshopy. Každá trochu jiná, každá s příběhem. Mám z nich radost, tak se trochu chlubím."
+    "perex": "Realizací už vznikla spousta, od prezentačních webů po eshopy. Každá trochu jiná, každá s příběhem. Mám z nich radost, tak se trochu chlubím.",
+    "readMore": "Více o projektu"
   }
 }
 </i18n>

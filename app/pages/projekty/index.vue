@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData('references', () => queryCollection('references').all())
+const { data: posts } = await useAsyncData('projekty', () => queryCollection('projekty').all())
 </script>
 
 <template>
   <div>
-    <h1>Reference ({{ posts?.length }})</h1>
+    <h1>Projekty ({{ posts?.length }})</h1>
     <ul>
       <li v-for="post in posts" :key="post.id">
         <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>

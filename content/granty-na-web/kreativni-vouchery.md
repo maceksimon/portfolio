@@ -6,9 +6,13 @@ created: 2025-11-01
 
 # Kreativní vouchery pro Královéhradecký kraj - Jak žádat o grant a jaké výhody může mít spolupráce s kreativcem
 
-> Termíny podání: listopad - prosinec 2026
-> Poskytovaná částka 50 000 - 150 000 Kč
-> Rozpočet projektu 62 500 - 187 500 Kč
+::grant-info-banner
+---
+deadline: "listopad - prosinec 2026"
+amount: "50 000 - 150 000 Kč"
+budget: "62 500+ Kč"
+---
+::
 
 Máte nápad a chuť dát nový impuls své kulturní instituci nebo projektu? [Kreativní vouchery](https://prokreativitu.cz/kr-zdroj/kreativni-vouchery-pro-kulturni-dedictvi-khk/) dotují projekty, které pracují s krajským kulturním dědictvím. Podmínkou je spolupráce s **profesionálem z kreativního odvětví**, který vám pomůže realizovat vaši vizi. Výsledkem je nový projekt, který skrze vaši instituci podpoří kulturní dědictví i originální kreativní tvorbu. Dosáhnete na kreativní vouchery? A jak o ně správně požádat? Čtěte dál.
 
@@ -46,6 +50,10 @@ Pokud se vaše organizace některým z nich zabývá, můžete žádat o kreativ
 ## Kreativec
 
 Pro žádost a realizaci projektu si musíte vybrat profesionála z kreativního oboru, s kterým budete spolupracovat. Důležité je to, že váš projektový partner musí být zapsán do [krajské](https://www.proinovace.cz/cs/vouchery/akceleracni-vouchery/galerie-kreativcu) nebo [celostátní](https://vouchery.kreativnicesko.cz/cs/galerie-kreativcu) galerie kreativců. Je dobré vybírat pečlivě, protože budete spolupracovat nejen na projektu samotném ale nejspíš i na psaní žádosti. Ideální je vybrat někoho, kdo už má z projektů v rámci kreativních voucherů zkušenosti.
+
+::case-study-link{to="/projekty/mestske-kulturni-stredisko-jaromer"}
+Přečtěte si o mé spolupráci na projektu MKS Jaroměř, dotovaného kreativními vouchery.
+::
 
 ## Hodnocení grantu
 
@@ -91,7 +99,10 @@ Jaký efekt bude mít váš projekt pro širší kontext kultury v regionu. Zamy
 
 ### Typ žadatele, sociální zvýhodnění (5 bodů)
 
-Několik důležitých bodů můžete v přihlášce získat díky umístění v tzv. "ohrožené oblasti". Tyto oblasti zahrnují ekonomicky slabší města a obce. Jejich úplný seznam si můžete prohlédnout **ZDE**, nebo využít INTERAKTIVNÍ VYHLEDÁVAČ.
+Několik důležitých bodů můžete v přihlášce získat díky umístění v tzv. "ohrožené oblasti". Tyto oblasti zahrnují ekonomicky slabší města a obce. Ověřte si, zda je vaše sídlo v seznamu:
+
+::place-search
+::
 
 ## Jak podat grant
 

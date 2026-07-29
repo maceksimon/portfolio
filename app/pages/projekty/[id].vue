@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const { data } = await useAsyncData(route.path, () => {
-  return queryCollection('references').path(route.path).first()
+  return queryCollection('projekty').path(route.path).first()
 })
 </script>
 

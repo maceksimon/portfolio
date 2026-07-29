@@ -13,9 +13,9 @@ export default defineContentConfig({
         created: z.date()
       })
     }),
-    references: defineCollection({
+    projekty: defineCollection({
       type: 'page',
-      source: 'references/*.md',
+      source: 'projekty/*.md',
       schema: z.object({
         tags: z.array(z.string()),
         image: z.string(),

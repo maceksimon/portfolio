@@ -29,6 +29,21 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     defaultLocale: 'cs',
     detectBrowserLanguage: false,
+    customRoutes: 'config',
+    pages: {
+      'projekty/index': {
+        en: '/projects',
+      },
+      'projekty/[id]': {
+        en: '/projects/[id]',
+      },
+      'granty-na-web/index': {
+        en: '/web-grants',
+      },
+      'granty-na-web/[id]': {
+        en: '/web-grants/[id]',
+      },
+    },
   },
   formkit: {
     // Experimental support for auto loading (see note):
