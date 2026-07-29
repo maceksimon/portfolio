@@ -37,9 +37,6 @@ export default {
     buttonDetail: 'Read on',
     buttonWebsite: 'Check out the web',
   },
-  blog: {
-    title: 'Blog',
-  },
   social: {
     twitter: 'Twitter',
     github: 'GitHub',

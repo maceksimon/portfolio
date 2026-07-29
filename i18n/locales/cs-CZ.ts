@@ -37,9 +37,6 @@ export default {
     buttonDetail: 'Přečtěte si víc',
     buttonWebsite: 'Prohlédněte si web',
   },
-  blog: {
-    title: 'Blog',
-  },
   social: {
     twitter: 'Twitter',
     github: 'GitHub',
