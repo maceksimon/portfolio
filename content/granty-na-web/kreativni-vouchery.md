@@ -4,7 +4,7 @@ description: Jak žádat o grant a jaké výhody může mít spolupráce s kreat
 created: 2025-11-01
 ---
 
-# Kreativní vouchery pro Královéhradecký kraj - Jak žádat o grant a jaké výhody může mít spolupráce s kreativcem
+# Kreativní vouchery pro Královéhradecký kraj
 
 ::grant-info-banner
 ---
@@ -20,7 +20,7 @@ Máte nápad a chuť dát nový impuls své kulturní instituci nebo projektu? [
 
 ## Kolik to bude
 
-Grantový program kreativní vouchery rozděluje každý rok 500 000 Kč částkou **50 000 - 150 000 Kč na projekt**. Z toho vychází, že dotaci získá asi 5-10 projektů. Grant má 20% spoluúčast. To znamená, že z něj můžete pokrýt 80% rozpočtu a zbylých 20% musí vaše organizace doplatit z jiných zdrojů. Dotace je určená jako honorář za kreativní práci spolupracujícího profesionála. Peníze nemůžete použít na nákup materiálů a vybavení potřebných k práci. Jde o neziskový grant, takže si z peněz bohužel nesmíte žádné nechat. Výstupem projektu mohou být třeba nové webové stránky, grafické propagační materiály, knižní publikace, fotografická výstava, nebo jiná tvořivá forma. Na realizaci projektu máte rok a peníze vám budou vyplaceny zhruba během května daného roku.
+Grantový program kreativní vouchery rozděluje každý rok 500 000 Kč částkou **50 000 - 150 000 Kč na projekt**. Z toho vychází, že dotaci získá asi 5-10 projektů. Grant má 20% spoluúčast. To znamená, že z něj můžete pokrýt 80% rozpočtu a zbylých 20% musí vaše organizace doplatit z jiných zdrojů. Dotace je určená jako honorář za kreativní práci spolupracujícího profesionála. Peníze nemůžete použít na nákup materiálů a vybavení potřebných k práci. Výstupem projektu mohou být třeba nové webové stránky, grafické propagační materiály, knižní publikace, fotografická výstava, nebo jiná tvořivá forma. Na realizaci projektu máte rok a peníze vám budou vyplaceny zhruba během května daného roku.
 
 ## Kdo může žádat
 
