@@ -102,4 +102,10 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Ochrana osobních údajů',
+  description: 'Informace o zpracování osobních údajů a používání cookies na webu Šimona Jasného.',
+})
+defineOgImageComponent('Simon', { title: 'Ochrana osobních údajů' })
+</script>
