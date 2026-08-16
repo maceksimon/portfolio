@@ -13,6 +13,7 @@ useSeoMeta({
 
 <template>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+    <Breadcrumbs :items="[{ label: t('title') }]" center />
     <div class="mx-auto max-w-3xl text-center">
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         {{ t('title') }}

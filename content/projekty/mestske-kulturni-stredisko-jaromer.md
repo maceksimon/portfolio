@@ -1,8 +1,8 @@
 ---
 title: Městské kulturní středisko Jaroměř
 description: Městské kulturní středisko Jaromeř využilo dotace Kreativní vouchery k redesignu webu.
-image: /image/portfolio/jaromer/jaromer-mockup-home.webp
-tags: ["WordPress", "WooCommerce"]
+image: /image/portfolio/jaromer/mks-jaromer-web-redesign.webp
+tags: []
 created: 2026-07-29
 order: 200
 featured: false

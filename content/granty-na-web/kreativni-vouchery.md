@@ -73,7 +73,9 @@ Ne každý může vyhrát. Aby komise mohla podpořit váš projekt, musíte nas
 
 Požadavky na kvalitu rozpočtu:
 
-> "Rozpočet je jasný, úplný, přehledný, odůvodněný, přiměřený, a obsahuje jasnou kalkulaci jednotlivých položek."
+> Rozpočet je jasný, úplný, přehledný, odůvodněný, přiměřený, a obsahuje jasnou kalkulaci jednotlivých položek.
+>
+> — [Specifikace bodového hodnocení dle jednotlivých hodnotících kritérií 2026](https://dotace.khk.cz/grantProgram/26KPG09)
 
 Je důležité být konkrétní a vypsat, k jakým účelům peníze z grantu použijete. Plný počet bodů dostanete jen tehdy, když detailně rozepíšete rozpočet na jednotlivé položky a správně je naceníte. Tohle je práce, se kterou vám vybraný kreativec může nejvíc pomoci. Pro žadatele, který se nepohybuje v kreativním oboru je často těžké přesně sestavit kalkulaci. Pro kreativního profesionála by to naopak měla být druhá přirozenost. Chtějte po svých spolupracovnících přesný rozpočet a nezapomeňte, že některé výdaje **nejsou uznatelné** - např. cestovní doklady fotografie z fotobanky, nebo nákup softwaru použitého pro realizaci projektu (váš designér si nemůže naúčtovat svou licenci Photoshopu). V případě tvorby webu, se tenhle požadavek může týkat např. hostingu webových stránek nebo nákupu softwarových knihoven a balíčků. Je na zodpovědnosti programátora, aby tyhle položky zajistil a aby nemusely být vykazovány zvlášť.
 
